@@ -10,12 +10,21 @@
         <activity
             android:name=".AccueilActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".MesInfoActivity"
+            android:label="@string/title_activity_mes_info"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".mesInfos.MesInfosActivity"
+            android:label="@string/title_activity_mes_infos" >
         </activity>
     </application>
 

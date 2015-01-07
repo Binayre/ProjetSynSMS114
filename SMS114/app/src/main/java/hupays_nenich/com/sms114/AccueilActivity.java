@@ -4,14 +4,20 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 
 public class AccueilActivity extends ActionBarActivity {
+
+    private Button btnMesInfos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_accueil);
+
+        btnMesInfos = (Button)findViewById(R.id.btnMesInfos);
+        btnMesInfos.setOnClickListener(new MesInfosListener(this));
     }
 
 
