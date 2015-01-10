@@ -6,5 +6,14 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_mes_info">MesInfoActivity</string>
     <string name="title_activity_mes_infos">MesInfosActivity</string>
+    <string name="title_activity_cause">CauseActivity</string>
+    <string name="accident_route">Accident de la route</string>
+    <string name="incendie">Incendie</string>
+    <string name="Cat_nat">Catastrophes Naturelles</string>
+    <string name="blessures_animales">Blessures par animaux</string>
+    <string name="autres">Autres</string>
+    <string name="accueil">Accueil</string>
+    <string name="enregistrer">Enregistrer</string>
+    <string name="annuler">Annuler</string>
 
 </resources>

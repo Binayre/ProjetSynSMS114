@@ -7,9 +7,9 @@ import android.view.MenuItem;
 import android.widget.Button;
 
 
-public class AccueilActivity extends ActionBarActivity {
+public class AccueilActivity extends GlobalActivity {
 
-    private Button btnMesInfos;
+    private Button btnMesInfos, btnSMS114;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +18,12 @@ public class AccueilActivity extends ActionBarActivity {
 
         btnMesInfos = (Button)findViewById(R.id.btnMesInfos);
         btnMesInfos.setOnClickListener(new MesInfosListener(this));
+
+        btnSMS114 = (Button)findViewById(R.id.btnSMS114);
+
+        this.message = new Message();
+
+        btnSMS114.setOnClickListener(new SMS114Listener(this));
     }
 
 

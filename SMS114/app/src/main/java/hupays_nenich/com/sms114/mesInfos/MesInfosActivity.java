@@ -1,7 +1,6 @@
 package hupays_nenich.com.sms114.mesInfos;
 
-import android.content.Context;
-import android.support.v7.app.ActionBarActivity;
+
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -11,17 +10,18 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
+import hupays_nenich.com.sms114.GlobalActivity;
 import hupays_nenich.com.sms114.R;
+import hupays_nenich.com.sms114.RetourListener;
 
-public class MesInfosActivity extends ActionBarActivity {
+public class MesInfosActivity extends GlobalActivity {
 
-    private Button btnEnregistrer;
+    private Button btnEnregistrer, btnAnnuler;
     private TextView txtEtage, txtCodePorte, txtPorte;
     private EditText edtPrenom, edtNom, edtPhone, edtAdresse, edtVille, edtCodePostal, edtEtage, edtCodePorte, edtPorte;
     private CheckBox chkImmeuble;
@@ -51,6 +51,9 @@ public class MesInfosActivity extends ActionBarActivity {
 
         btnEnregistrer = (Button)findViewById(R.id.btnEnregistrer);
         btnEnregistrer.setOnClickListener(new EnregistrerListener(this));
+
+        btnAnnuler = (Button)findViewById(R.id.btnAnnuler);
+        btnAnnuler.setOnClickListener(new RetourListener(this));
 
         chargerDonnees();
     }

@@ -18,13 +18,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MesInfoActivity"
-            android:label="@string/title_activity_mes_info"
+            android:name=".mesInfos.MesInfosActivity"
+            android:label="@string/title_activity_mes_infos"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name=".mesInfos.MesInfosActivity"
-            android:label="@string/title_activity_mes_infos" >
+            android:name=".causes.CauseActivity"
+            android:label="@string/title_activity_cause"
+            android:screenOrientation="portrait">
         </activity>
     </application>
 
