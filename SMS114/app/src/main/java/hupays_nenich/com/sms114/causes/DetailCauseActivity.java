@@ -27,7 +27,7 @@ public class DetailCauseActivity extends GlobalActivity{
         this.liste_boutons.add(btn);
     }
 
-    public void setBoutonListener(detailCauseListener listener){
+    public void setBoutonListener(DetailCauseListener listener){
         for(int i=0; i<liste_boutons.size();i++){
 
             liste_boutons.get(i).setOnClickListener(listener);

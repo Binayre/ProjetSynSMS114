@@ -81,7 +81,7 @@
             android:textSize="20sp" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:text="@string/accueil"
             android:id="@+id/btnRetourAccueil"
@@ -89,9 +89,10 @@
             android:layout_centerHorizontal="true"
             android:layout_alignParentEnd="false"
             android:layout_alignParentLeft="true"
-            android:background="#ffff4e25"
+            android:background="@drawable/bouton_bleu"
             android:drawableLeft="@drawable/retour"
             android:layout_marginTop="10dp"
-            android:textSize="20sp" />
+            android:textSize="18sp"
+            android:textColor="#ffffffff" />
     </RelativeLayout>
 </RelativeLayout>

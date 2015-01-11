@@ -82,7 +82,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Numéro\nTéléphone:"
+                android:text="Téléphone:"
                 android:id="@+id/txtNumeroTel"
                 android:layout_alignParentLeft="true" />
 
@@ -254,24 +254,28 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:text="@string/annuler"
                 android:id="@+id/btnAnnuler"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:background="#ffff4a2c" />
+                android:background="@drawable/bouton_bleu"
+                android:textColor="#ffffffff"
+                android:textSize="18sp" />
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="140dp"
                 android:layout_height="wrap_content"
                 android:text="@string/enregistrer"
                 android:id="@+id/btnEnregistrer"
                 android:layout_gravity="center_horizontal"
                 android:layout_weight="0.02"
                 android:layout_alignParentRight="true"
-                android:background="#ff17ff60" />
+                android:background="@drawable/bouton_bleu"
+                android:textColor="#ffffffff"
+                android:textSize="18sp" />
         </RelativeLayout>
 
     </LinearLayout>

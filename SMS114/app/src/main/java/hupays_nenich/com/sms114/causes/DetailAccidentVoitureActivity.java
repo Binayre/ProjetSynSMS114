@@ -35,7 +35,7 @@ public class DetailAccidentVoitureActivity extends DetailCauseActivity {
         this.ajouterBouton((ToggleButton)findViewById(R.id.btnCamion));
         this.ajouterBouton((ToggleButton)findViewById(R.id.btnBus));
 
-        this.setBoutonListener(new detailCauseListener());
+        this.setBoutonListener(new DetailCauseListener());
 
         btnRetour = (Button)findViewById(R.id.btnRetourCauses);
         btnRetour.setOnClickListener(new RetourListener(this));

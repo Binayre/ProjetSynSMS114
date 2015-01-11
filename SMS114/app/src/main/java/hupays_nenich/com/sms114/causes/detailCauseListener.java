@@ -12,7 +12,7 @@ import android.widget.ToggleButton;
 /**
  * change le background d'un ToggleButton
  */
-public class detailCauseListener implements View.OnClickListener{
+public class DetailCauseListener implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
