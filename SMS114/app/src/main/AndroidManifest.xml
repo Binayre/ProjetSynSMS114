@@ -20,12 +20,16 @@
         <activity
             android:name=".mesInfos.MesInfosActivity"
             android:label="@string/title_activity_mes_infos"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name=".causes.CauseActivity"
             android:label="@string/title_activity_cause"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".causes.DetailAccidentVoitureActivity"
+            android:label="@string/title_activity_detail_accident_voiture" >
         </activity>
     </application>
 

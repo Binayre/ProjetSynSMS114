@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="hupays_nenich.com.sms114.causes.DetailAccidentVoitureActivity"
+    android:background="#ffffffff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Accident de la route"
+        android:id="@+id/txtDetailAccidentRoute"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDetailAccidentRoute"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:id="@+id/linearLayout">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnVoiture"
+                android:layout_gravity="center_vertical|left"
+                android:drawableTop="@drawable/voiture"
+                android:checked="false"
+                android:text="@string/voiture"
+                android:textAllCaps="false"
+                android:textOff="@string/voiture"
+                android:textOn="@string/voiture"
+                android:layout_marginRight="30dp" />
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New ToggleButton"
+                android:id="@+id/btnVelo"
+                android:layout_gravity="center_vertical"
+                android:drawableTop="@drawable/velo"
+                android:textOff="@string/velo"
+                android:textOn="@string/velo"
+                android:checked="false"
+                android:layout_marginRight="30dp" />
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New ToggleButton"
+                android:id="@+id/btnMoto"
+                android:layout_gravity="center_vertical"
+                android:drawableTop="@drawable/moto"
+                android:textOff="@string/moto"
+                android:textOn="@string/moto"
+                android:checked="false" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="20dp">
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New ToggleButton"
+                android:id="@+id/btnCamion"
+                android:layout_gravity="center_vertical"
+                android:drawableTop="@drawable/camion"
+                android:textOff="@string/camion"
+                android:textOn="@string/camion"
+                android:checked="false"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="50dp" />
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New ToggleButton"
+                android:id="@+id/btnBus"
+                android:layout_gravity="center_vertical"
+                android:drawableTop="@drawable/bus"
+                android:textOff="@string/bus"
+                android:textOn="@string/bus"
+                android:checked="false"
+                android:layout_marginLeft="30dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/causes"
+            android:id="@+id/btnRetourCauses"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:drawableLeft="@drawable/retour"
+            android:background="#ffff5943" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nb_victime"
+            android:id="@+id/btnNbVictime"
+            android:layout_alignTop="@+id/btnRetourCauses"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:drawableRight="@drawable/suivant"
+            android:background="#ff36ff6b" />
+    </RelativeLayout>
+</RelativeLayout>

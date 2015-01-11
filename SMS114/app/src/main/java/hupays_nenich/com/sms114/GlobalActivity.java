@@ -14,9 +14,7 @@ public class GlobalActivity extends ActionBarActivity{
     private Class<?> suivante;
     private Class<?> precedente;
 
-    public Message getMessage() {
-        return message;
-    }
+    public Message getMessage() { return message; }
 
     public Class<?> getSuivante() {
         return suivante;

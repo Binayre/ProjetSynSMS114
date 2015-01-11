@@ -12,6 +12,10 @@ import hupays_nenich.com.sms114.R;
 import hupays_nenich.com.sms114.RetourListener;
 import hupays_nenich.com.sms114.mesInfos.MesInfosActivity;
 
+
+/**
+ * permet de choisir la cause de l'appel
+ */
 public class CauseActivity extends GlobalActivity {
 
    private Button btnAccident, btnIncendie, btnBlessureAnimale, btnCatastrophe, btnAutre, btnRetourAccueil;
@@ -29,7 +33,7 @@ public class CauseActivity extends GlobalActivity {
 
 
         btnAccident = (Button)findViewById(R.id.btnAccidentRoute);
-        btnAccident.setOnClickListener(new CauseListener(this, MesInfosActivity.class));
+        btnAccident.setOnClickListener(new CauseListener(this, DetailAccidentVoitureActivity.class));
 
         btnIncendie = (Button)findViewById(R.id.btnIncendie);
         btnIncendie.setOnClickListener(new CauseListener(this, MesInfosActivity.class));

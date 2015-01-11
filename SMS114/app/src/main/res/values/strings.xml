@@ -15,5 +15,13 @@
     <string name="accueil">Accueil</string>
     <string name="enregistrer">Enregistrer</string>
     <string name="annuler">Annuler</string>
+    <string name="title_activity_detail_accident_voiture">DetailAccidentVoitureActivity</string>
+    <string name="voiture">Voiture</string>
+    <string name="moto">Moto</string>
+    <string name="velo">Vélo</string>
+    <string name="camion">Camion</string>
+    <string name="bus">Bus</string>
+    <string name="nb_victime">Nombre de victime</string>
+    <string name="causes">Causes</string>
 
 </resources>

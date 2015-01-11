@@ -1,11 +1,16 @@
 package hupays_nenich.com.sms114.causes;
 
+import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
 /**
  * Created by Jérémy on 10/01/2015.
+ */
+
+/**
+ * valide la cause et affiche l'activity permettant d'en selectionner les details
  */
 public class CauseListener implements View.OnClickListener{
 
@@ -22,7 +27,9 @@ public class CauseListener implements View.OnClickListener{
         Button b = (Button) v;
         activity.getMessage().setCause(b.getText().toString());
 
+        Intent intent = new Intent(activity,suivante);
+        intent.putExtra("message",activity.getMessage());
 
-        Toast .makeText(activity.getApplicationContext(), ""+activity.getMessage().getCause(), Toast.LENGTH_LONG).show();
+        activity.startActivity(intent);
     }
 }

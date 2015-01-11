@@ -4,7 +4,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="hupays_nenich.com.sms114.mesInfos.MesInfosActivity">
+    tools:context="hupays_nenich.com.sms114.mesInfos.MesInfosActivity"
+    android:background="#ffffffff">
 
     <TextView
         android:layout_width="wrap_content"
@@ -13,7 +14,8 @@
         android:text="Mes Informations"
         android:id="@+id/txtMesInfos"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
 
     <LinearLayout
         android:orientation="vertical"
@@ -24,18 +26,18 @@
         android:layout_below="@+id/txtMesInfos"
         android:weightSum="1">
 
-        <LinearLayout
-            android:orientation="horizontal"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.02">
+            android:layout_height="wrap_content">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Prénom:"
-                android:id="@+id/txtPrenom" />
+                android:id="@+id/txtPrenom"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="false" />
 
             <EditText
                 android:layout_width="wrap_content"
@@ -44,21 +46,23 @@
                 android:ems="10"
                 android:id="@+id/edtPrenom"
                 android:layout_weight="0.10"
-                android:gravity="left" />
-        </LinearLayout>
+                android:gravity="left"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentLeft="false" />
+        </RelativeLayout>
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.03">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Nom:"
-                android:id="@+id/txtNom" />
+                android:id="@+id/txtNom"
+                android:layout_alignParentLeft="true" />
 
             <EditText
                 android:layout_width="wrap_content"
@@ -66,21 +70,21 @@
                 android:inputType="textPersonName"
                 android:ems="10"
                 android:id="@+id/edtNom"
-                android:layout_weight="0.70" />
-        </LinearLayout>
+                android:layout_weight="0.70"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.02">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Numéro Téléphone:"
-                android:id="@+id/txtNumeroTel" />
+                android:text="Numéro\nTéléphone:"
+                android:id="@+id/txtNumeroTel"
+                android:layout_alignParentLeft="true" />
 
             <EditText
                 android:layout_width="wrap_content"
@@ -88,61 +92,65 @@
                 android:inputType="phone"
                 android:ems="10"
                 android:id="@+id/edtTelephone"
-                android:layout_weight="1" />
-        </LinearLayout>
+                android:layout_weight="1"
+                android:layout_alignParentRight="true" />
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.02">
+            android:layout_below="@+id/txtNumeroTel"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Adresse:"
-                android:id="@+id/txtAdresse" />
+                android:id="@+id/txtAdresse"
+                android:layout_alignParentLeft="true" />
 
             <EditText
-                android:layout_width="wrap_content"
+                android:layout_width="212dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/edtAdresse"
-                android:layout_weight="1" />
-        </LinearLayout>
+                android:layout_weight="1"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.02">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Ville:"
-                android:id="@+id/txtVille" />
+                android:id="@+id/txtVille"
+                android:layout_alignParentLeft="true" />
 
             <EditText
-                android:layout_width="wrap_content"
+                android:layout_width="212dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/edtVille"
-                android:layout_weight="1" />
-        </LinearLayout>
+                android:layout_weight="1"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.02">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Code Postal:"
-                android:id="@+id/txtCodePostal" />
+                android:id="@+id/txtCodePostal"
+                android:layout_alignParentLeft="true" />
 
             <EditText
                 android:layout_width="wrap_content"
@@ -150,20 +158,18 @@
                 android:inputType="number"
                 android:ems="10"
                 android:id="@+id/edtCodePostal"
-                android:layout_weight="1" />
-        </LinearLayout>
+                android:layout_weight="1"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
 
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_weight="0.12"></LinearLayout>
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"></LinearLayout>
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.02">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -171,14 +177,13 @@
                 android:text="J&apos;habite en immeuble"
                 android:id="@+id/checkboxImmeuble"
                 android:checked="false"
-                android:textSize="20sp" />
-        </LinearLayout>
+                android:textSize="20sp"
+                android:layout_alignParentLeft="true" />
+        </RelativeLayout>
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.02">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -186,7 +191,8 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Etage:"
                 android:id="@+id/txtEtage"
-                android:visibility="invisible" />
+                android:visibility="invisible"
+                android:layout_alignParentLeft="true" />
 
             <EditText
                 android:layout_width="wrap_content"
@@ -195,14 +201,13 @@
                 android:ems="10"
                 android:id="@+id/edtEtage"
                 android:layout_weight="1"
-                android:visibility="invisible" />
-        </LinearLayout>
+                android:visibility="invisible"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.02">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -210,21 +215,21 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Code porte:"
                 android:id="@+id/txtCodePorte"
-                android:visibility="invisible" />
+                android:visibility="invisible"
+                android:layout_alignParentLeft="true" />
 
             <EditText
-                android:layout_width="wrap_content"
+                android:layout_width="215dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/edtCodePorte"
                 android:layout_weight="1"
-                android:visibility="invisible" />
-        </LinearLayout>
+                android:visibility="invisible"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.02">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -232,28 +237,21 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Porte:"
                 android:id="@+id/txtPorte"
-                android:visibility="invisible" />
+                android:visibility="invisible"
+                android:layout_alignParentLeft="true" />
 
             <EditText
-                android:layout_width="wrap_content"
+                android:layout_width="215dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/edtPorte"
                 android:layout_weight="1"
-                android:visibility="invisible" />
-        </LinearLayout>
+                android:visibility="invisible"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="100dp">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/enregistrer"
-                android:id="@+id/btnEnregistrer"
-                android:layout_gravity="center_horizontal"
-                android:layout_weight="0.02"
-                android:layout_alignParentRight="true" />
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
 
             <Button
                 android:layout_width="wrap_content"
@@ -262,8 +260,20 @@
                 android:id="@+id/btnAnnuler"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
+                android:layout_alignParentStart="true"
+                android:background="#ffff4a2c" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enregistrer"
+                android:id="@+id/btnEnregistrer"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.02"
+                android:layout_alignParentRight="true"
+                android:background="#ff17ff60" />
         </RelativeLayout>
 
     </LinearLayout>
+
 </RelativeLayout>

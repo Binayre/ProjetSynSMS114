@@ -4,7 +4,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="hupays_nenich.com.sms114.causes.CauseActivity">
+    tools:context="hupays_nenich.com.sms114.causes.CauseActivity"
+    android:background="#ffffffff">
 
     <TextView
         android:layout_width="wrap_content"
@@ -13,23 +14,26 @@
         android:text="Cause"
         android:id="@+id/txtCause"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp" />
 
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_below="@+id/txtCause"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp">
+        android:layout_marginTop="5dp"
+        android:layout_alignParentBottom="true">
 
         <Button
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/accident_route"
             android:id="@+id/btnAccidentRoute"
-            android:drawableLeft="@drawable/accident_route_icone"
             android:layout_gravity="center_vertical"
-            android:layout_alignParentTop="true" />
+            android:layout_alignParentTop="true"
+            android:drawableLeft="@drawable/accident_de_la_route"
+            android:textSize="20sp" />
 
         <Button
             android:layout_width="fill_parent"
@@ -38,7 +42,9 @@
             android:id="@+id/btnIncendie"
             android:layout_below="@+id/btnAccidentRoute"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="28dp" />
+            android:layout_marginTop="14dp"
+            android:drawableLeft="@drawable/incendie"
+            android:textSize="20sp" />
 
         <Button
             android:layout_width="fill_parent"
@@ -47,7 +53,9 @@
             android:id="@+id/btnBlessuresAnimales"
             android:layout_below="@+id/btnIncendie"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="28dp" />
+            android:layout_marginTop="14dp"
+            android:drawableLeft="@drawable/blessures_animales"
+            android:textSize="20sp" />
 
         <Button
             android:layout_width="fill_parent"
@@ -56,7 +64,9 @@
             android:id="@+id/btnCatastrophes"
             android:layout_below="@+id/btnBlessuresAnimales"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="28dp" />
+            android:layout_marginTop="14dp"
+            android:drawableLeft="@drawable/catastrophes_naturelles"
+            android:textSize="20sp" />
 
         <Button
             android:layout_width="fill_parent"
@@ -65,7 +75,10 @@
             android:id="@+id/btnAutresCauses"
             android:layout_below="@+id/btnCatastrophes"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="28dp" />
+            android:layout_marginTop="14dp"
+            android:drawableLeft="@drawable/autres"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp" />
 
         <Button
             android:layout_width="wrap_content"
@@ -75,6 +88,10 @@
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_alignParentEnd="false"
-            android:layout_alignParentLeft="true" />
+            android:layout_alignParentLeft="true"
+            android:background="#ffff4e25"
+            android:drawableLeft="@drawable/retour"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp" />
     </RelativeLayout>
 </RelativeLayout>
