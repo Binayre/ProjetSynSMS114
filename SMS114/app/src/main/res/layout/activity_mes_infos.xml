@@ -213,18 +213,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Code porte:"
-                android:id="@+id/txtCodePorte"
+                android:text="Porte:"
+                android:id="@+id/txtPorte"
                 android:visibility="invisible"
                 android:layout_alignParentLeft="true" />
 
             <EditText
-                android:layout_width="215dp"
+                android:layout_width="212dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/edtCodePorte"
-                android:layout_weight="1"
+                android:id="@+id/edtPorte"
                 android:visibility="invisible"
                 android:layout_alignParentRight="true" />
+
         </RelativeLayout>
 
         <RelativeLayout
@@ -235,18 +235,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Porte:"
-                android:id="@+id/txtPorte"
+                android:text="Code porte:"
+                android:id="@+id/txtCodePorte"
                 android:visibility="invisible"
                 android:layout_alignParentLeft="true" />
 
             <EditText
-                android:layout_width="215dp"
+                android:layout_width="212dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/edtPorte"
-                android:layout_weight="1"
-                android:visibility="invisible"
-                android:layout_alignParentRight="true" />
+                android:id="@+id/edtCodePorte"
+                android:layout_alignParentRight="true"
+                android:visibility="invisible" />
+
         </RelativeLayout>
 
         <RelativeLayout

@@ -1,6 +1,5 @@
 package hupays_nenich.com.sms114.causes;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -8,25 +7,21 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.ToggleButton;
 
-import hupays_nenich.com.sms114.GlobalActivity;
-import hupays_nenich.com.sms114.Message;
 import hupays_nenich.com.sms114.R;
 import hupays_nenich.com.sms114.RetourListener;
 
-public class DetailAnimauxActivity extends DetailCauseActivity {
+public class DetailCatastropheActivity extends DetailCauseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail_animaux);
+        setContentView(R.layout.activity_detail_catastrophe);
 
-
-        this.ajouterBouton((ToggleButton)findViewById(R.id.btnChien));
-        this.ajouterBouton((ToggleButton)findViewById(R.id.btnChat));
-        this.ajouterBouton((ToggleButton)findViewById(R.id.btnSerpent));
-        this.ajouterBouton((ToggleButton)findViewById(R.id.btnAraignee));
-        this.ajouterBouton((ToggleButton)findViewById(R.id.btnAbeille));
-        this.ajouterBouton((ToggleButton)findViewById(R.id.btnOiseau));
+        this.ajouterBouton((ToggleButton)findViewById(R.id.btnInondation));
+        this.ajouterBouton((ToggleButton)findViewById(R.id.btnVentViolent));
+        this.ajouterBouton((ToggleButton)findViewById(R.id.btnVolcan));
+        this.ajouterBouton((ToggleButton)findViewById(R.id.btnAvalanche));
+        this.ajouterBouton((ToggleButton)findViewById(R.id.btnSeisme));
 
         setListener();
     }
@@ -35,7 +30,7 @@ public class DetailAnimauxActivity extends DetailCauseActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_detail_animaux, menu);
+        getMenuInflater().inflate(R.menu.menu_detail_catastrophe, menu);
         return true;
     }
 

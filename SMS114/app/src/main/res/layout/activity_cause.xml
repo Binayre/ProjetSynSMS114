@@ -82,7 +82,7 @@
 
         <Button
             android:layout_width="140dp"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:text="@string/accueil"
             android:id="@+id/btnRetourAccueil"
             android:layout_alignParentBottom="true"

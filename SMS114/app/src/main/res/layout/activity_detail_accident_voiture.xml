@@ -117,7 +117,7 @@
 
         <Button
             android:layout_width="140dp"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:text="@string/causes"
             android:id="@+id/btnRetourCauses"
             android:layout_alignParentBottom="true"
@@ -130,7 +130,7 @@
 
         <Button
             android:layout_width="140dp"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:text="@string/nb_victime"
             android:id="@+id/btnNbVictime"
             android:layout_alignTop="@+id/btnRetourCauses"

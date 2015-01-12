@@ -21,31 +21,13 @@ public class DetailAccidentVoitureActivity extends DetailCauseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_accident_voiture);
 
-        Intent intent = getIntent();
-
-        if(intent != null){
-            this.message = (Message) intent.getSerializableExtra("message");
-        }
-
-        this.creerListe();
-
         this.ajouterBouton((ToggleButton)findViewById(R.id.btnVoiture));
         this.ajouterBouton((ToggleButton)findViewById(R.id.btnVelo));
         this.ajouterBouton((ToggleButton)findViewById(R.id.btnMoto));
         this.ajouterBouton((ToggleButton)findViewById(R.id.btnCamion));
         this.ajouterBouton((ToggleButton)findViewById(R.id.btnBus));
 
-        this.setBoutonListener(new DetailCauseListener());
-
-        btnRetour = (Button)findViewById(R.id.btnRetourCauses);
-        btnRetour.setOnClickListener(new RetourListener(this));
-
-        btnSuivant =(Button)findViewById(R.id.btnNbVictime);
-        btnSuivant.setOnClickListener(new ValiderDetailListener(this));
-
-
-
-
+        setListener();
     }
 
 

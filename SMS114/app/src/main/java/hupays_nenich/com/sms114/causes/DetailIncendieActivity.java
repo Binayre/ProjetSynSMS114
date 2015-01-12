@@ -19,25 +19,11 @@ public class DetailIncendieActivity extends DetailCauseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_incendie);
 
-        Intent intent = getIntent();
-
-        if(intent != null){
-            this.message = (Message) intent.getSerializableExtra("message");
-        }
-
-        this.creerListe();
-
         this.ajouterBouton((ToggleButton)findViewById(R.id.btnVehicule));
         this.ajouterBouton((ToggleButton)findViewById(R.id.btnVegetation));
         this.ajouterBouton((ToggleButton)findViewById(R.id.btnBatiment));
 
-        this.setBoutonListener(new DetailCauseListener());
-
-        btnRetour = (Button)findViewById(R.id.btnRetourCauses);
-        btnRetour.setOnClickListener(new RetourListener(this));
-
-        btnSuivant =(Button)findViewById(R.id.btnNbVictime);
-        btnSuivant.setOnClickListener(new ValiderDetailListener(this));
+        setListener();
     }
 
 

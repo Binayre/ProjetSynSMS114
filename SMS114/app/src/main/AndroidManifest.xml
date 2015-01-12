@@ -36,6 +36,14 @@
             android:name=".causes.DetailAnimauxActivity"
             android:label="@string/title_activity_detail_animaux" >
         </activity>
+        <activity
+            android:name=".causes.DetailCatastropheActivity"
+            android:label="@string/title_activity_detail_catastrophe" >
+        </activity>
+        <activity
+            android:name=".causes.DetailAutreActivity"
+            android:label="@string/title_activity_detail_autre" >
+        </activity>
     </application>
 
 </manifest>

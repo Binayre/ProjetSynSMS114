@@ -1,11 +1,17 @@
 package hupays_nenich.com.sms114.causes;
 
+import android.content.Intent;
+import android.content.pm.ActivityInfo;
+import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ToggleButton;
 
 import java.util.ArrayList;
 
 import hupays_nenich.com.sms114.GlobalActivity;
+import hupays_nenich.com.sms114.Message;
+import hupays_nenich.com.sms114.R;
+import hupays_nenich.com.sms114.RetourListener;
 
 /**
  * Created by Jérémy on 11/01/2015.
@@ -18,6 +24,31 @@ public class DetailCauseActivity extends GlobalActivity{
 
     private ArrayList<ToggleButton> liste_boutons;
     protected  Button btnRetour, btnSuivant;
+
+
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        Intent intent = getIntent();
+
+        if(intent != null){
+            this.message = (Message) intent.getSerializableExtra("message");
+        }
+
+        this.creerListe();
+    }
+
+    public void setListener(){
+        this.setBoutonListener(new DetailCauseListener(this));
+
+        btnRetour = (Button)findViewById(R.id.btnRetourCauses);
+        btnRetour.setOnClickListener(new RetourListener(this));
+
+        btnSuivant =(Button)findViewById(R.id.btnNbVictime);
+        btnSuivant.setOnClickListener(new ValiderDetailListener(this));
+
+        btnSuivant.setEnabled(false);
+    }
 
     public void creerListe(){
         this.liste_boutons = new ArrayList<ToggleButton>();

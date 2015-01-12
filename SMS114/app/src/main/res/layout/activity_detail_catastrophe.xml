@@ -4,15 +4,15 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="hupays_nenich.com.sms114.causes.DetailAnimauxActivity"
+    tools:context="hupays_nenich.com.sms114.causes.DetailCatastropheActivity"
     android:background="#ffffffff">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Blessures animales"
-        android:id="@+id/txtDetailAnimaux"
+        android:text="Catastrophes naturelles"
+        android:id="@+id/txtCatNat"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
@@ -20,8 +20,8 @@
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/linearLayout3"
-        android:layout_below="@+id/txtDetailAnimaux"
+        android:id="@+id/linearLayout4"
+        android:layout_below="@+id/txtCatNat"
         android:layout_centerHorizontal="true">
 
         <LinearLayout
@@ -29,47 +29,44 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="38dp">
+            android:layout_marginTop="38dp" >
 
             <ToggleButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/btnChien"
+                android:id="@+id/btnInondation"
                 android:layout_gravity="center_vertical|left"
                 android:checked="false"
-                android:text="@string/chien"
+                android:text="@string/inondation"
                 android:textAllCaps="false"
-                android:textOff="@string/chien"
-                android:textOn="@string/chien"
+                android:textOff="@string/inondation"
+                android:textOn="@string/inondation"
                 android:layout_marginRight="40dp"
                 android:background="#ffe0e0e0"
-                android:layout_marginLeft="30dp"
-                android:drawableTop="@drawable/chien" />
+                android:layout_marginLeft="30dp" />
 
             <ToggleButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/chat"
-                android:id="@+id/btnChat"
+                android:text="@string/vent_violent"
+                android:id="@+id/btnVentViolent"
                 android:layout_gravity="center_vertical"
-                android:textOff="@string/chat"
-                android:textOn="@string/chat"
+                android:textOff="@string/vent_violent"
+                android:textOn="@string/vent_violent"
                 android:checked="false"
                 android:layout_marginRight="40dp"
-                android:background="#ffe0e0e0"
-                android:drawableTop="@drawable/chat" />
+                android:background="#ffe0e0e0" />
 
             <ToggleButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/serpent"
-                android:id="@+id/btnSerpent"
-                android:textOff="@string/serpent"
-                android:textOn="@string/serpent"
+                android:text="@string/volcan"
+                android:id="@+id/btnVolcan"
+                android:textOff="@string/volcan"
+                android:textOn="@string/volcan"
                 android:checked="false"
                 android:background="#ffe0e0e0"
-                android:singleLine="true"
-                android:drawableTop="@drawable/serpent" />
+                android:singleLine="true" />
         </LinearLayout>
 
         <LinearLayout
@@ -81,40 +78,25 @@
             <ToggleButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/abeille"
-                android:id="@+id/btnAbeille"
+                android:text="@string/avalanche"
+                android:id="@+id/btnAvalanche"
                 android:layout_gravity="center_vertical"
-                android:textOff="@string/abeille"
-                android:textOn="@string/abeille"
+                android:textOff="@string/avalanche"
+                android:textOn="@string/avalanche"
                 android:checked="false"
                 android:layout_marginRight="40dp"
-                android:layout_marginLeft="30dp"
-                android:background="#ffe0e0e0"
-                android:drawableTop="@drawable/abeille" />
+                android:layout_marginLeft="80dp"
+                android:background="#ffe0e0e0" />
 
             <ToggleButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/araignee"
-                android:id="@+id/btnAraignee"
-                android:layout_gravity="center_vertical"
-                android:textOff="@string/araignee"
-                android:textOn="@string/araignee"
-                android:checked="false"
+                android:text="@string/seisme"
+                android:id="@+id/btnSeisme"
+                android:textOff="@string/seisme"
+                android:textOn="@string/seisme"
                 android:background="#ffe0e0e0"
-                android:layout_marginRight="40dp"
-                android:drawableTop="@drawable/araignee" />
-
-            <ToggleButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/oiseau"
-                android:id="@+id/btnOiseau"
-                android:textOff="@string/oiseau"
-                android:textOn="@string/oiseau"
-                android:background="#ffe0e0e0"
-                android:checked="false"
-                android:drawableTop="@drawable/aigle" />
+                android:checked="false" />
         </LinearLayout>
     </LinearLayout>
 
@@ -122,7 +104,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/linearLayout3"
+        android:layout_below="@+id/linearLayout4"
         android:layout_centerHorizontal="true">
 
         <Button
@@ -150,6 +132,7 @@
             android:drawableRight="@drawable/suivant"
             android:background="@drawable/bouton_bleu"
             android:textColor="#ffffffff"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:enabled="false" />
     </RelativeLayout>
 </RelativeLayout>

@@ -19,16 +19,11 @@ public class ValiderDetailListener implements View.OnClickListener{
         this.activity = activity;
     }
 
-
     @Override
     public void onClick(View v) {
 
-        if(activity.nbBoutonsSelectionnes() >= 1){
-            activity.getMessage().setDetails_causes(activity.boutonSelectionne());
-            Dialogue d = new Dialogue(v.getContext(),activity.getMessage().toString(), "test");
-        }
-        else{
-            Dialogue d = new Dialogue(v.getContext(),"Vous devez selectionner au moins 1 élément", "Erreur");
-        }
+        activity.getMessage().setDetails_causes(activity.boutonSelectionne());
+        Dialogue d = new Dialogue(v.getContext(), activity.getMessage().toString(), "test");
+        //intent
     }
 }

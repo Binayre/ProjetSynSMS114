@@ -34,6 +34,13 @@
     <string name="oiseau">Oiseau</string>
     <string name="serpent">Serpent</string>
     <string name="araignee">Araignée</string>
-    <string name="abeille">Abeille</string>
+    <string name="abeille">Insecte</string>
+    <string name="title_activity_detail_catastrophe">DetailCatastropheActivity</string>
+    <string name="volcan">Volcan</string>
+    <string name="inondation">Inondation</string>
+    <string name="seisme">Séisme</string>
+    <string name="vent_violent">Vent violent</string>
+    <string name="avalanche">Avalanche</string>
+    <string name="title_activity_detail_autre">DetailAutreActivity</string>
 
 </resources>

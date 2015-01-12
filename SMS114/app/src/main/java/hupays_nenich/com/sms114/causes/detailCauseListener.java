@@ -14,6 +14,13 @@ import android.widget.ToggleButton;
  */
 public class DetailCauseListener implements View.OnClickListener{
 
+
+    private DetailCauseActivity activity;
+
+    public DetailCauseListener(DetailCauseActivity activity) {
+        this.activity = activity;
+    }
+
     @Override
     public void onClick(View v) {
 
@@ -25,5 +32,10 @@ public class DetailCauseListener implements View.OnClickListener{
         else{
             btn.setBackgroundColor(Color.argb(255,224,224,224));
         }
+
+        if(activity.nbBoutonsSelectionnes()>0)
+            activity.btnSuivant.setEnabled(true);
+        else
+            activity.btnSuivant.setEnabled(false);
     }
 }

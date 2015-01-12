@@ -42,10 +42,10 @@ public class CauseActivity extends GlobalActivity {
         btnBlessureAnimale.setOnClickListener(new CauseListener(this, DetailAnimauxActivity.class));
 
         btnCatastrophe = (Button)findViewById(R.id.btnCatastrophes);
-        btnCatastrophe.setOnClickListener(new CauseListener(this, MesInfosActivity.class));
+        btnCatastrophe.setOnClickListener(new CauseListener(this, DetailCatastropheActivity.class));
 
         btnAutre = (Button)findViewById(R.id.btnAutresCauses);
-        btnAutre.setOnClickListener(new CauseListener(this, MesInfosActivity.class));
+        btnAutre.setOnClickListener(new CauseListener(this, DetailAutreActivity.class));
 
         btnRetourAccueil = (Button)findViewById(R.id.btnRetourAccueil);
         btnRetourAccueil.setOnClickListener(new RetourListener(this));

@@ -85,7 +85,7 @@ public class MesInfosActivity extends GlobalActivity {
                 out.write('\n');
                 out.write(edtEtage.getText().toString());
                 out.write('\n');
-                out.write(edtCodePorte.getText().toString());
+                out.write(edtPorte.getText().toString());
                 out.write('\n');
                 out.write(edtCodePorte.getText().toString());
                 out.write('\n');
@@ -146,10 +146,11 @@ public class MesInfosActivity extends GlobalActivity {
                     edtEtage.setText(mot);
 
                     mot = fadresse.readLine();
-                    edtCodePorte.setText(mot);
+                    edtPorte.setText(mot);
 
                     mot = fadresse.readLine();
-                    edtPorte.setText(mot);
+                    edtCodePorte.setText(mot);
+
                 }
                 else{
                     chkImmeuble.setChecked(false);
