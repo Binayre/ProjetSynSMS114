@@ -21,12 +21,19 @@
     <string name="velo">Vélo</string>
     <string name="camion">Camion</string>
     <string name="bus">Bus</string>
-    <string name="nb_victime">Nombre de victimes</string>
+    <string name="nb_victime">Nombre  victimes</string>
     <string name="causes">Causes</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_detail_incendie">DetailIncendieActivity</string>
     <string name="batiment">Batiment</string>
     <string name="vehicule">Véhicule</string>
     <string name="vegetation">Végétation</string>
+    <string name="title_activity_detail_animaux">DetailAnimauxActivity</string>
+    <string name="chien">Chien</string>
+    <string name="chat">Chat</string>
+    <string name="oiseau">Oiseau</string>
+    <string name="serpent">Serpent</string>
+    <string name="araignee">Araignée</string>
+    <string name="abeille">Abeille</string>
 
 </resources>

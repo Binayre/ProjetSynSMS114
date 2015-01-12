@@ -22,7 +22,7 @@
         </activity>
         <activity
             android:name=".causes.CauseActivity"
-            android:label="@string/title_activity_cause">
+            android:label="@string/title_activity_cause" >
         </activity>
         <activity
             android:name=".causes.DetailAccidentVoitureActivity"
@@ -31,6 +31,10 @@
         <activity
             android:name=".causes.DetailIncendieActivity"
             android:label="@string/title_activity_detail_incendie" >
+        </activity>
+        <activity
+            android:name=".causes.DetailAnimauxActivity"
+            android:label="@string/title_activity_detail_animaux" >
         </activity>
     </application>
 
