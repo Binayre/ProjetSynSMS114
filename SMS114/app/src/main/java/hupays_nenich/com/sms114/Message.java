@@ -74,8 +74,13 @@ public class Message implements Serializable{
 
     @Override
     public String toString() {
-        return " Je vous appelle pour vous signaler un/une "+ cause +
-                " impliquant "+ details_causes +".\n Il y a "+ nb_victime+
-                " victimes souffrant de "+ symptomes +".\n"+ precisions+ ".\n Je me trouve à "+ adresse+".";
+        return "Je suis témoin de : "+ cause +", "+ details_causes+"\n"+
+               "Nombre de victime : "+ nb_victime+"\n"+
+               "Profil de la victime :"+ "age approc\n"+
+               "Symptômes : "+ symptomes +"\n"+
+               "Zones concernées : "+ "emplacement\n"+
+               "Précisions :"+ precisions +"\n"+
+               "Localisation : "+ adresse +"\n";
+
     }
 }

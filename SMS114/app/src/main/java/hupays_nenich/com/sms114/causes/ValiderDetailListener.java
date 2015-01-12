@@ -28,7 +28,7 @@ public class ValiderDetailListener implements View.OnClickListener{
             Dialogue d = new Dialogue(v.getContext(),activity.getMessage().toString(), "test");
         }
         else{
-            Dialogue d = new Dialogue(v.getContext(),"Vous devez selectionner au moins 1 véhicule", "Erreur");
+            Dialogue d = new Dialogue(v.getContext(),"Vous devez selectionner au moins 1 élément", "Erreur");
         }
     }
 }

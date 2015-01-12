@@ -21,7 +21,12 @@
     <string name="velo">Vélo</string>
     <string name="camion">Camion</string>
     <string name="bus">Bus</string>
-    <string name="nb_victime">Nombre de victime</string>
+    <string name="nb_victime">Nombre de victimes</string>
     <string name="causes">Causes</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_detail_incendie">DetailIncendieActivity</string>
+    <string name="batiment">Batiment</string>
+    <string name="vehicule">Véhicule</string>
+    <string name="vegetation">Végétation</string>
 
 </resources>
