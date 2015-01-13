@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="hupays_nenich.com.sms114.NombreVictimeActivity"
+    android:background="#ffffffff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Nombre de victimes"
+        android:id="@+id/txtNbVictime"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="0"
+        android:id="@+id/txtNombre"
+        android:layout_marginTop="69dp"
+        android:layout_below="@+id/txtNbVictime"
+        android:layout_centerHorizontal="true"
+        android:textSize="170sp" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/barreNbVictime"
+        android:layout_below="@+id/txtNombre"
+        android:layout_centerHorizontal="true"
+        android:max="10"
+        android:progress="0"
+        android:indeterminate="false" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/barreNbVictime"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="100dp">
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:text="@string/DetailsCause"
+            android:id="@+id/btnRetourDetailCause"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/bouton_bleu"
+            android:drawableLeft="@drawable/retour"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textColor="#ffffffff" />
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:text="@string/localisation"
+            android:id="@+id/btnSuivantNbVictime"
+            android:layout_alignTop="@+id/btnRetourCauses"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:drawableRight="@drawable/suivant"
+            android:background="@drawable/bouton_bleu"
+            android:textColor="#ffffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/environ"
+        android:id="@+id/checkBoxEnviron"
+        android:layout_below="@+id/barreNbVictime"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp"
+        android:checked="false"
+        android:textSize="30sp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inconnu"
+        android:id="@+id/checkBoxInconnu"
+        android:layout_below="@+id/checkBoxEnviron"
+        android:layout_alignLeft="@+id/checkBoxEnviron"
+        android:layout_alignStart="@+id/checkBoxEnviron"
+        android:checked="false"
+        android:textSize="30sp" />
+
+</RelativeLayout>

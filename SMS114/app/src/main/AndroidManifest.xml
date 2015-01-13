@@ -44,6 +44,10 @@
             android:name=".causes.DetailAutreActivity"
             android:label="@string/title_activity_detail_autre" >
         </activity>
+        <activity
+            android:name=".nombreVictime.NombreVictimeActivity"
+            android:label="@string/title_activity_nombre_victime" >
+        </activity>
     </application>
 
 </manifest>

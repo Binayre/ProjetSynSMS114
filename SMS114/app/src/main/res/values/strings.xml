@@ -42,5 +42,11 @@
     <string name="vent_violent">Vent violent</string>
     <string name="avalanche">Avalanche</string>
     <string name="title_activity_detail_autre">DetailAutreActivity</string>
+    <string name="title_activity_nombre_victime">NombreVictimeActivity</string>
+    <string name="DetailsCause">Detail cause</string>
+    <string name="DetailVictime">Détail victime</string>
+    <string name="localisation">Adresse</string>
+    <string name="environ">Environ</string>
+    <string name="inconnu">Je ne sais pas</string>
 
 </resources>

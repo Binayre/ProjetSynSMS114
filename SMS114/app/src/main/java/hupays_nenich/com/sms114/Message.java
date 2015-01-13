@@ -8,7 +8,7 @@ import java.io.Serializable;
 public class Message implements Serializable{
 
     private String numero, cause, details_causes, symptomes, adresse, precisions;
-    private int nb_victime;
+    private String nb_victime, profil_victime, zone_concernee;
 
     public Message() {
         this.numero = "";
@@ -17,7 +17,9 @@ public class Message implements Serializable{
         this.symptomes = "";
         this.adresse = "";
         this.precisions = "";
-        this.nb_victime = 0;
+        this.nb_victime = "0";
+        this.profil_victime = "";
+        this.zone_concernee = "";
     }
 
     public String getNumero() { return numero; }
@@ -64,21 +66,29 @@ public class Message implements Serializable{
         this.precisions = precisions;
     }
 
-    public int getNb_victime() {
+    public String getNb_victime() {
         return nb_victime;
     }
 
-    public void setNb_victime(int nb_victime) {
+    public void setNb_victime(String nb_victime) {
         this.nb_victime = nb_victime;
     }
+
+    public String getZone_concernee() {  return zone_concernee; }
+
+    public void setZone_concernee(String zone_concernee) { this.zone_concernee = zone_concernee; }
+
+    public String getProfil_victime() { return profil_victime; }
+
+    public void setProfil_victime(String profil_victime) { this.profil_victime = profil_victime; }
 
     @Override
     public String toString() {
         return "Je suis témoin de : "+ cause +", "+ details_causes+"\n"+
                "Nombre de victime : "+ nb_victime+"\n"+
-               "Profil de la victime :"+ "age approc\n"+
+               "Profil des victime :"+ profil_victime+"\n"+
                "Symptômes : "+ symptomes +"\n"+
-               "Zones concernées : "+ "emplacement\n"+
+               "Zones concernées : "+ zone_concernee +"\n"+
                "Précisions :"+ precisions +"\n"+
                "Localisation : "+ adresse +"\n";
 
