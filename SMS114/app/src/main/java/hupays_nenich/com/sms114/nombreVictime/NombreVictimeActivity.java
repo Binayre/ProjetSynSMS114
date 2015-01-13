@@ -15,6 +15,7 @@ import hupays_nenich.com.sms114.GlobalActivity;
 import hupays_nenich.com.sms114.Message;
 import hupays_nenich.com.sms114.R;
 import hupays_nenich.com.sms114.RetourListener;
+import hupays_nenich.com.sms114.detailVictime.DetailVictimeActivity;
 import hupays_nenich.com.sms114.mesInfos.MesInfosActivity;
 
 
@@ -22,7 +23,6 @@ public class NombreVictimeActivity extends GlobalActivity implements SeekBar.OnS
 
     private SeekBar barre;
     private TextView nbvict;
-    private Button btnRetour, btnSuivant;
     private CheckBox environ, inconnu;
 
     @Override
@@ -30,11 +30,6 @@ public class NombreVictimeActivity extends GlobalActivity implements SeekBar.OnS
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nombre_victime);
 
-        Intent intent = getIntent();
-
-        if(intent != null){
-            this.message = (Message)intent.getSerializableExtra("message");
-        }
 
         barre = (SeekBar)findViewById(R.id.barreNbVictime);
         nbvict = (TextView)findViewById(R.id.txtNombre);
@@ -81,10 +76,10 @@ public class NombreVictimeActivity extends GlobalActivity implements SeekBar.OnS
      */
     public Class<?> suivante(){
         if((inconnu.isChecked()) || (barre.getProgress()==0)){
-            return MesInfosActivity.class; //renvoyer l'activitty qui s'occupe de l'adresse ou des precisions
+            return MesInfosActivity.class; //renvoyer l'activity qui s'occupe de l'adresse ou des precisions
         }
         else{
-            return MesInfosActivity.class; //renvoyer l'activity qui s'occuper de detailler les victimes
+            return DetailVictimeActivity.class; //renvoyer l'activity qui s'occuper de detailler les victimes
         }
     }
 

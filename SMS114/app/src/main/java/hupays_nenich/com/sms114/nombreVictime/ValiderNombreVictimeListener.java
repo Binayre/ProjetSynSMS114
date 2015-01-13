@@ -20,11 +20,10 @@ public class ValiderNombreVictimeListener implements View.OnClickListener{
     public void onClick(View v) {
 
         activity.getMessage().setNb_victime(activity.nbVictime());
-        Dialogue d = new Dialogue(activity,activity.getMessage().toString(),"test");
 
-        /*Intent intent = new Intent(activity,activity.suivante());
+        Intent intent = new Intent(activity,activity.suivante());
         intent.putExtra("message",activity.getMessage());
-        activity.startActivity(intent);*/
+        activity.startActivity(intent);
 
 
     }

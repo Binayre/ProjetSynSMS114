@@ -48,6 +48,10 @@
             android:name=".nombreVictime.NombreVictimeActivity"
             android:label="@string/title_activity_nombre_victime" >
         </activity>
+        <activity
+            android:name=".detailVictime.DetailVictimeActivity"
+            android:label="@string/title_activity_detail_victime" >
+        </activity>
     </application>
 
 </manifest>

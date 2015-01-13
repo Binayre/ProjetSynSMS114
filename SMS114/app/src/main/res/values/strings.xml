@@ -48,5 +48,15 @@
     <string name="localisation">Adresse</string>
     <string name="environ">Environ</string>
     <string name="inconnu">Je ne sais pas</string>
+    <string name="title_activity_detail_victime">DetailVictimeActivity</string>
+    <string name="age_approx">Age (approximatif)</string>
+    <string name="nourrisson">Nourrisson</string>
+    <string name="enfant">Enfant</string>
+    <string name="adolescent">Adolescent</string>
+    <string name="adulte">Adulte</string>
+    <string name="senior">Senior</string>
+    <string name="symptome">Symptômes</string>
+    <string name="handicap">Handicapé(s) moteur(s)</string>
+    <string name="enceinte">Femme(s) enceinte(s)</string>
 
 </resources>

@@ -21,7 +21,6 @@ import hupays_nenich.com.sms114.RetourListener;
 
 public class MesInfosActivity extends GlobalActivity {
 
-    private Button btnEnregistrer, btnAnnuler;
     private TextView txtEtage, txtCodePorte, txtPorte;
     private EditText edtPrenom, edtNom, edtPhone, edtAdresse, edtVille, edtCodePostal, edtEtage, edtCodePorte, edtPorte;
     private CheckBox chkImmeuble;
@@ -49,11 +48,11 @@ public class MesInfosActivity extends GlobalActivity {
         chkImmeuble = (CheckBox)findViewById(R.id.checkboxImmeuble);
         chkImmeuble.setOnCheckedChangeListener(new CheckBoxListener(txtEtage,txtCodePorte,txtPorte,edtEtage,edtCodePorte,edtPorte));
 
-        btnEnregistrer = (Button)findViewById(R.id.btnEnregistrer);
-        btnEnregistrer.setOnClickListener(new EnregistrerListener(this));
+        btnSuivant = (Button)findViewById(R.id.btnEnregistrer);
+        btnSuivant.setOnClickListener(new EnregistrerListener(this));
 
-        btnAnnuler = (Button)findViewById(R.id.btnAnnuler);
-        btnAnnuler.setOnClickListener(new RetourListener(this));
+        btnRetour = (Button)findViewById(R.id.btnAnnuler);
+        btnRetour.setOnClickListener(new RetourListener(this));
 
         chargerDonnees();
     }

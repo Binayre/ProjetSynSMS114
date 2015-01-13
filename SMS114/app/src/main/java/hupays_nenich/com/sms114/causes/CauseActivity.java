@@ -18,18 +18,12 @@ import hupays_nenich.com.sms114.mesInfos.MesInfosActivity;
  */
 public class CauseActivity extends GlobalActivity {
 
-   private Button btnAccident, btnIncendie, btnBlessureAnimale, btnCatastrophe, btnAutre, btnRetourAccueil;
+   private Button btnAccident, btnIncendie, btnBlessureAnimale, btnCatastrophe, btnAutre;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cause);
-
-        Intent intent = this.getIntent();
-
-        if(intent != null){
-            this.message = (Message) intent.getSerializableExtra("message");
-        }
 
 
         btnAccident = (Button)findViewById(R.id.btnAccidentRoute);
@@ -47,8 +41,8 @@ public class CauseActivity extends GlobalActivity {
         btnAutre = (Button)findViewById(R.id.btnAutresCauses);
         btnAutre.setOnClickListener(new CauseListener(this, DetailAutreActivity.class));
 
-        btnRetourAccueil = (Button)findViewById(R.id.btnRetourAccueil);
-        btnRetourAccueil.setOnClickListener(new RetourListener(this));
+        btnRetour = (Button)findViewById(R.id.btnRetourAccueil);
+        btnRetour.setOnClickListener(new RetourListener(this));
 
 
     }

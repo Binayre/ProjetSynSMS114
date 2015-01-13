@@ -34,8 +34,8 @@ public class DetailCauseListener implements View.OnClickListener{
         }
 
         if(activity.nbBoutonsSelectionnes()>0)
-            activity.btnSuivant.setEnabled(true);
+            activity.getBtnSuivant().setEnabled(true);
         else
-            activity.btnSuivant.setEnabled(false);
+            activity.getBtnSuivant().setEnabled(false);
     }
 }

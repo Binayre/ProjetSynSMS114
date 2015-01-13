@@ -84,7 +84,7 @@ public class Message implements Serializable{
 
     @Override
     public String toString() {
-        return "Je suis témoin de : "+ cause +", "+ details_causes+"\n"+
+        return "Je suis témoin de : "+ cause + details_causes+"\n"+
                "Nombre de victime : "+ nb_victime+"\n"+
                "Profil des victime :"+ profil_victime+"\n"+
                "Symptômes : "+ symptomes +"\n"+

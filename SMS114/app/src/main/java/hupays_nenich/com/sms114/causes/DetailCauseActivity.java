@@ -23,17 +23,10 @@ import hupays_nenich.com.sms114.RetourListener;
 public class DetailCauseActivity extends GlobalActivity{
 
     private ArrayList<ToggleButton> liste_boutons;
-    protected  Button btnRetour, btnSuivant;
 
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        Intent intent = getIntent();
-
-        if(intent != null){
-            this.message = (Message) intent.getSerializableExtra("message");
-        }
 
         this.creerListe();
     }

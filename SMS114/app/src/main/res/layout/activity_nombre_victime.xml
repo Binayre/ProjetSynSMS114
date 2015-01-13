@@ -37,6 +37,30 @@
         android:progress="0"
         android:indeterminate="false" />
 
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/environ"
+        android:id="@+id/checkBoxEnviron"
+        android:layout_below="@+id/barreNbVictime"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp"
+        android:checked="false"
+        android:textSize="30sp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inconnu"
+        android:id="@+id/checkBoxInconnu"
+        android:layout_below="@+id/checkBoxEnviron"
+        android:layout_alignLeft="@+id/checkBoxEnviron"
+        android:layout_alignStart="@+id/checkBoxEnviron"
+        android:checked="false"
+        android:textSize="30sp" />
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -48,7 +72,7 @@
         <Button
             android:layout_width="140dp"
             android:layout_height="60dp"
-            android:text="@string/DetailsCause"
+            android:text="@string/nb_victime"
             android:id="@+id/btnRetourDetailCause"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
@@ -74,29 +98,5 @@
             android:textColor="#ffffffff"
             android:textSize="18sp" />
     </RelativeLayout>
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/environ"
-        android:id="@+id/checkBoxEnviron"
-        android:layout_below="@+id/barreNbVictime"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="39dp"
-        android:layout_marginStart="39dp"
-        android:checked="false"
-        android:textSize="30sp" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/inconnu"
-        android:id="@+id/checkBoxInconnu"
-        android:layout_below="@+id/checkBoxEnviron"
-        android:layout_alignLeft="@+id/checkBoxEnviron"
-        android:layout_alignStart="@+id/checkBoxEnviron"
-        android:checked="false"
-        android:textSize="30sp" />
 
 </RelativeLayout>

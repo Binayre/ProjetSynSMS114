@@ -65,8 +65,8 @@
             android:layout_below="@+id/btnBlessuresAnimales"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="14dp"
-            android:drawableLeft="@drawable/catastrophes_naturelles"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/catastrophes_naturelles" />
 
         <Button
             android:layout_width="fill_parent"
