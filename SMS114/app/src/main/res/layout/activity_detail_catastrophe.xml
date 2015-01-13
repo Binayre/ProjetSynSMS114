@@ -44,7 +44,8 @@
                 android:layout_marginRight="40dp"
                 android:background="#ffe0e0e0"
                 android:layout_marginLeft="30dp"
-                android:drawableTop="@drawable/inondation" />
+                android:drawableTop="@drawable/inondation"
+                android:padding="2dp" />
 
             <ToggleButton
                 android:layout_width="wrap_content"
@@ -57,7 +58,8 @@
                 android:checked="false"
                 android:layout_marginRight="40dp"
                 android:background="#ffe0e0e0"
-                android:drawableTop="@drawable/vent_violent" />
+                android:drawableTop="@drawable/vent_violent"
+                android:padding="2dp" />
 
             <ToggleButton
                 android:layout_width="wrap_content"
@@ -69,7 +71,8 @@
                 android:checked="false"
                 android:background="#ffe0e0e0"
                 android:singleLine="true"
-                android:drawableTop="@drawable/volcan" />
+                android:drawableTop="@drawable/volcan"
+                android:padding="2dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -90,7 +93,8 @@
                 android:layout_marginRight="40dp"
                 android:layout_marginLeft="80dp"
                 android:background="#ffe0e0e0"
-                android:drawableTop="@drawable/avalanche" />
+                android:drawableTop="@drawable/avalanche"
+                android:padding="2dp" />
 
             <ToggleButton
                 android:layout_width="wrap_content"
@@ -101,7 +105,8 @@
                 android:textOn="@string/seisme"
                 android:background="#ffe0e0e0"
                 android:checked="false"
-                android:drawableTop="@drawable/seisme" />
+                android:drawableTop="@drawable/seisme"
+                android:padding="2dp" />
         </LinearLayout>
     </LinearLayout>
 

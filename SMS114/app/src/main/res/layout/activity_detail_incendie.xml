@@ -44,7 +44,8 @@
                 android:textOn="@string/vehicule"
                 android:layout_marginRight="40dp"
                 android:background="#ffe0e0e0"
-                android:layout_marginLeft="30dp" />
+                android:layout_marginLeft="30dp"
+                android:padding="2dp" />
 
             <ToggleButton
                 android:layout_width="wrap_content"
@@ -57,7 +58,8 @@
                 android:textOn="@string/vegetation"
                 android:checked="false"
                 android:layout_marginRight="40dp"
-                android:background="#ffe0e0e0" />
+                android:background="#ffe0e0e0"
+                android:padding="2dp" />
 
             <ToggleButton
                 android:layout_width="wrap_content"
@@ -68,7 +70,8 @@
                 android:textOn="@string/batiment"
                 android:checked="false"
                 android:background="#ffe0e0e0"
-                android:drawableTop="@drawable/batiment" />
+                android:drawableTop="@drawable/batiment"
+                android:padding="2dp" />
         </LinearLayout>
 
     </LinearLayout>

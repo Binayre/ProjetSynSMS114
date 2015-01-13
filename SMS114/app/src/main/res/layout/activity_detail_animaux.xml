@@ -44,7 +44,8 @@
                 android:layout_marginRight="40dp"
                 android:background="#ffe0e0e0"
                 android:layout_marginLeft="30dp"
-                android:drawableTop="@drawable/chien" />
+                android:drawableTop="@drawable/chien"
+                android:padding="2dp" />
 
             <ToggleButton
                 android:layout_width="wrap_content"
@@ -57,7 +58,8 @@
                 android:checked="false"
                 android:layout_marginRight="40dp"
                 android:background="#ffe0e0e0"
-                android:drawableTop="@drawable/chat" />
+                android:drawableTop="@drawable/chat"
+                android:padding="2dp" />
 
             <ToggleButton
                 android:layout_width="wrap_content"
@@ -69,7 +71,8 @@
                 android:checked="false"
                 android:background="#ffe0e0e0"
                 android:singleLine="true"
-                android:drawableTop="@drawable/serpent" />
+                android:drawableTop="@drawable/serpent"
+                android:padding="2dp" />
         </LinearLayout>
 
         <LinearLayout
@@ -90,7 +93,8 @@
                 android:layout_marginRight="40dp"
                 android:layout_marginLeft="30dp"
                 android:background="#ffe0e0e0"
-                android:drawableTop="@drawable/abeille" />
+                android:drawableTop="@drawable/abeille"
+                android:padding="2dp" />
 
             <ToggleButton
                 android:layout_width="wrap_content"
@@ -103,7 +107,8 @@
                 android:checked="false"
                 android:background="#ffe0e0e0"
                 android:layout_marginRight="40dp"
-                android:drawableTop="@drawable/araignee" />
+                android:drawableTop="@drawable/araignee"
+                android:padding="2dp" />
 
             <ToggleButton
                 android:layout_width="wrap_content"
@@ -114,7 +119,8 @@
                 android:textOn="@string/oiseau"
                 android:background="#ffe0e0e0"
                 android:checked="false"
-                android:drawableTop="@drawable/aigle" />
+                android:drawableTop="@drawable/aigle"
+                android:padding="2dp" />
         </LinearLayout>
     </LinearLayout>
 

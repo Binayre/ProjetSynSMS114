@@ -44,7 +44,9 @@
                 android:textOn="@string/voiture"
                 android:layout_marginRight="40dp"
                 android:background="#ffe0e0e0"
-                android:layout_marginLeft="30dp" />
+                android:layout_marginLeft="30dp"
+                android:fitsSystemWindows="false"
+                android:padding="2dp" />
 
             <ToggleButton
                 android:layout_width="wrap_content"
@@ -57,7 +59,8 @@
                 android:textOn="@string/velo"
                 android:checked="false"
                 android:layout_marginRight="40dp"
-                android:background="#ffe0e0e0" />
+                android:background="#ffe0e0e0"
+                android:padding="2dp" />
 
             <ToggleButton
                 android:layout_width="wrap_content"
@@ -68,7 +71,8 @@
                 android:textOff="@string/moto"
                 android:textOn="@string/moto"
                 android:checked="false"
-                android:background="#ffe0e0e0" />
+                android:background="#ffe0e0e0"
+                android:padding="2dp" />
 
         </LinearLayout>
 
@@ -90,7 +94,8 @@
                 android:checked="false"
                 android:layout_marginRight="30dp"
                 android:layout_marginLeft="80dp"
-                android:background="#ffe0e0e0" />
+                android:background="#ffe0e0e0"
+                android:padding="2dp" />
 
             <ToggleButton
                 android:layout_width="wrap_content"
@@ -103,7 +108,8 @@
                 android:textOn="@string/bus"
                 android:checked="false"
                 android:layout_marginLeft="30dp"
-                android:background="#ffe0e0e0" />
+                android:background="#ffe0e0e0"
+                android:padding="2dp" />
         </LinearLayout>
     </LinearLayout>
 
