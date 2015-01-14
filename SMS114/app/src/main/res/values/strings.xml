@@ -58,5 +58,17 @@
     <string name="symptome">Symptômes</string>
     <string name="handicap">Handicapé(s) moteur(s)</string>
     <string name="enceinte">Femme(s) enceinte(s)</string>
+    <string name="title_activity_symptome">SymptomeActivity</string>
+    <string name="precision">Précisions</string>
+    <string name="pb_respiratoire">Problèmes \n respiratoires</string>
+    <string name="arret_cardiaque">Arrêt \n cardiaque</string>
+    <string name="vomissement">Vomissement</string>
+    <string name="douleurs">Douleurs \n internes</string>
+    <string name="inconscient">Inconscient</string>
+    <string name="saignement">Saignement</string>
+    <string name="spasmes">Spasmes</string>
+    <string name="brulure">Brulure</string>
+    <string name="contraction">Contraction</string>
+    <string name="perte_eaux">Perte des \n eaux</string>
 
 </resources>

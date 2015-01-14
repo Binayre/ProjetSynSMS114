@@ -1,0 +1,232 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="hupays_nenich.com.sms114.symptome.SymptomeActivity"
+    android:background="#ffffffff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Symptomes"
+        android:id="@+id/txtSymptome"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSymptome"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="34dp"
+        android:id="@+id/linearLayout6">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pb_respiratoire"
+                    android:id="@+id/btnPbRespi"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:textOff="@string/pb_respiratoire"
+                    android:textOn="@string/pb_respiratoire"
+                    android:background="#ffe0e0e0"
+                    android:layout_marginTop="10dp"
+                    android:checked="false" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/arret_cardiaque"
+                    android:id="@+id/btnArretCardiaque"
+                    android:layout_marginRight="10dp"
+                    android:textOn="@string/arret_cardiaque"
+                    android:textOff="@string/arret_cardiaque"
+                    android:background="#ffe0e0e0"
+                    android:layout_marginTop="10dp"
+                    android:checked="false" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/douleurs"
+                    android:id="@+id/btnDouleurInterne"
+                    android:layout_marginRight="10dp"
+                    android:textOff="@string/douleurs"
+                    android:textOn="@string/douleurs"
+                    android:background="#ffe0e0e0"
+                    android:layout_marginTop="10dp"
+                    android:layout_column="2"
+                    android:checked="false" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vomissement"
+                    android:id="@+id/btnVomissement"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="#ffe0e0e0"
+                    android:layout_marginTop="10dp"
+                    android:checked="false"
+                    android:textOff="@string/vomissement"
+                    android:textOn="@string/vomissement" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/inconscient"
+                    android:id="@+id/btnInconscient"
+                    android:layout_marginRight="10dp"
+                    android:background="#ffe0e0e0"
+                    android:layout_marginTop="10dp"
+                    android:textOn="@string/inconscient"
+                    android:textOff="@string/inconscient"
+                    android:layout_column="1"
+                    android:checked="false" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/spasmes"
+                    android:id="@+id/btnSpasmes"
+                    android:layout_marginRight="10dp"
+                    android:background="#ffe0e0e0"
+                    android:layout_marginTop="10dp"
+                    android:textOff="@string/spasmes"
+                    android:textOn="@string/spasmes"
+                    android:layout_column="2"
+                    android:checked="false" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/saignement"
+                    android:id="@+id/btnSaignement"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:background="#ffe0e0e0"
+                    android:layout_marginTop="10dp"
+                    android:textOff="@string/saignement"
+                    android:textOn="@string/saignement"
+                    android:checked="false" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/brulure"
+                    android:id="@+id/btnBrulure"
+                    android:layout_marginRight="10dp"
+                    android:background="#ffe0e0e0"
+                    android:layout_marginTop="10dp"
+                    android:textOn="@string/brulure"
+                    android:textOff="@string/brulure"
+                    android:layout_column="1"
+                    android:checked="false" />
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contraction"
+                    android:id="@+id/btnContraction"
+                    android:layout_marginRight="10dp"
+                    android:background="#ffe0e0e0"
+                    android:layout_marginTop="10dp"
+                    android:textOff="@string/contraction"
+                    android:textOn="@string/contraction"
+                    android:layout_column="2"
+                    android:checked="false" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/perte_eaux"
+                    android:id="@+id/btnPerteEaux"
+                    android:background="#ffe0e0e0"
+                    android:textOff="@string/perte_eaux"
+                    android:textOn="@string/perte_eaux"
+                    android:layout_column="1"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:checked="false" />
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/linearLayout6"
+            android:layout_alignEnd="@+id/linearLayout6">
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="60dp"
+                android:text="@string/DetailVictime"
+                android:id="@+id/btnRetourDetailVictime"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/bouton_bleu"
+                android:drawableLeft="@drawable/retour"
+                android:textSize="18sp"
+                android:textColor="#ffffffff" />
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="60dp"
+                android:text="@string/precision"
+                android:id="@+id/btnPrecisions"
+                android:layout_alignTop="@+id/btnRetourCauses"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:drawableRight="@drawable/suivant"
+                android:background="@drawable/bouton_bleu"
+                android:textColor="#ffffffff"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

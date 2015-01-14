@@ -52,6 +52,10 @@
             android:name=".detailVictime.DetailVictimeActivity"
             android:label="@string/title_activity_detail_victime" >
         </activity>
+        <activity
+            android:name=".symptome.SymptomeActivity"
+            android:label="@string/title_activity_symptome" >
+        </activity>
     </application>
 
 </manifest>
