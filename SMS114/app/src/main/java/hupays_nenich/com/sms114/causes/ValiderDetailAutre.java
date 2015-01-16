@@ -24,6 +24,7 @@ public class ValiderDetailAutre implements View.OnClickListener{
         Intent intent = new Intent(activity, NombreVictimeActivity.class);
         intent.putExtra("message",activity.getMessage());
         activity.startActivity(intent);
+        activity.animationNouvelleActivite();
 
     }
 }

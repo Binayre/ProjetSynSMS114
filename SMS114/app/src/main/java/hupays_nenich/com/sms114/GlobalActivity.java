@@ -28,6 +28,18 @@ public class GlobalActivity extends ActionBarActivity{
 
     }
 
+    public void animationNouvelleActivite(){
+        //l'activite entrante arrive par la droite, l'activite sortante sort par la gauche
+        overridePendingTransition(R.anim.push_left_in,R.anim.push_left_out);
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        //l'activite entrante arrive par la gauche, l'activite sortante sort par la droite
+        overridePendingTransition(R.anim.push_right_in, R.anim.push_right_out);
+    }
+
     public Button getBtnRetour() {
         return btnRetour;
     }

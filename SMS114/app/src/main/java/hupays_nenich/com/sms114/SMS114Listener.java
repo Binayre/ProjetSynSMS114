@@ -24,5 +24,7 @@ public class SMS114Listener implements View.OnClickListener{
         Intent intent = new Intent(activity, CauseActivity.class);
         intent.putExtra("message",activity.getMessage());
         activity.startActivity(intent);
+
+        activity.animationNouvelleActivite();
     }
 }

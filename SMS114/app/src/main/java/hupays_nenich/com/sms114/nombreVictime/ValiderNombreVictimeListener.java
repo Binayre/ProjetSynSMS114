@@ -24,6 +24,7 @@ public class ValiderNombreVictimeListener implements View.OnClickListener{
         Intent intent = new Intent(activity,activity.suivante());
         intent.putExtra("message",activity.getMessage());
         activity.startActivity(intent);
+        activity.animationNouvelleActivite();
 
 
     }
