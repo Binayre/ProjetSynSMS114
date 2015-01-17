@@ -49,4 +49,11 @@ public class GlobalActivity extends ActionBarActivity{
     }
 
     public Message getMessage() { return message; }
+
+    public void lancerActivity(Class<?> suivante){
+        Intent intent = new Intent(this,suivante);
+        intent.putExtra("message",message);
+        startActivity(intent);
+        animationNouvelleActivite();
+    }
 }

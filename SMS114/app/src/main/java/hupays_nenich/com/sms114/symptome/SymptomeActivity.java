@@ -16,6 +16,7 @@ import hupays_nenich.com.sms114.RetourListener;
 public class SymptomeActivity extends GlobalActivity {
 
     private ArrayList<ToggleButton> liste_boutons;
+    private ToggleButton btn_saignement, btn_douleurs, btn_brulure;
 
 
     @Override
@@ -28,6 +29,8 @@ public class SymptomeActivity extends GlobalActivity {
 
         btnSuivant = (Button)findViewById(R.id.btnPrecisions);
         btnSuivant.setOnClickListener(new ValiderSymptomeListener(this));
+
+        btnSuivant.setEnabled(false);
 
         this.liste_boutons = new ArrayList<ToggleButton>();
 
@@ -42,6 +45,10 @@ public class SymptomeActivity extends GlobalActivity {
         liste_boutons.add((ToggleButton)findViewById(R.id.btnContraction));
         liste_boutons.add((ToggleButton)findViewById(R.id.btnPerteEaux));
 
+        btn_saignement = (ToggleButton)findViewById(R.id.btnSaignement);
+        btn_douleurs = (ToggleButton)findViewById(R.id.btnDouleurInterne);
+        btn_brulure = (ToggleButton)findViewById(R.id.btnBrulure);
+
         SymptomeListener listener = new SymptomeListener(this);
 
         for(int i=0; i<liste_boutons.size();i++){
@@ -49,6 +56,11 @@ public class SymptomeActivity extends GlobalActivity {
             liste_boutons.get(i).setOnClickListener(listener);
         }
 
+    }
+
+    // si True, lancer le body
+    public boolean lancerBody(){
+        return btn_saignement.isChecked() || btn_douleurs.isChecked() || btn_brulure.isChecked();
     }
 
     public int nbBoutonsSelectionnes(){

@@ -36,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/btnVehicule"
                 android:layout_gravity="center_vertical|left"
-                android:drawableTop="@drawable/vehicule"
+                android:drawableTop="@drawable/vehicules"
                 android:checked="false"
                 android:text="@string/vehicule"
                 android:textAllCaps="false"

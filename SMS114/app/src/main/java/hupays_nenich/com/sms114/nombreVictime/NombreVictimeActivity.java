@@ -17,6 +17,7 @@ import hupays_nenich.com.sms114.R;
 import hupays_nenich.com.sms114.RetourListener;
 import hupays_nenich.com.sms114.detailVictime.DetailVictimeActivity;
 import hupays_nenich.com.sms114.mesInfos.MesInfosActivity;
+import hupays_nenich.com.sms114.precisions.PrecisionActivity;
 
 
 public class NombreVictimeActivity extends GlobalActivity implements SeekBar.OnSeekBarChangeListener, CompoundButton.OnCheckedChangeListener{
@@ -76,7 +77,7 @@ public class NombreVictimeActivity extends GlobalActivity implements SeekBar.OnS
      */
     public Class<?> suivante(){
         if((inconnu.isChecked()) || (barre.getProgress()==0)){
-            return MesInfosActivity.class; //renvoyer l'activity qui s'occupe de l'adresse ou des precisions
+            return PrecisionActivity.class; //renvoyer l'activity qui s'occupe de l'adresse ou des precisions
         }
         else{
             return DetailVictimeActivity.class; //renvoyer l'activity qui s'occuper de detailler les victimes
@@ -114,10 +115,10 @@ public class NombreVictimeActivity extends GlobalActivity implements SeekBar.OnS
             if (progress > 0)
                 btnSuivant.setText(R.string.DetailVictime);
             else
-                btnSuivant.setText(R.string.localisation);
+                btnSuivant.setText(R.string.precision);
         }
        else
-           btnSuivant.setText(R.string.localisation);
+           btnSuivant.setText(R.string.precision);
     }
 
     @Override
@@ -133,12 +134,12 @@ public class NombreVictimeActivity extends GlobalActivity implements SeekBar.OnS
     @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
         if(inconnu.isChecked())
-            btnSuivant.setText(R.string.localisation);
+            btnSuivant.setText(R.string.precision);
         else{
             if (barre.getProgress() > 0)
                 btnSuivant.setText(R.string.DetailVictime);
             else
-                btnSuivant.setText(R.string.localisation);
+                btnSuivant.setText(R.string.precision);
         }
 
     }

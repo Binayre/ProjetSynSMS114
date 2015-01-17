@@ -19,8 +19,6 @@ public class EnregistrerListener implements View.OnClickListener{
     @Override
     public void onClick(View v) {
         activity.sauvegarderDonnees();
-        Intent intent = new Intent(activity,AccueilActivity.class);
-        activity.setResult(10, intent);
         activity.finish();
     }
 }

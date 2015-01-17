@@ -107,7 +107,7 @@
                 android:checked="false"
                 android:background="#ffe0e0e0"
                 android:layout_marginRight="40dp"
-                android:drawableTop="@drawable/araignee"
+                android:drawableTop="@drawable/areignee"
                 android:padding="2dp" />
 
             <ToggleButton
@@ -119,7 +119,7 @@
                 android:textOn="@string/oiseau"
                 android:background="#ffe0e0e0"
                 android:checked="false"
-                android:drawableTop="@drawable/aigle"
+                android:drawableTop="@drawable/oiseau"
                 android:padding="2dp" />
         </LinearLayout>
     </LinearLayout>

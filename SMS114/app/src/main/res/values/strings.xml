@@ -70,5 +70,6 @@
     <string name="brulure">Brulure</string>
     <string name="contraction">Contraction</string>
     <string name="perte_eaux">Perte des \n eaux</string>
+    <string name="title_activity_precision">PrecisionActivity</string>
 
 </resources>

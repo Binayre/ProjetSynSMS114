@@ -19,8 +19,6 @@ public class MesInfosListener implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(activity, MesInfosActivity.class);
-        activity.startActivityForResult(intent,10);
-        activity.animationNouvelleActivite();
+        activity.lancerActivity(MesInfosActivity.class);
     }
 }

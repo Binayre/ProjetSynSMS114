@@ -25,9 +25,7 @@ public class ValiderDetailListener implements View.OnClickListener{
     public void onClick(View v) {
 
         activity.getMessage().setDetails_causes(activity.boutonSelectionne());
-        Intent intent = new Intent(activity, NombreVictimeActivity.class);
-        intent.putExtra("message",activity.getMessage());
-        activity.startActivity(intent);
-        activity.animationNouvelleActivite();
+
+        activity.lancerActivity(NombreVictimeActivity.class);
     }
 }

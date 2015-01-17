@@ -22,9 +22,6 @@ public class ValiderDetailVictime implements View.OnClickListener{
 
         activity.getMessage().setProfil_victime(activity.detail());
 
-        Intent intent = new Intent(activity, SymptomeActivity.class);
-        intent.putExtra("message",activity.getMessage());
-        activity.startActivity(intent);
-        activity.animationNouvelleActivite();
+        activity.lancerActivity(SymptomeActivity.class);
     }
 }

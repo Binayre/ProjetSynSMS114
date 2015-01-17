@@ -32,7 +32,8 @@
 
             <TableRow
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
+                android:layout_height="fill_parent"
+                android:layout_marginStart="15dp">
 
                 <ToggleButton
                     android:layout_width="wrap_content"
@@ -45,7 +46,8 @@
                     android:textOn="@string/pb_respiratoire"
                     android:background="#ffe0e0e0"
                     android:layout_marginTop="10dp"
-                    android:checked="false" />
+                    android:checked="false"
+                    android:drawableTop="@drawable/pb_respi" />
 
                 <ToggleButton
                     android:layout_width="wrap_content"
@@ -57,7 +59,8 @@
                     android:textOff="@string/arret_cardiaque"
                     android:background="#ffe0e0e0"
                     android:layout_marginTop="10dp"
-                    android:checked="false" />
+                    android:checked="false"
+                    android:drawableTop="@drawable/crise_cardiaque" />
 
                 <ToggleButton
                     android:layout_width="wrap_content"
@@ -70,12 +73,14 @@
                     android:background="#ffe0e0e0"
                     android:layout_marginTop="10dp"
                     android:layout_column="2"
-                    android:checked="false" />
+                    android:checked="false"
+                    android:drawableTop="@drawable/douleur_interne" />
             </TableRow>
 
             <TableRow
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
+                android:layout_height="fill_parent"
+                android:layout_marginStart="15dp">
 
                 <ToggleButton
                     android:layout_width="wrap_content"
@@ -88,7 +93,8 @@
                     android:layout_marginTop="10dp"
                     android:checked="false"
                     android:textOff="@string/vomissement"
-                    android:textOn="@string/vomissement" />
+                    android:textOn="@string/vomissement"
+                    android:drawableTop="@drawable/vomissement" />
 
                 <ToggleButton
                     android:layout_width="wrap_content"
@@ -101,7 +107,8 @@
                     android:textOn="@string/inconscient"
                     android:textOff="@string/inconscient"
                     android:layout_column="1"
-                    android:checked="false" />
+                    android:checked="false"
+                    android:drawableTop="@drawable/inconscient" />
 
                 <ToggleButton
                     android:layout_width="wrap_content"
@@ -114,12 +121,14 @@
                     android:textOff="@string/spasmes"
                     android:textOn="@string/spasmes"
                     android:layout_column="2"
-                    android:checked="false" />
+                    android:checked="false"
+                    android:drawableTop="@drawable/spasmes" />
             </TableRow>
 
             <TableRow
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
+                android:layout_height="fill_parent"
+                android:layout_marginStart="15dp">
 
                 <ToggleButton
                     android:layout_width="wrap_content"
@@ -132,7 +141,8 @@
                     android:layout_marginTop="10dp"
                     android:textOff="@string/saignement"
                     android:textOn="@string/saignement"
-                    android:checked="false" />
+                    android:checked="false"
+                    android:drawableTop="@drawable/saignement" />
 
                 <ToggleButton
                     android:layout_width="wrap_content"
@@ -145,7 +155,8 @@
                     android:textOn="@string/brulure"
                     android:textOff="@string/brulure"
                     android:layout_column="1"
-                    android:checked="false" />
+                    android:checked="false"
+                    android:drawableTop="@drawable/brulure" />
 
                 <ToggleButton
                     android:layout_width="wrap_content"
@@ -158,12 +169,14 @@
                     android:textOff="@string/contraction"
                     android:textOn="@string/contraction"
                     android:layout_column="2"
-                    android:checked="false" />
+                    android:checked="false"
+                    android:drawableTop="@drawable/contraction" />
             </TableRow>
 
             <TableRow
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
+                android:layout_height="fill_parent"
+                android:layout_marginStart="15dp">
 
                 <ToggleButton
                     android:layout_width="wrap_content"
@@ -179,7 +192,8 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="10dp"
-                    android:checked="false" />
+                    android:checked="false"
+                    android:drawableTop="@drawable/perte_des_eaux" />
             </TableRow>
 
         </TableLayout>

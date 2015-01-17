@@ -56,6 +56,10 @@
             android:name=".symptome.SymptomeActivity"
             android:label="@string/title_activity_symptome" >
         </activity>
+        <activity
+            android:name=".precisions.PrecisionActivity"
+            android:label="@string/title_activity_precision" >
+        </activity>
     </application>
 
 </manifest>
