@@ -53,7 +53,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:drawableLeft="@drawable/retour"
-            android:background="@drawable/bouton_bleu"
+            android:background="@drawable/bouton_nav"
             android:textColor="#ffffffff"
             android:textSize="18sp" />
 
@@ -67,7 +67,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:drawableRight="@drawable/suivant"
-            android:background="@drawable/bouton_bleu"
+            android:background="@drawable/bouton_nav"
             android:textColor="#ffffffff"
             android:textSize="18sp" />
     </RelativeLayout>

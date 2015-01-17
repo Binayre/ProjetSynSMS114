@@ -78,7 +78,7 @@
             android:layout_centerHorizontal="true"
             android:layout_alignParentEnd="false"
             android:layout_alignParentLeft="true"
-            android:background="@drawable/bouton_bleu"
+            android:background="@drawable/bouton_nav"
             android:drawableLeft="@drawable/retour"
             android:layout_marginTop="10dp"
             android:textSize="18sp"
@@ -94,7 +94,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:drawableRight="@drawable/suivant"
-            android:background="@drawable/bouton_bleu"
+            android:background="@drawable/bouton_nav"
             android:textColor="#ffffffff"
             android:textSize="18sp" />
     </RelativeLayout>

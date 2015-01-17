@@ -22,7 +22,7 @@
         android:layout_height="fill_parent"
         android:layout_below="@+id/txtCause"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="15dp"
         android:layout_alignParentBottom="true">
 
         <Button
@@ -33,7 +33,9 @@
             android:layout_gravity="center_vertical"
             android:layout_alignParentTop="true"
             android:drawableLeft="@drawable/accident_de_la_route"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:background="@drawable/bouton_icon"
+            android:padding="6dp" />
 
         <Button
             android:layout_width="fill_parent"
@@ -44,7 +46,9 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="14dp"
             android:drawableLeft="@drawable/incendie"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:background="@drawable/bouton_icon"
+            android:padding="6dp" />
 
         <Button
             android:layout_width="fill_parent"
@@ -55,7 +59,9 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="14dp"
             android:drawableLeft="@drawable/blessures_animales"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:background="@drawable/bouton_icon"
+            android:padding="6dp" />
 
         <Button
             android:layout_width="fill_parent"
@@ -66,7 +72,9 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="14dp"
             android:textSize="20sp"
-            android:drawableLeft="@drawable/catastrophes_naturelles" />
+            android:drawableLeft="@drawable/catastrophes_naturelles"
+            android:background="@drawable/bouton_icon"
+            android:padding="6dp" />
 
         <Button
             android:layout_width="fill_parent"
@@ -78,7 +86,9 @@
             android:layout_marginTop="14dp"
             android:drawableLeft="@drawable/autres"
             android:layout_marginBottom="10dp"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:background="@drawable/bouton_icon"
+            android:padding="6dp" />
 
         <Button
             android:layout_width="140dp"
@@ -89,7 +99,7 @@
             android:layout_centerHorizontal="true"
             android:layout_alignParentEnd="false"
             android:layout_alignParentLeft="true"
-            android:background="@drawable/bouton_bleu"
+            android:background="@drawable/bouton_nav"
             android:drawableLeft="@drawable/retour"
             android:layout_marginTop="10dp"
             android:textSize="18sp"

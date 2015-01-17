@@ -36,45 +36,48 @@
                 android:layout_marginStart="15dp">
 
                 <ToggleButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
                     android:text="@string/pb_respiratoire"
                     android:id="@+id/btnPbRespi"
                     android:layout_marginRight="10dp"
                     android:layout_marginLeft="30dp"
                     android:textOff="@string/pb_respiratoire"
                     android:textOn="@string/pb_respiratoire"
-                    android:background="#ffe0e0e0"
+                    android:background="@drawable/bouton_icon"
                     android:layout_marginTop="10dp"
                     android:checked="false"
-                    android:drawableTop="@drawable/pb_respi" />
+                    android:drawableTop="@drawable/pb_respi"
+                    android:textSize="10sp" />
 
                 <ToggleButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
                     android:text="@string/arret_cardiaque"
                     android:id="@+id/btnArretCardiaque"
                     android:layout_marginRight="10dp"
                     android:textOn="@string/arret_cardiaque"
                     android:textOff="@string/arret_cardiaque"
-                    android:background="#ffe0e0e0"
+                    android:background="@drawable/bouton_icon"
                     android:layout_marginTop="10dp"
                     android:checked="false"
-                    android:drawableTop="@drawable/crise_cardiaque" />
+                    android:drawableTop="@drawable/crise_cardiaque"
+                    android:textSize="10sp" />
 
                 <ToggleButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
                     android:text="@string/douleurs"
                     android:id="@+id/btnDouleurInterne"
                     android:layout_marginRight="10dp"
                     android:textOff="@string/douleurs"
                     android:textOn="@string/douleurs"
-                    android:background="#ffe0e0e0"
+                    android:background="@drawable/bouton_icon"
                     android:layout_marginTop="10dp"
                     android:layout_column="2"
                     android:checked="false"
-                    android:drawableTop="@drawable/douleur_interne" />
+                    android:drawableTop="@drawable/douleur_interne"
+                    android:textSize="10sp" />
             </TableRow>
 
             <TableRow
@@ -83,13 +86,13 @@
                 android:layout_marginStart="15dp">
 
                 <ToggleButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
                     android:text="@string/vomissement"
                     android:id="@+id/btnVomissement"
                     android:layout_marginRight="10dp"
                     android:layout_marginLeft="30dp"
-                    android:background="#ffe0e0e0"
+                    android:background="@drawable/bouton_icon"
                     android:layout_marginTop="10dp"
                     android:checked="false"
                     android:textOff="@string/vomissement"
@@ -97,12 +100,12 @@
                     android:drawableTop="@drawable/vomissement" />
 
                 <ToggleButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
                     android:text="@string/inconscient"
                     android:id="@+id/btnInconscient"
                     android:layout_marginRight="10dp"
-                    android:background="#ffe0e0e0"
+                    android:background="@drawable/bouton_icon"
                     android:layout_marginTop="10dp"
                     android:textOn="@string/inconscient"
                     android:textOff="@string/inconscient"
@@ -111,12 +114,12 @@
                     android:drawableTop="@drawable/inconscient" />
 
                 <ToggleButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
                     android:text="@string/spasmes"
                     android:id="@+id/btnSpasmes"
                     android:layout_marginRight="10dp"
-                    android:background="#ffe0e0e0"
+                    android:background="@drawable/bouton_icon"
                     android:layout_marginTop="10dp"
                     android:textOff="@string/spasmes"
                     android:textOn="@string/spasmes"
@@ -131,13 +134,13 @@
                 android:layout_marginStart="15dp">
 
                 <ToggleButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
                     android:text="@string/saignement"
                     android:id="@+id/btnSaignement"
                     android:layout_marginRight="10dp"
                     android:layout_marginLeft="30dp"
-                    android:background="#ffe0e0e0"
+                    android:background="@drawable/bouton_icon"
                     android:layout_marginTop="10dp"
                     android:textOff="@string/saignement"
                     android:textOn="@string/saignement"
@@ -145,12 +148,12 @@
                     android:drawableTop="@drawable/saignement" />
 
                 <ToggleButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
                     android:text="@string/brulure"
                     android:id="@+id/btnBrulure"
                     android:layout_marginRight="10dp"
-                    android:background="#ffe0e0e0"
+                    android:background="@drawable/bouton_icon"
                     android:layout_marginTop="10dp"
                     android:textOn="@string/brulure"
                     android:textOff="@string/brulure"
@@ -159,12 +162,12 @@
                     android:drawableTop="@drawable/brulure" />
 
                 <ToggleButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
                     android:text="@string/contraction"
                     android:id="@+id/btnContraction"
                     android:layout_marginRight="10dp"
-                    android:background="#ffe0e0e0"
+                    android:background="@drawable/bouton_icon"
                     android:layout_marginTop="10dp"
                     android:textOff="@string/contraction"
                     android:textOn="@string/contraction"
@@ -179,11 +182,11 @@
                 android:layout_marginStart="15dp">
 
                 <ToggleButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
                     android:text="@string/perte_eaux"
                     android:id="@+id/btnPerteEaux"
-                    android:background="#ffe0e0e0"
+                    android:background="@drawable/bouton_icon"
                     android:textOff="@string/perte_eaux"
                     android:textOn="@string/perte_eaux"
                     android:layout_column="1"
@@ -193,7 +196,8 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="10dp"
                     android:checked="false"
-                    android:drawableTop="@drawable/perte_des_eaux" />
+                    android:drawableTop="@drawable/perte_des_eaux"
+                    android:textSize="10sp" />
             </TableRow>
 
         </TableLayout>
@@ -220,7 +224,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_alignParentEnd="false"
                 android:layout_alignParentLeft="true"
-                android:background="@drawable/bouton_bleu"
+                android:background="@drawable/bouton_nav"
                 android:drawableLeft="@drawable/retour"
                 android:textSize="18sp"
                 android:textColor="#ffffffff" />
@@ -235,7 +239,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
                 android:drawableRight="@drawable/suivant"
-                android:background="@drawable/bouton_bleu"
+                android:background="@drawable/bouton_nav"
                 android:textColor="#ffffffff"
                 android:textSize="18sp" />
 

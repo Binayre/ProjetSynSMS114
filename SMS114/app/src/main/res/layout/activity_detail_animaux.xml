@@ -32,8 +32,8 @@
             android:layout_marginTop="38dp">
 
             <ToggleButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
                 android:id="@+id/btnChien"
                 android:layout_gravity="center_vertical|left"
                 android:checked="false"
@@ -41,35 +41,35 @@
                 android:textAllCaps="false"
                 android:textOff="@string/chien"
                 android:textOn="@string/chien"
-                android:layout_marginRight="40dp"
-                android:background="#ffe0e0e0"
-                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bouton_icon"
+                android:layout_marginLeft="20dp"
                 android:drawableTop="@drawable/chien"
                 android:padding="2dp" />
 
             <ToggleButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
                 android:text="@string/chat"
                 android:id="@+id/btnChat"
                 android:layout_gravity="center_vertical"
                 android:textOff="@string/chat"
                 android:textOn="@string/chat"
                 android:checked="false"
-                android:layout_marginRight="40dp"
-                android:background="#ffe0e0e0"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bouton_icon"
                 android:drawableTop="@drawable/chat"
                 android:padding="2dp" />
 
             <ToggleButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
                 android:text="@string/serpent"
                 android:id="@+id/btnSerpent"
                 android:textOff="@string/serpent"
                 android:textOn="@string/serpent"
                 android:checked="false"
-                android:background="#ffe0e0e0"
+                android:background="@drawable/bouton_icon"
                 android:singleLine="true"
                 android:drawableTop="@drawable/serpent"
                 android:padding="2dp" />
@@ -82,42 +82,42 @@
             android:layout_marginTop="20dp" >
 
             <ToggleButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
                 android:text="@string/abeille"
                 android:id="@+id/btnAbeille"
                 android:layout_gravity="center_vertical"
                 android:textOff="@string/abeille"
                 android:textOn="@string/abeille"
                 android:checked="false"
-                android:layout_marginRight="40dp"
-                android:layout_marginLeft="30dp"
-                android:background="#ffe0e0e0"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/bouton_icon"
                 android:drawableTop="@drawable/abeille"
                 android:padding="2dp" />
 
             <ToggleButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
                 android:text="@string/araignee"
                 android:id="@+id/btnAraignee"
                 android:layout_gravity="center_vertical"
                 android:textOff="@string/araignee"
                 android:textOn="@string/araignee"
                 android:checked="false"
-                android:background="#ffe0e0e0"
-                android:layout_marginRight="40dp"
+                android:background="@drawable/bouton_icon"
+                android:layout_marginRight="20dp"
                 android:drawableTop="@drawable/areignee"
                 android:padding="2dp" />
 
             <ToggleButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
                 android:text="@string/oiseau"
                 android:id="@+id/btnOiseau"
                 android:textOff="@string/oiseau"
                 android:textOn="@string/oiseau"
-                android:background="#ffe0e0e0"
+                android:background="@drawable/bouton_icon"
                 android:checked="false"
                 android:drawableTop="@drawable/oiseau"
                 android:padding="2dp" />
@@ -140,7 +140,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:drawableLeft="@drawable/retour"
-            android:background="@drawable/bouton_bleu"
+            android:background="@drawable/bouton_nav"
             android:textColor="#ffffffff"
             android:textSize="18sp" />
 
@@ -154,7 +154,7 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:drawableRight="@drawable/suivant"
-            android:background="@drawable/bouton_bleu"
+            android:background="@drawable/bouton_nav"
             android:textColor="#ffffffff"
             android:textSize="18sp" />
     </RelativeLayout>

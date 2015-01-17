@@ -10,7 +10,7 @@ import android.widget.ToggleButton;
  */
 
 /**
- * change le background d'un ToggleButton
+ * Avtive le bouton d acces la l activity suivante si au moins un item est selectionne
  */
 public class DetailCauseListener implements View.OnClickListener{
 
@@ -23,16 +23,6 @@ public class DetailCauseListener implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
-
-        ToggleButton btn = (ToggleButton)v;
-
-        if(btn.isChecked()){
-            btn.setBackgroundColor(Color.argb(255,0,255,0));
-        }
-        else{
-            btn.setBackgroundColor(Color.argb(255,224,224,224));
-        }
-
         if(activity.nbBoutonsSelectionnes()>0)
             activity.getBtnSuivant().setEnabled(true);
         else

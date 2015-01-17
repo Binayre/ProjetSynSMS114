@@ -17,16 +17,6 @@ public class SymptomeListener implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
-
-        ToggleButton btn = (ToggleButton)v;
-
-        if(btn.isChecked()){
-            btn.setBackgroundColor(Color.argb(255, 0, 255, 0));
-        }
-        else{
-            btn.setBackgroundColor(Color.argb(255,224,224,224));
-        }
-
         if(activity.nbBoutonsSelectionnes()>0)
             activity.getBtnSuivant().setEnabled(true);
         else
