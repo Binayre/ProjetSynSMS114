@@ -15,7 +15,7 @@
         android:id="@+id/txtCause"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textSize="25sp" />
+        android:textSize="30sp" />
 
     <RelativeLayout
         android:layout_width="fill_parent"

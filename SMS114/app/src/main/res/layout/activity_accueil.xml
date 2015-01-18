@@ -14,7 +14,7 @@
         android:id="@+id/txtTitre"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textSize="30sp" />
+        android:textSize="40sp" />
 
     <LinearLayout
         android:orientation="vertical"
@@ -50,7 +50,7 @@
 
             <Button
                 android:layout_width="140dp"
-                android:layout_height="50dp"
+                android:layout_height="60dp"
                 android:text="SMS Test"
                 android:id="@+id/btnSMSTest"
                 android:layout_gravity="left"
@@ -63,7 +63,7 @@
 
             <Button
                 android:layout_width="140dp"
-                android:layout_height="50dp"
+                android:layout_height="60dp"
                 android:text="Mes Infos"
                 android:id="@+id/btnMesInfos"
                 android:layout_gravity="right"

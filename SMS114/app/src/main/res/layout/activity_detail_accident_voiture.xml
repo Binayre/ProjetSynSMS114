@@ -14,7 +14,8 @@
         android:text="Accident de la route"
         android:id="@+id/txtDetailAccidentRoute"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp" />
 
     <LinearLayout
         android:orientation="vertical"

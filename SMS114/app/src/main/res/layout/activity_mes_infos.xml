@@ -15,7 +15,8 @@
         android:id="@+id/txtMesInfos"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp" />
+        android:layout_marginBottom="20dp"
+        android:textSize="30sp" />
 
     <LinearLayout
         android:orientation="vertical"
@@ -36,8 +37,9 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Prénom:"
                 android:id="@+id/txtPrenom"
+                android:layout_centerVertical="true"
                 android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="false" />
+                android:layout_alignParentStart="true" />
 
             <EditText
                 android:layout_width="wrap_content"
@@ -62,7 +64,9 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Nom:"
                 android:id="@+id/txtNom"
-                android:layout_alignParentLeft="true" />
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
 
             <EditText
                 android:layout_width="wrap_content"
@@ -84,7 +88,9 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Téléphone:"
                 android:id="@+id/txtNumeroTel"
-                android:layout_alignParentLeft="true" />
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
 
             <EditText
                 android:layout_width="wrap_content"
@@ -110,7 +116,9 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Adresse:"
                 android:id="@+id/txtAdresse"
-                android:layout_alignParentLeft="true" />
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
 
             <EditText
                 android:layout_width="212dp"
@@ -130,7 +138,9 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Ville:"
                 android:id="@+id/txtVille"
-                android:layout_alignParentLeft="true" />
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
 
             <EditText
                 android:layout_width="212dp"
@@ -150,7 +160,9 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Code Postal:"
                 android:id="@+id/txtCodePostal"
-                android:layout_alignParentLeft="true" />
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
 
             <EditText
                 android:layout_width="wrap_content"
@@ -165,7 +177,7 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="fill_parent"
-            android:layout_height="50dp"></LinearLayout>
+            android:layout_height="35dp"></LinearLayout>
 
         <RelativeLayout
             android:layout_width="fill_parent"
@@ -192,7 +204,9 @@
                 android:text="Etage:"
                 android:id="@+id/txtEtage"
                 android:visibility="invisible"
-                android:layout_alignParentLeft="true" />
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
 
             <EditText
                 android:layout_width="wrap_content"
@@ -216,7 +230,9 @@
                 android:text="Porte:"
                 android:id="@+id/txtPorte"
                 android:visibility="invisible"
-                android:layout_alignParentLeft="true" />
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
 
             <EditText
                 android:layout_width="212dp"
@@ -238,7 +254,9 @@
                 android:text="Code porte:"
                 android:id="@+id/txtCodePorte"
                 android:visibility="invisible"
-                android:layout_alignParentLeft="true" />
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
 
             <EditText
                 android:layout_width="212dp"
@@ -251,11 +269,12 @@
 
         <RelativeLayout
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
 
             <Button
                 android:layout_width="140dp"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:text="@string/annuler"
                 android:id="@+id/btnAnnuler"
                 android:layout_alignParentTop="true"
@@ -267,7 +286,7 @@
 
             <Button
                 android:layout_width="140dp"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
                 android:text="@string/enregistrer"
                 android:id="@+id/btnEnregistrer"
                 android:layout_gravity="center_horizontal"

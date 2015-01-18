@@ -14,7 +14,8 @@
         android:text="Blessures animales"
         android:id="@+id/txtDetailAnimaux"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp" />
 
     <LinearLayout
         android:orientation="vertical"
@@ -156,6 +157,7 @@
             android:drawableRight="@drawable/suivant"
             android:background="@drawable/bouton_nav"
             android:textColor="#ffffffff"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:enabled="false" />
     </RelativeLayout>
 </RelativeLayout>

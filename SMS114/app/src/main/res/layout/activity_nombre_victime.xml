@@ -14,7 +14,8 @@
         android:text="Nombre de victimes"
         android:id="@+id/txtNbVictime"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -22,10 +23,11 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="0"
         android:id="@+id/txtNombre"
-        android:layout_marginTop="69dp"
+        android:layout_marginTop="40dp"
         android:layout_below="@+id/txtNbVictime"
         android:layout_centerHorizontal="true"
-        android:textSize="170sp" />
+        android:textSize="170sp"
+        android:layout_marginBottom="20dp" />
 
     <SeekBar
         android:layout_width="match_parent"
@@ -42,24 +44,23 @@
         android:layout_height="wrap_content"
         android:text="@string/environ"
         android:id="@+id/checkBoxEnviron"
-        android:layout_below="@+id/barreNbVictime"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginLeft="39dp"
-        android:layout_marginStart="39dp"
         android:checked="false"
-        android:textSize="30sp" />
+        android:textSize="25sp"
+        android:layout_alignTop="@+id/checkBoxInconnu"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/inconnu"
         android:id="@+id/checkBoxInconnu"
-        android:layout_below="@+id/checkBoxEnviron"
-        android:layout_alignLeft="@+id/checkBoxEnviron"
-        android:layout_alignStart="@+id/checkBoxEnviron"
         android:checked="false"
-        android:textSize="30sp" />
+        android:textSize="25sp"
+        android:layout_below="@+id/barreNbVictime"
+        android:layout_alignRight="@+id/barreNbVictime"
+        android:layout_alignEnd="@+id/barreNbVictime"
+        android:layout_marginTop="32dp" />
 
     <RelativeLayout
         android:layout_width="match_parent"
