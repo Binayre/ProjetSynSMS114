@@ -17,10 +17,6 @@ public class DetailVictimeActivity extends GlobalActivity{
     private ArrayList<CheckBox> liste;
     private CheckBox handicap, enceinte;
 
-    public DetailVictimeActivity() {
-        super();
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

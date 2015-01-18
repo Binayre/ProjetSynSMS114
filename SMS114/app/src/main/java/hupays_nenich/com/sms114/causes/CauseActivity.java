@@ -17,10 +17,6 @@ public class CauseActivity extends GlobalActivity {
 
    private Button btnAccident, btnIncendie, btnBlessureAnimale, btnCatastrophe, btnAutre;
 
-    public CauseActivity() {
-        super();
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

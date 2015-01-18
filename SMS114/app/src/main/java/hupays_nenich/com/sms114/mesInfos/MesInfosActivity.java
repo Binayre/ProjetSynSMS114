@@ -25,10 +25,6 @@ public class MesInfosActivity extends GlobalActivity {
     private EditText edtPrenom, edtNom, edtPhone, edtAdresse, edtVille, edtCodePostal, edtEtage, edtCodePorte, edtPorte;
     private CheckBox chkImmeuble;
 
-    public MesInfosActivity() {
-        super();
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -17,10 +17,6 @@ public class SymptomeActivity extends GlobalActivity {
     private ArrayList<ToggleButton> liste_boutons;
     private ToggleButton btn_saignement, btn_douleurs, btn_brulure;
 
-    public SymptomeActivity() {
-        super();
-    }
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

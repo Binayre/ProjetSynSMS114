@@ -23,10 +23,6 @@ public class NombreVictimeActivity extends GlobalActivity implements SeekBar.OnS
     private TextView nbvict;
     private CheckBox environ, inconnu;
 
-    public NombreVictimeActivity() {
-        super();
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

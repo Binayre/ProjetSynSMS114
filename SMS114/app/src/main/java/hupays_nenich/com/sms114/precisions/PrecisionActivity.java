@@ -14,10 +14,6 @@ public class PrecisionActivity extends GlobalActivity {
 
     private EditText edtPrecisions;
 
-    public PrecisionActivity() {
-        super();
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

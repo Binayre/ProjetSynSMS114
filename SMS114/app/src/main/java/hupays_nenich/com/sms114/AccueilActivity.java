@@ -10,10 +10,6 @@ public class AccueilActivity extends GlobalActivity {
 
     private Button btnMesInfos, btnSMS114;
 
-    public AccueilActivity() {
-        super();
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

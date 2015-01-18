@@ -21,10 +21,6 @@ public abstract class DetailCauseActivity extends GlobalActivity{
 
     private ArrayList<ToggleButton> liste_boutons;
 
-    public DetailCauseActivity() {
-        super();
-    }
-
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

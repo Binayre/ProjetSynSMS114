@@ -168,7 +168,7 @@
                 android:background="@drawable/bouton_nav"
                 android:textColor="#ffffffff"
                 android:textSize="18sp"
-                android:enabled="false" />
+                android:enabled="true" />
         </RelativeLayout>
 
     </LinearLayout>
