@@ -1,6 +1,5 @@
 package hupays_nenich.com.sms114.symptome;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -17,6 +16,10 @@ public class SymptomeActivity extends GlobalActivity {
 
     private ArrayList<ToggleButton> liste_boutons;
     private ToggleButton btn_saignement, btn_douleurs, btn_brulure;
+
+    public SymptomeActivity() {
+        super();
+    }
 
 
     @Override
@@ -55,7 +58,11 @@ public class SymptomeActivity extends GlobalActivity {
 
             liste_boutons.get(i).setOnClickListener(listener);
         }
+    }
 
+    @Override
+    public String getNouveauTitre() {
+        return "Symptome";
     }
 
     // si True, lancer le body

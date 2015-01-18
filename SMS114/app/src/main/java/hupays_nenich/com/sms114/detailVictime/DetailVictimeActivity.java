@@ -17,6 +17,10 @@ public class DetailVictimeActivity extends GlobalActivity{
     private ArrayList<CheckBox> liste;
     private CheckBox handicap, enceinte;
 
+    public DetailVictimeActivity() {
+        super();
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +43,11 @@ public class DetailVictimeActivity extends GlobalActivity{
         btnSuivant = (Button)findViewById(R.id.btnSymptome);
         btnSuivant.setOnClickListener(new ValiderDetailVictime(this));
 
+    }
+
+    @Override
+    public String getNouveauTitre() {
+        return "Victime";
     }
 
     public String detail(){

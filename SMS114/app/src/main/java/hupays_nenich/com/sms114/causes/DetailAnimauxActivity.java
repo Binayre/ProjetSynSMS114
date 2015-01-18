@@ -31,6 +31,10 @@ public class DetailAnimauxActivity extends DetailCauseActivity {
         setListener();
     }
 
+    @Override
+    public String getNouveauTitre() {
+        return "Animaux";
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

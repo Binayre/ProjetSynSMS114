@@ -1,7 +1,5 @@
 package hupays_nenich.com.sms114.causes;
 
-import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ToggleButton;
@@ -9,7 +7,6 @@ import android.widget.ToggleButton;
 import java.util.ArrayList;
 
 import hupays_nenich.com.sms114.GlobalActivity;
-import hupays_nenich.com.sms114.Message;
 import hupays_nenich.com.sms114.R;
 import hupays_nenich.com.sms114.RetourListener;
 
@@ -20,9 +17,13 @@ import hupays_nenich.com.sms114.RetourListener;
 /**
  * classe mere de toutes les activity servant a detailler les causes
  */
-public class DetailCauseActivity extends GlobalActivity{
+public abstract class DetailCauseActivity extends GlobalActivity{
 
     private ArrayList<ToggleButton> liste_boutons;
+
+    public DetailCauseActivity() {
+        super();
+    }
 
 
     protected void onCreate(Bundle savedInstanceState) {

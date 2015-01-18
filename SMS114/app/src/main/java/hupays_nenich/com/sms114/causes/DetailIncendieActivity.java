@@ -26,6 +26,10 @@ public class DetailIncendieActivity extends DetailCauseActivity {
         setListener();
     }
 
+    @Override
+    public String getNouveauTitre() {
+        return "Incendie";
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

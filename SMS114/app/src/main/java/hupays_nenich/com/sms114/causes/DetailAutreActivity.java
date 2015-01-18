@@ -26,8 +26,11 @@ public class DetailAutreActivity extends DetailCauseActivity {
         btnSuivant =(Button)findViewById(R.id.btnNbVictime);
 
         btnSuivant.setOnClickListener(new ValiderDetailAutre(this));
+    }
 
-
+    @Override
+    public String getNouveauTitre() {
+        return "Autre";
     }
 
     public String getDetail(){

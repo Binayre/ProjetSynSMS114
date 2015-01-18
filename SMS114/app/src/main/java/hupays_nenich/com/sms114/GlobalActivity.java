@@ -5,14 +5,16 @@ import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.widget.Button;
 
 /**
  * Created by Jérémy on 10/01/2015.
  */
-public class GlobalActivity extends ActionBarActivity{
+public abstract  class GlobalActivity extends ActionBarActivity{
 
     protected Message message;
+    protected String titre;
     protected Button btnRetour, btnSuivant;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,11 +24,23 @@ public class GlobalActivity extends ActionBarActivity{
 
         Intent intent = getIntent();
 
+
         if(intent != null){
             this.message = (Message)intent.getSerializableExtra("message");
+            this.titre = intent.getStringExtra("titre");
+        }
+
+
+        if(titre!=null) {
+            this.setTitle(titre + ">" + getNouveauTitre());
+        }
+        else{
+            this.setTitle(getNouveauTitre());
         }
 
     }
+
+    public abstract String getNouveauTitre();
 
     public void animationNouvelleActivite(){
         //l'activite entrante arrive par la droite, l'activite sortante sort par la gauche
@@ -53,6 +67,7 @@ public class GlobalActivity extends ActionBarActivity{
     public void lancerActivity(Class<?> suivante){
         Intent intent = new Intent(this,suivante);
         intent.putExtra("message",message);
+        intent.putExtra("titre",this.getTitle());
         startActivity(intent);
         animationNouvelleActivite();
     }

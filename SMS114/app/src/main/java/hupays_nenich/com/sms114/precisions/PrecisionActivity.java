@@ -1,6 +1,5 @@
 package hupays_nenich.com.sms114.precisions;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -14,6 +13,10 @@ import hupays_nenich.com.sms114.RetourListener;
 public class PrecisionActivity extends GlobalActivity {
 
     private EditText edtPrecisions;
+
+    public PrecisionActivity() {
+        super();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +37,11 @@ public class PrecisionActivity extends GlobalActivity {
         else{
             btnRetour.setText(R.string.symptome);
         }
+    }
+
+    @Override
+    public String getNouveauTitre() {
+        return "Precision";
     }
 
     public String precisions(){

@@ -30,6 +30,10 @@ public class DetailAccidentVoitureActivity extends DetailCauseActivity {
         setListener();
     }
 
+    @Override
+    public String getNouveauTitre() {
+        return "Accident";
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

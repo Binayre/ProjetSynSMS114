@@ -1,6 +1,5 @@
 package hupays_nenich.com.sms114.nombreVictime;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -12,11 +11,9 @@ import android.widget.TextView;
 
 
 import hupays_nenich.com.sms114.GlobalActivity;
-import hupays_nenich.com.sms114.Message;
 import hupays_nenich.com.sms114.R;
 import hupays_nenich.com.sms114.RetourListener;
 import hupays_nenich.com.sms114.detailVictime.DetailVictimeActivity;
-import hupays_nenich.com.sms114.mesInfos.MesInfosActivity;
 import hupays_nenich.com.sms114.precisions.PrecisionActivity;
 
 
@@ -25,6 +22,10 @@ public class NombreVictimeActivity extends GlobalActivity implements SeekBar.OnS
     private SeekBar barre;
     private TextView nbvict;
     private CheckBox environ, inconnu;
+
+    public NombreVictimeActivity() {
+        super();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +52,11 @@ public class NombreVictimeActivity extends GlobalActivity implements SeekBar.OnS
 
         btnRetour.setOnClickListener(new RetourListener(this));
         btnSuivant.setOnClickListener(new ValiderNombreVictimeListener(this));
+    }
 
+    @Override
+    public String getNouveauTitre() {
+        return "Nombre de victime";
     }
 
     /**

@@ -1,6 +1,5 @@
 package hupays_nenich.com.sms114;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -10,6 +9,10 @@ import android.widget.Button;
 public class AccueilActivity extends GlobalActivity {
 
     private Button btnMesInfos, btnSMS114;
+
+    public AccueilActivity() {
+        super();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +27,11 @@ public class AccueilActivity extends GlobalActivity {
         this.message = new Message();
 
         btnSMS114.setOnClickListener(new SMS114Listener(this));
+    }
+
+    @Override
+    public String getNouveauTitre() {
+        return "Accueil";
     }
 
 

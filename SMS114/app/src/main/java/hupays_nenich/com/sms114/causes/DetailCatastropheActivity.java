@@ -26,6 +26,10 @@ public class DetailCatastropheActivity extends DetailCauseActivity {
         setListener();
     }
 
+    @Override
+    public String getNouveauTitre() {
+        return "Catastrophe";
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

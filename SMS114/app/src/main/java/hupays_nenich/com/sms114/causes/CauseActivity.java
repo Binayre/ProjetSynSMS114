@@ -1,16 +1,13 @@
 package hupays_nenich.com.sms114.causes;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 
 import hupays_nenich.com.sms114.GlobalActivity;
-import hupays_nenich.com.sms114.Message;
 import hupays_nenich.com.sms114.R;
 import hupays_nenich.com.sms114.RetourListener;
-import hupays_nenich.com.sms114.mesInfos.MesInfosActivity;
 
 
 /**
@@ -19,6 +16,10 @@ import hupays_nenich.com.sms114.mesInfos.MesInfosActivity;
 public class CauseActivity extends GlobalActivity {
 
    private Button btnAccident, btnIncendie, btnBlessureAnimale, btnCatastrophe, btnAutre;
+
+    public CauseActivity() {
+        super();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,10 +44,12 @@ public class CauseActivity extends GlobalActivity {
 
         btnRetour = (Button)findViewById(R.id.btnRetourAccueil);
         btnRetour.setOnClickListener(new RetourListener(this));
-
-
     }
 
+    @Override
+    public String getNouveauTitre() {
+        return "Cause";
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
