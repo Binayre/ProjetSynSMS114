@@ -27,11 +27,11 @@ public class PrecisionActivity extends GlobalActivity {
         btnSuivant = (Button)findViewById(R.id.btnSuivantLocalisation);
         btnSuivant.setOnClickListener(new ValiderPrecisionListener(this));
 
-        if((message.getNb_victime().equalsIgnoreCase("Je ne sais pas") )|| (Integer.parseInt(message.getNb_victime())==0)){
-            btnRetour.setText(R.string.nb_victime);
+        if(message.getNb_victime().matches("[1-9]+[^0-9]*") ){
+            btnRetour.setText(R.string.symptome);
         }
         else{
-            btnRetour.setText(R.string.symptome);
+            btnRetour.setText(R.string.nb_victime);
         }
     }
 
