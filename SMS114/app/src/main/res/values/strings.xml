@@ -43,7 +43,7 @@
     <string name="avalanche">Avalanche</string>
     <string name="title_activity_detail_autre">DetailAutreActivity</string>
     <string name="title_activity_nombre_victime">NombreVictimeActivity</string>
-    <string name="DetailsCause">Detail cause</string>
+    <string name="DetailsCause">Détail cause</string>
     <string name="DetailVictime">Détail victime</string>
     <string name="localisation">Adresse</string>
     <string name="environ">Environ</string>
@@ -67,9 +67,21 @@
     <string name="inconscient">Inconscient</string>
     <string name="saignement">Saignement</string>
     <string name="spasmes">Spasmes</string>
-    <string name="brulure">Brulure</string>
+    <string name="brulure">Brûlure</string>
     <string name="contraction">Contraction</string>
     <string name="perte_eaux">Perte des \n eaux</string>
     <string name="title_activity_precision">PrecisionActivity</string>
+    <string name="autre">Autre</string>
+    <string name="details">Détails</string>
+    <string name="mesInfos">Mes Informations</string>
+    <string name="prenom">Prénom</string>
+    <string name="nom">Nom</string>
+    <string name="telephone">Téléphone</string>
+    <string name="adresse">Adresse</string>
+    <string name="ville">Ville</string>
+    <string name="code_postal">Code postal</string>
+    <string name="porte">Porte</string>
+    <string name="etage">Etage</string>
+    <string name="code_porte">Code porte</string>
 
 </resources>

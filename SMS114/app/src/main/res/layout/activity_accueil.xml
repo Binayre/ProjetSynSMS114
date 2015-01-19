@@ -22,7 +22,7 @@
         android:layout_height="fill_parent"
         android:layout_below="@+id/txtTitre"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp">
+        android:layout_marginTop="30dp">
 
         <Button
             android:layout_width="fill_parent"
@@ -40,8 +40,7 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Le 114 est un service de secours contactable par SMS. Il redirige votre demande au bon service (15,18) qui interviendra au plus vite"
             android:id="@+id/textView"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="50dp" />
+            android:layout_gravity="center_horizontal" />
 
         <RelativeLayout
             android:layout_width="match_parent"

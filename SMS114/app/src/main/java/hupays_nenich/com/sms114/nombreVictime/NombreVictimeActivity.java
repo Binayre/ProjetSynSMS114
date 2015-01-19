@@ -17,11 +17,11 @@ import hupays_nenich.com.sms114.detailVictime.DetailVictimeActivity;
 import hupays_nenich.com.sms114.precisions.PrecisionActivity;
 
 
-public class NombreVictimeActivity extends GlobalActivity implements SeekBar.OnSeekBarChangeListener, CompoundButton.OnCheckedChangeListener{
+public class NombreVictimeActivity extends GlobalActivity implements SeekBar.OnSeekBarChangeListener{
 
-    private SeekBar barre;
+    public SeekBar barre;
     private TextView nbvict;
-    private CheckBox environ, inconnu;
+    public CheckBox environ, inconnu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,9 +37,12 @@ public class NombreVictimeActivity extends GlobalActivity implements SeekBar.OnS
         barre.setProgress(Integer.parseInt(message.getNb_victime()));
         nbvict.setText(message.getNb_victime());
 
-        environ = (CheckBox)findViewById(R.id.checkBoxEnviron);
+
         inconnu = (CheckBox)findViewById(R.id.checkBoxInconnu);
-        inconnu.setOnCheckedChangeListener(this);
+        inconnu.setOnCheckedChangeListener(new InconnuListener(this));
+
+        environ = (CheckBox)findViewById(R.id.checkBoxEnviron);
+        environ.setOnCheckedChangeListener(new EnvironListener(this));
 
 
         btnRetour = (Button)findViewById(R.id.btnRetourDetailCause);
@@ -112,14 +115,13 @@ public class NombreVictimeActivity extends GlobalActivity implements SeekBar.OnS
 
         nbvict.setText(Integer.toString(progress));
 
-        if(!inconnu.isChecked()) {
-            if (progress > 0)
-                btnSuivant.setText(R.string.DetailVictime);
-            else
-                btnSuivant.setText(R.string.precision);
-        }
-       else
-           btnSuivant.setText(R.string.precision);
+         if (progress > 0) {
+             btnSuivant.setText(R.string.DetailVictime);
+             inconnu.setChecked(false);
+         }
+         else
+              btnSuivant.setText(R.string.precision);
+
     }
 
     @Override
@@ -129,19 +131,6 @@ public class NombreVictimeActivity extends GlobalActivity implements SeekBar.OnS
 
     @Override
     public void onStopTrackingTouch(SeekBar seekBar) {
-
-    }
-
-    @Override
-    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-        if(inconnu.isChecked())
-            btnSuivant.setText(R.string.precision);
-        else{
-            if (barre.getProgress() > 0)
-                btnSuivant.setText(R.string.DetailVictime);
-            else
-                btnSuivant.setText(R.string.precision);
-        }
 
     }
 }

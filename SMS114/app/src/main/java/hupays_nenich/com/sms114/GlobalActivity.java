@@ -37,7 +37,6 @@ public abstract  class GlobalActivity extends ActionBarActivity{
         else{
             this.setTitle(getNouveauTitre());
         }
-
     }
 
     public abstract String getNouveauTitre();
