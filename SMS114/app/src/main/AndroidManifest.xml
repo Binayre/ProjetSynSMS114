@@ -16,50 +16,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".mesInfos.MesInfosActivity"
-            android:label="@string/title_activity_mes_infos" >
-        </activity>
-        <activity
-            android:name=".causes.CauseActivity"
-            android:label="@string/title_activity_cause" >
-        </activity>
-        <activity
-            android:name=".causes.DetailAccidentVoitureActivity"
-            android:label="@string/title_activity_detail_accident_voiture" >
-        </activity>
-        <activity
-            android:name=".causes.DetailIncendieActivity"
-            android:label="@string/title_activity_detail_incendie" >
-        </activity>
-        <activity
-            android:name=".causes.DetailAnimauxActivity"
-            android:label="@string/title_activity_detail_animaux" >
-        </activity>
-        <activity
-            android:name=".causes.DetailCatastropheActivity"
-            android:label="@string/title_activity_detail_catastrophe" >
-        </activity>
-        <activity
-            android:name=".causes.DetailAutreActivity"
-            android:label="@string/title_activity_detail_autre" >
-        </activity>
-        <activity
-            android:name=".nombreVictime.NombreVictimeActivity"
-            android:label="@string/title_activity_nombre_victime" >
-        </activity>
-        <activity
-            android:name=".detailVictime.DetailVictimeActivity"
-            android:label="@string/title_activity_detail_victime" >
-        </activity>
-        <activity
-            android:name=".symptome.SymptomeActivity"
-            android:label="@string/title_activity_symptome" >
-        </activity>
-        <activity
-            android:name=".precisions.PrecisionActivity"
-            android:label="@string/title_activity_precision" >
-        </activity>
     </application>
 
 </manifest>
