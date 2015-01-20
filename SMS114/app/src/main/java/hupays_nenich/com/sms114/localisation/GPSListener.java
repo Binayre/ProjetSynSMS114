@@ -41,14 +41,15 @@ public class GPSListener implements View.OnClickListener, LocationListener{
 
     @Override
     public void onClick(View v) {
-        String geoloc = "";
+        if(location != null) {
+            String geoloc = "";
+            AngleDMS dms = new AngleDMS(location.getLongitude(), false);
+            AngleDMS dms1 = new AngleDMS(location.getLatitude(), true);
 
-        AngleDMS dms = new AngleDMS(location.getLongitude(), false);
-        AngleDMS dms1 = new AngleDMS(location.getLatitude(), true);
+            geoloc = geoloc + "Latitude: " + dms1.toString() + "\n";
+            geoloc = geoloc + "Longitude: " + dms.toString() + "\n";
 
-        geoloc = geoloc + "Latitude: "+ dms1.toString()+"\n";
-        geoloc = geoloc + "Longitude: "+ dms.toString()+"\n";
-
-        activity.setTexte(geoloc);
+            activity.setTexte(geoloc);
+        }
     }
 }

@@ -55,16 +55,15 @@ public class LocalisationActivity extends GlobalActivity {
     }
 
     @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        lm.removeUpdates(listener);
-    }
-
-    @Override
     public String getNouveauTitre() {
         return "Localisation";
     }
 
+    @Override
+    public void finish(){
+        super.finish();
+        lm.removeUpdates(listener);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

@@ -67,6 +67,10 @@
             android:name=".localisation.LocalisationActivity"
             android:label="@string/title_activity_localisation" >
         </activity>
+        <activity
+            android:name=".message.MessageActivity"
+            android:label="@string/title_activity_message" >
+        </activity>
     </application>
 
 </manifest>

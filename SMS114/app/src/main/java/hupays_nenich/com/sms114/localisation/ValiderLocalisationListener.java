@@ -2,7 +2,7 @@ package hupays_nenich.com.sms114.localisation;
 
 import android.view.View;
 
-import hupays_nenich.com.sms114.Dialogue;
+import hupays_nenich.com.sms114.message.MessageActivity;
 
 /**
  * Created by Jérémy on 20/01/2015.
@@ -19,9 +19,7 @@ public class ValiderLocalisationListener implements View.OnClickListener{
     public void onClick(View v) {
         activity.getMessage().setAdresse(activity.getTexte());
 
-        Dialogue d = new Dialogue(activity,activity.getMessage().toString(),"test");
-
-        //activity.lancerActivity(??);
+        activity.lancerActivity(MessageActivity.class);
 
     }
 }

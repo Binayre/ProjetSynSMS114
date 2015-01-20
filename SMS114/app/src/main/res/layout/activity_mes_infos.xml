@@ -190,7 +190,8 @@
                 android:id="@+id/checkboxImmeuble"
                 android:checked="false"
                 android:textSize="20sp"
-                android:layout_alignParentLeft="true" />
+                android:layout_alignParentLeft="true"
+                android:button="@drawable/checkbox" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -280,7 +281,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:background="@drawable/bouton_bleu"
+                android:background="@drawable/bouton_nav"
                 android:textColor="#ffffffff"
                 android:textSize="18sp" />
 
@@ -292,7 +293,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_weight="0.02"
                 android:layout_alignParentRight="true"
-                android:background="@drawable/bouton_bleu"
+                android:background="@drawable/bouton_nav"
                 android:textColor="#ffffffff"
                 android:textSize="18sp" />
         </RelativeLayout>

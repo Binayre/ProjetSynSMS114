@@ -49,7 +49,11 @@
             android:text="@string/domicile"
             android:id="@+id/btnDomicile"
             android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true" />
+            android:layout_alignParentLeft="true"
+            android:drawableTop="@drawable/domicile"
+            android:autoText="false"
+            android:background="@drawable/bouton_icon"
+            android:padding="2dp" />
 
         <Button
             android:layout_width="wrap_content"
@@ -58,7 +62,10 @@
             android:id="@+id/btnGeoloc"
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_alignParentEnd="true"
+            android:drawableTop="@drawable/gps"
+            android:background="@drawable/bouton_icon"
+            android:padding="2dp" />
     </RelativeLayout>
 
     <RelativeLayout

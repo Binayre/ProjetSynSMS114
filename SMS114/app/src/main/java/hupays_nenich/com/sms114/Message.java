@@ -87,13 +87,13 @@ public class Message implements Serializable{
 
         String s = "";
 
-        s="Je suis témoin de : "+ cause + details_causes + "\n";
+        s="Je suis témoin de : "+ cause + " impliquant "+details_causes + "\n";
         s = s + "Nombre de victime : "+ nb_victime+"\n";
 
         //la chaine contient au moins 1 chiffres
         if(nb_victime.matches("[1-9]+[^0-9]*")){
             s = s + "Profil des victime :"+ profil_victime+"\n" +
-                    "Symptômes : "+ symptomes +"\n";
+                    "Les victimes souffrent de "+ symptomes +"\n";
 
             if(!zone_concernee.equals(""))
                 s = s + "Zones concernées : "+ zone_concernee +"\n";

@@ -30,9 +30,9 @@ public class AdresseListener implements View.OnClickListener{
                 mot = fadresse.readLine(); //nom
                 mot = fadresse.readLine(); //telephone
 
-                mot = "Adresse:"+fadresse.readLine()+"\n";
-                mot = mot + "Ville: "+fadresse.readLine()+"\n";
-                mot = mot + "Code postal: "+fadresse.readLine()+"\n";
+                mot = fadresse.readLine()+"\n";
+                mot = mot + fadresse.readLine()+"\n";
+                mot = mot + fadresse.readLine()+"\n";
 
                 String immeuble = fadresse.readLine();
                 if (Integer.parseInt(immeuble) == 1) {

@@ -19,6 +19,7 @@ public class EnregistrerListener implements View.OnClickListener{
     @Override
     public void onClick(View v) {
         activity.sauvegarderDonnees();
+        activity.onBackPressed();
         activity.finish();
     }
 }

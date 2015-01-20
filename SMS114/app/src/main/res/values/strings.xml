@@ -25,7 +25,7 @@
     <string name="causes">Causes</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_detail_incendie">DetailIncendieActivity</string>
-    <string name="batiment">Batiment</string>
+    <string name="batiment">Bâtiment</string>
     <string name="vehicule">Véhicule</string>
     <string name="vegetation">Végétation</string>
     <string name="title_activity_detail_animaux">DetailAnimauxActivity</string>
@@ -85,8 +85,12 @@
     <string name="code_porte">Code porte</string>
     <string name="title_activity_localisation">LocalisationActivity</string>
     <string name="domicile">Domicile</string>
-    <string name="geoloc">Géolocalisation</string>
+    <string name="geoloc">GPS</string>
     <string name="message">Message</string>
     <string name="aide">Donner toutes informations permettant de vous localiser \nPenser à : étage, code porte, monument proches...</string>
+    <string name="title_activity_message">MessageActivity</string>
+    <string name="envoi_message">Envoi \nmessage</string>
+    <string name="aide_precision">Position de la victime, gestes de secours effectués...</string>
+    <string name="description114">Le 114 est un service de secours contactable par SMS.\nIl redirige votre demande au bon service (15,18) qui interviendra au plus vite</string>
 
 </resources>

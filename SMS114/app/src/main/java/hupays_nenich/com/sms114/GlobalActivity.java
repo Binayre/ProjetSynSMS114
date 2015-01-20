@@ -16,6 +16,7 @@ public abstract  class GlobalActivity extends ActionBarActivity{
     protected Message message;
     protected String titre;
     protected Button btnRetour, btnSuivant;
+    private static  int numero = 0;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,9 +31,13 @@ public abstract  class GlobalActivity extends ActionBarActivity{
             this.titre = intent.getStringExtra("titre");
         }
 
-
+        //pour la gestion du fil d'Arianne
+        numero++;
         if(titre!=null) {
-            this.setTitle(titre + ">" + getNouveauTitre());
+            if(numero%4 == 0)
+                this.setTitle("...>" + getNouveauTitre());
+            else
+                this.setTitle(titre + ">" + getNouveauTitre());
         }
         else{
             this.setTitle(getNouveauTitre());
@@ -47,9 +52,9 @@ public abstract  class GlobalActivity extends ActionBarActivity{
     }
 
     @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        //l'activite entrante arrive par la gauche, l'activite sortante sort par la droite
+    public void finish(){
+        super.finish();
+        numero--;
         overridePendingTransition(R.anim.push_right_in, R.anim.push_right_out);
     }
 

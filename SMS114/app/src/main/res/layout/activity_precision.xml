@@ -23,11 +23,19 @@
         android:inputType="textMultiLine"
         android:ems="10"
         android:id="@+id/edtPrecision"
-        android:layout_marginTop="131dp"
         android:layout_below="@+id/txtPrecisions"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:layout_marginTop="100dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/aide_precision"
+        android:id="@+id/txtAidePrecision"
+        android:layout_below="@+id/edtPrecision" />
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -35,7 +43,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:id="@+id/relativeLayout"
-        android:layout_below="@+id/edtPrecision">
+        android:layout_below="@+id/txtAidePrecision">
 
         <Button
             android:layout_width="140dp"
