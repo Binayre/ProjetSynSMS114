@@ -52,7 +52,8 @@
                 android:checked="false"
                 android:textSize="22sp"
                 android:layout_marginRight="10dp"
-                android:layout_marginBottom="20dp" />
+                android:layout_marginBottom="20dp"
+                android:button="@drawable/checkbox" />
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -62,7 +63,8 @@
                 android:checked="false"
                 android:textSize="22sp"
                 android:layout_marginRight="10dp"
-                android:layout_marginBottom="20dp" />
+                android:layout_marginBottom="20dp"
+                android:button="@drawable/checkbox" />
         </LinearLayout>
 
         <LinearLayout
@@ -78,7 +80,8 @@
                 android:checked="false"
                 android:textSize="22sp"
                 android:layout_marginRight="10dp"
-                android:layout_marginBottom="20dp" />
+                android:layout_marginBottom="20dp"
+                android:button="@drawable/checkbox" />
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -88,7 +91,8 @@
                 android:checked="false"
                 android:textSize="22sp"
                 android:layout_marginRight="10dp"
-                android:layout_marginBottom="20dp" />
+                android:layout_marginBottom="20dp"
+                android:button="@drawable/checkbox" />
         </LinearLayout>
 
         <LinearLayout
@@ -104,7 +108,8 @@
                 android:checked="false"
                 android:textSize="22sp"
                 android:layout_marginRight="10dp"
-                android:layout_marginBottom="20dp" />
+                android:layout_marginBottom="20dp"
+                android:button="@drawable/checkbox" />
         </LinearLayout>
 
         <TextView
@@ -123,7 +128,8 @@
             android:id="@+id/checkBoxHandicap"
             android:checked="false"
             android:textSize="22sp"
-            android:layout_marginBottom="10dp" />
+            android:layout_marginBottom="10dp"
+            android:button="@drawable/checkbox" />
 
         <CheckBox
             android:layout_width="wrap_content"
@@ -132,7 +138,8 @@
             android:id="@+id/checkBoxEnceinte"
             android:checked="false"
             android:textSize="22sp"
-            android:layout_marginBottom="10dp" />
+            android:layout_marginBottom="10dp"
+            android:button="@drawable/checkbox" />
 
         <RelativeLayout
             android:layout_width="match_parent"

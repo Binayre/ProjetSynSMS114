@@ -63,6 +63,10 @@ public class SymptomeActivity extends GlobalActivity {
 
     // si True, lancer le body
     public boolean lancerBody(){
+        if(message.getNb_victime().matches("[2-9]+[^0-9]*")){
+            return false;
+        }
+
         return btn_saignement.isChecked() || btn_douleurs.isChecked() || btn_brulure.isChecked();
     }
 

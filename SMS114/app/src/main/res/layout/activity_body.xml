@@ -1,0 +1,215 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="hupays_nenich.com.sms114.body.BodyActivity"
+    android:background="#ffffffff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/emplacement_douloureux"
+        android:id="@+id/txtBody"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutBody"
+        android:layout_below="@+id/txtBody"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:id="@+id/btnTete"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:textOff=" "
+            android:textOn=" "
+            android:drawableBottom="@drawable/tete"
+            android:background="@drawable/bouton_body" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:id="@+id/btnTorse"
+            android:layout_below="@+id/btnTete"
+            android:layout_centerHorizontal="true"
+            android:checked="false"
+            android:textOff=" "
+            android:textOn=" "
+            android:drawableTop="@drawable/torse"
+            android:background="@drawable/bouton_body" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:id="@+id/btnBrasDroit"
+            android:checked="false"
+            android:textOff=" "
+            android:textOn=" "
+            android:layout_alignTop="@+id/btnTorse"
+            android:layout_toLeftOf="@+id/btnTorse"
+            android:layout_toStartOf="@+id/btnTorse"
+            android:drawableTop="@drawable/bras_droit"
+            android:background="@drawable/bouton_body" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:id="@+id/btnBrasGauche"
+            android:layout_alignTop="@+id/btnTorse"
+            android:layout_toRightOf="@+id/btnTorse"
+            android:layout_toEndOf="@+id/btnTorse"
+            android:checked="false"
+            android:textOff=" "
+            android:textOn=" "
+            android:drawableTop="@drawable/bras_gauche"
+            android:background="@drawable/bouton_body" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:id="@+id/btnVentre"
+            android:layout_below="@+id/btnTorse"
+            android:checked="false"
+            android:textOff=" "
+            android:textOn=" "
+            android:drawableTop="@drawable/ventre"
+            android:layout_toLeftOf="@+id/btnBrasGauche"
+            android:layout_toStartOf="@+id/btnBrasGauche"
+            android:background="@drawable/bouton_body" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:id="@+id/btnMainDroite"
+            android:layout_below="@+id/btnBrasDroit"
+            android:layout_toStartOf="@+id/btnPiedDroit"
+            android:checked="false"
+            android:textOff=" "
+            android:textOn=" "
+            android:drawableTop="@drawable/main_droite"
+            android:layout_toLeftOf="@+id/btnPiedDroit"
+            android:background="@drawable/bouton_body" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:id="@+id/btnMainGauche"
+            android:layout_below="@+id/btnBrasGauche"
+            android:layout_toEndOf="@+id/btnPiedGauche"
+            android:checked="false"
+            android:textOff=" "
+            android:textOn=" "
+            android:drawableTop="@drawable/main_gauche"
+            android:layout_toRightOf="@+id/btnPiedGauche"
+            android:background="@drawable/bouton_body" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:id="@+id/btnJambeDroite"
+            android:checked="false"
+            android:textOn=" "
+            android:textOff=" "
+            android:drawableTop="@drawable/jambe_droite"
+            android:layout_below="@+id/btnVentre"
+            android:layout_toLeftOf="@+id/btnJambeGauche"
+            android:layout_alignLeft="@+id/btnVentre"
+            android:layout_alignStart="@+id/btnVentre"
+            android:background="@drawable/bouton_body" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:id="@+id/btnJambeGauche"
+            android:checked="false"
+            android:textOff=" "
+            android:textOn=" "
+            android:layout_below="@+id/btnVentre"
+            android:drawableTop="@drawable/jambe_gauche"
+            android:layout_alignRight="@+id/btnVentre"
+            android:layout_alignEnd="@+id/btnVentre"
+            android:background="@drawable/bouton_body" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:id="@+id/btnPiedDroit"
+            android:checked="false"
+            android:textOff=" "
+            android:textOn=" "
+            android:drawableTop="@drawable/pied_droit"
+            android:layout_below="@+id/btnJambeDroite"
+            android:layout_toLeftOf="@+id/btnJambeGauche"
+            android:layout_toStartOf="@+id/btnJambeGauche"
+            android:background="@drawable/bouton_body" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:id="@+id/btnPiedGauche"
+            android:checked="false"
+            android:textOff=" "
+            android:textOn=" "
+            android:drawableTop="@drawable/pied_gauche"
+            android:layout_alignTop="@+id/btnPiedDroit"
+            android:layout_alignLeft="@+id/btnJambeGauche"
+            android:layout_alignStart="@+id/btnJambeGauche"
+            android:background="@drawable/bouton_body" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutBody"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:text="@string/symptome"
+            android:id="@+id/btnRetourSymptome"
+            android:background="@drawable/bouton_nav"
+            android:drawableLeft="@drawable/retour"
+            android:textSize="18sp"
+            android:textColor="#ffffffff"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:text="@string/precision"
+            android:id="@+id/btnVersPrecision"
+            android:drawableRight="@drawable/suivant"
+            android:background="@drawable/bouton_nav"
+            android:textColor="#ffffffff"
+            android:textSize="18sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

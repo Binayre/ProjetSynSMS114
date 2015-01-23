@@ -92,5 +92,18 @@
     <string name="envoi_message">Envoi \nmessage</string>
     <string name="aide_precision">Position de la victime, gestes de secours effectués...</string>
     <string name="description114">Le 114 est un service de secours contactable par SMS.\nIl redirige votre demande au bon service (15,18) qui interviendra au plus vite</string>
+    <string name="title_activity_body">BodyActivity</string>
+    <string name="emplacement_douloureux">Zone douloureuses</string>
+    <string name="tete">Tête</string>
+    <string name="torse">Torse</string>
+    <string name="ventre">Ventre</string>
+    <string name="bras_droit">Bras droit</string>
+    <string name="bras_gauche">Bras gauche</string>
+    <string name="main_droite">Main droite</string>
+    <string name="main_gauche">Main gauche</string>
+    <string name="jambe_droite">Jambe droite</string>
+    <string name="jambe_gauche">Jambe gauche</string>
+    <string name="pied_droit">Pied droit</string>
+    <string name="pied_gauche">Pied gauche</string>
 
 </resources>

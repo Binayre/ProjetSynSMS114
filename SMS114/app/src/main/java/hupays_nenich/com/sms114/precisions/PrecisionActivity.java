@@ -27,7 +27,10 @@ public class PrecisionActivity extends GlobalActivity {
         btnSuivant = (Button)findViewById(R.id.btnSuivantLocalisation);
         btnSuivant.setOnClickListener(new ValiderPrecisionListener(this));
 
-        if(message.getNb_victime().matches("[1-9]+[^0-9]*") ){
+        if(!message.getZone_concernee().equals("")){
+            btnRetour.setText(R.string.emplacement_douloureux);
+        }
+        else if(message.getNb_victime().matches("[1-9]+[^0-9]*") ){
             btnRetour.setText(R.string.symptome);
         }
         else{

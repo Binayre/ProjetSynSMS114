@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.view.View;
 
 import hupays_nenich.com.sms114.Dialogue;
+import hupays_nenich.com.sms114.body.BodyActivity;
 import hupays_nenich.com.sms114.precisions.PrecisionActivity;
 
 /**
@@ -25,7 +26,7 @@ public class ValiderSymptomeListener implements View.OnClickListener{
         Class<?> suivante = PrecisionActivity.class;
 
         if(activity.lancerBody()) {
-            //suivante = ;
+            suivante = BodyActivity.class;
         }
 
         activity.lancerActivity(suivante);
