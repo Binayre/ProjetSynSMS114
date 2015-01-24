@@ -16,7 +16,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-    <EditText
+    <hupays_nenich.com.sms114.MyEditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:inputType="textMultiLine"

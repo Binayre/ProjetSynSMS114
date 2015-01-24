@@ -17,7 +17,7 @@
         android:layout_centerHorizontal="true"
         android:textSize="30sp" />
 
-    <EditText
+    <hupays_nenich.com.sms114.MyEditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:inputType="textMultiLine"
@@ -64,7 +64,6 @@
             android:layout_height="60dp"
             android:text="@string/localisation"
             android:id="@+id/btnSuivantLocalisation"
-            android:layout_alignTop="@+id/btnRetourCauses"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"

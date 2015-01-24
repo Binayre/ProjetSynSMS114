@@ -28,7 +28,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="38dp" />
 
-    <EditText
+    <hupays_nenich.com.sms114.MyEditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:inputType="textMultiLine"
