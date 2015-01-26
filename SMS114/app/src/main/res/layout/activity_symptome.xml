@@ -47,8 +47,7 @@
                     android:background="@drawable/bouton_icon"
                     android:layout_marginTop="10dp"
                     android:checked="false"
-                    android:drawableTop="@drawable/pb_respi"
-                    android:textSize="10sp" />
+                    android:drawableTop="@drawable/pb_respi" />
 
                 <ToggleButton
                     android:layout_width="90dp"
@@ -61,8 +60,7 @@
                     android:background="@drawable/bouton_icon"
                     android:layout_marginTop="10dp"
                     android:checked="false"
-                    android:drawableTop="@drawable/crise_cardiaque"
-                    android:textSize="10sp" />
+                    android:drawableTop="@drawable/crise_cardiaque" />
 
                 <ToggleButton
                     android:layout_width="90dp"
@@ -76,8 +74,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_column="2"
                     android:checked="false"
-                    android:drawableTop="@drawable/douleur_interne"
-                    android:textSize="10sp" />
+                    android:drawableTop="@drawable/douleur_interne" />
             </TableRow>
 
             <TableRow
