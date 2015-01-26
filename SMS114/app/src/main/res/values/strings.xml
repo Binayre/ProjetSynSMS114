@@ -10,7 +10,7 @@
     <string name="accident_route">Accident de la route</string>
     <string name="incendie">Incendie</string>
     <string name="Cat_nat">Catastrophes Naturelles</string>
-    <string name="blessures_animales">Blessures par animaux</string>
+    <string name="blessures_animales">Blessures animales</string>
     <string name="autres">Autres</string>
     <string name="accueil">Accueil</string>
     <string name="enregistrer">Enregistrer</string>
@@ -93,7 +93,7 @@
     <string name="aide_precision">Position de la victime, gestes de secours effectués...</string>
     <string name="description114">Le 114 est un service de secours contactable par SMS.\nIl redirige votre demande au bon service (15,18) qui interviendra au plus vite</string>
     <string name="title_activity_body">BodyActivity</string>
-    <string name="emplacement_douloureux">Zone douloureuses</string>
+    <string name="emplacement_douloureux">Zone douloureuse</string>
     <string name="tete">Tête</string>
     <string name="torse">Torse</string>
     <string name="ventre">Ventre</string>
