@@ -50,7 +50,8 @@
         android:layout_alignTop="@+id/checkBoxInconnu"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:button="@drawable/checkbox" />
+        android:button="@drawable/checkbox"
+        android:paddingLeft="5dp" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -63,7 +64,8 @@
         android:layout_alignRight="@+id/barreNbVictime"
         android:layout_alignEnd="@+id/barreNbVictime"
         android:layout_marginTop="32dp"
-        android:button="@drawable/checkbox" />
+        android:button="@drawable/checkbox"
+        android:paddingLeft="5dp" />
 
     <RelativeLayout
         android:layout_width="match_parent"

@@ -14,7 +14,8 @@
         android:text="@string/message"
         android:id="@+id/textView2"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp" />
 
     <hupays_nenich.com.sms114.MyEditText
         android:layout_width="fill_parent"

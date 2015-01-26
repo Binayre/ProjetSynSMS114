@@ -14,7 +14,8 @@
         android:text="@string/emplacement_douloureux"
         android:id="@+id/txtBody"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp" />
 
     <RelativeLayout
         android:layout_width="fill_parent"
@@ -22,7 +23,8 @@
         android:id="@+id/layoutBody"
         android:layout_below="@+id/txtBody"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp">
 
         <ToggleButton
             android:layout_width="60dp"

@@ -191,7 +191,8 @@
                 android:checked="false"
                 android:textSize="20sp"
                 android:layout_alignParentLeft="true"
-                android:button="@drawable/checkbox" />
+                android:button="@drawable/checkbox"
+                android:paddingLeft="5dp" />
         </RelativeLayout>
 
         <RelativeLayout
