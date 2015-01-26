@@ -25,8 +25,8 @@
         android:layout_alignParentStart="true">
 
         <ToggleButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:text=" "
             android:id="@+id/btnTete"
             android:layout_alignParentTop="true"
@@ -34,12 +34,11 @@
             android:checked="false"
             android:textOff=" "
             android:textOn=" "
-            android:drawableBottom="@drawable/tete"
-            android:background="@drawable/bouton_body" />
+            android:background="@drawable/tete_body" />
 
         <ToggleButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="77dp"
             android:text=" "
             android:id="@+id/btnTorse"
             android:layout_below="@+id/btnTete"
@@ -47,12 +46,11 @@
             android:checked="false"
             android:textOff=" "
             android:textOn=" "
-            android:drawableTop="@drawable/torse"
-            android:background="@drawable/bouton_body" />
+            android:background="@drawable/torse_body" />
 
         <ToggleButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:layout_height="130dp"
             android:text=" "
             android:id="@+id/btnBrasDroit"
             android:checked="false"
@@ -61,12 +59,11 @@
             android:layout_alignTop="@+id/btnTorse"
             android:layout_toLeftOf="@+id/btnTorse"
             android:layout_toStartOf="@+id/btnTorse"
-            android:drawableTop="@drawable/bras_droit"
-            android:background="@drawable/bouton_body" />
+            android:background="@drawable/bras_droit_body" />
 
         <ToggleButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:layout_height="130dp"
             android:text=" "
             android:id="@+id/btnBrasGauche"
             android:layout_alignTop="@+id/btnTorse"
@@ -75,107 +72,97 @@
             android:checked="false"
             android:textOff=" "
             android:textOn=" "
-            android:drawableTop="@drawable/bras_gauche"
-            android:background="@drawable/bouton_body" />
+            android:background="@drawable/bras_gauche_body" />
 
         <ToggleButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="90dp"
+            android:layout_height="77dp"
             android:text=" "
             android:id="@+id/btnVentre"
-            android:layout_below="@+id/btnTorse"
             android:checked="false"
             android:textOff=" "
             android:textOn=" "
-            android:drawableTop="@drawable/ventre"
-            android:layout_toLeftOf="@+id/btnBrasGauche"
-            android:layout_toStartOf="@+id/btnBrasGauche"
-            android:background="@drawable/bouton_body" />
+            android:background="@drawable/ventre_body"
+            android:layout_below="@+id/btnTorse"
+            android:layout_centerHorizontal="true" />
 
         <ToggleButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:text=" "
             android:id="@+id/btnMainDroite"
-            android:layout_below="@+id/btnBrasDroit"
-            android:layout_toStartOf="@+id/btnPiedDroit"
             android:checked="false"
             android:textOff=" "
             android:textOn=" "
-            android:drawableTop="@drawable/main_droite"
-            android:layout_toLeftOf="@+id/btnPiedDroit"
-            android:background="@drawable/bouton_body" />
+            android:background="@drawable/main_droite_body"
+            android:layout_below="@+id/btnBrasDroit"
+            android:layout_alignRight="@+id/btnBrasDroit"
+            android:layout_alignEnd="@+id/btnBrasDroit" />
 
         <ToggleButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:text=" "
             android:id="@+id/btnMainGauche"
-            android:layout_below="@+id/btnBrasGauche"
-            android:layout_toEndOf="@+id/btnPiedGauche"
             android:checked="false"
             android:textOff=" "
             android:textOn=" "
-            android:drawableTop="@drawable/main_gauche"
-            android:layout_toRightOf="@+id/btnPiedGauche"
-            android:background="@drawable/bouton_body" />
+            android:background="@drawable/main_gauche_body"
+            android:layout_alignTop="@+id/btnMainDroite"
+            android:layout_alignLeft="@+id/btnBrasGauche"
+            android:layout_alignStart="@+id/btnBrasGauche" />
 
         <ToggleButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:layout_height="130dp"
             android:text=" "
             android:id="@+id/btnJambeDroite"
             android:checked="false"
             android:textOn=" "
             android:textOff=" "
-            android:drawableTop="@drawable/jambe_droite"
             android:layout_below="@+id/btnVentre"
-            android:layout_toLeftOf="@+id/btnJambeGauche"
             android:layout_alignLeft="@+id/btnVentre"
             android:layout_alignStart="@+id/btnVentre"
-            android:background="@drawable/bouton_body" />
+            android:background="@drawable/jambe_droite_body" />
 
         <ToggleButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="40dp"
+            android:layout_height="130dp"
             android:text=" "
             android:id="@+id/btnJambeGauche"
             android:checked="false"
             android:textOff=" "
             android:textOn=" "
             android:layout_below="@+id/btnVentre"
-            android:drawableTop="@drawable/jambe_gauche"
             android:layout_alignRight="@+id/btnVentre"
             android:layout_alignEnd="@+id/btnVentre"
-            android:background="@drawable/bouton_body" />
+            android:background="@drawable/jambe_gauche_body" />
 
         <ToggleButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
             android:text=" "
             android:id="@+id/btnPiedDroit"
             android:checked="false"
             android:textOff=" "
             android:textOn=" "
-            android:drawableTop="@drawable/pied_droit"
+            android:background="@drawable/pied_droit_body"
             android:layout_below="@+id/btnJambeDroite"
-            android:layout_toLeftOf="@+id/btnJambeGauche"
-            android:layout_toStartOf="@+id/btnJambeGauche"
-            android:background="@drawable/bouton_body" />
+            android:layout_alignRight="@+id/btnJambeDroite"
+            android:layout_alignEnd="@+id/btnJambeDroite" />
 
         <ToggleButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
             android:text=" "
             android:id="@+id/btnPiedGauche"
             android:checked="false"
             android:textOff=" "
             android:textOn=" "
-            android:drawableTop="@drawable/pied_gauche"
-            android:layout_alignTop="@+id/btnPiedDroit"
+            android:background="@drawable/pied_gauche_body"
+            android:layout_below="@+id/btnJambeGauche"
             android:layout_alignLeft="@+id/btnJambeGauche"
-            android:layout_alignStart="@+id/btnJambeGauche"
-            android:background="@drawable/bouton_body" />
+            android:layout_alignStart="@+id/btnJambeGauche" />
 
     </RelativeLayout>
 
@@ -210,6 +197,7 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true" />
+
     </RelativeLayout>
 
 </RelativeLayout>
