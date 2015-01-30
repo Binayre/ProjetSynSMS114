@@ -42,11 +42,11 @@
                 android:textAllCaps="false"
                 android:textOff="@string/inondation"
                 android:textOn="@string/inondation"
-                android:layout_marginRight="20dp"
                 android:background="@drawable/bouton_icon"
                 android:layout_marginLeft="20dp"
                 android:drawableTop="@drawable/inondation"
-                android:padding="2dp" />
+                android:padding="2dp"
+                android:layout_marginRight="10dp" />
 
             <ToggleButton
                 android:layout_width="90dp"
@@ -57,10 +57,10 @@
                 android:textOff="@string/vent_violent"
                 android:textOn="@string/vent_violent"
                 android:checked="false"
-                android:layout_marginRight="20dp"
                 android:background="@drawable/bouton_icon"
                 android:drawableTop="@drawable/vent_violent"
-                android:padding="2dp" />
+                android:padding="2dp"
+                android:layout_marginRight="10dp" />
 
             <ToggleButton
                 android:layout_width="90dp"
@@ -91,11 +91,11 @@
                 android:textOff="@string/avalanche"
                 android:textOn="@string/avalanche"
                 android:checked="false"
-                android:layout_marginRight="20dp"
-                android:layout_marginLeft="130dp"
+                android:layout_marginLeft="20dp"
                 android:background="@drawable/bouton_icon"
                 android:drawableTop="@drawable/avalanche"
-                android:padding="2dp" />
+                android:padding="2dp"
+                android:layout_marginRight="10dp" />
 
             <ToggleButton
                 android:layout_width="90dp"
@@ -132,7 +132,7 @@
             android:textSize="18sp" />
 
         <Button
-            android:layout_width="140dp"
+            android:layout_width="160dp"
             android:layout_height="60dp"
             android:text="@string/nb_victime"
             android:id="@+id/btnNbVictime"

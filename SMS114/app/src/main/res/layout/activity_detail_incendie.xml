@@ -43,7 +43,7 @@
                 android:textAllCaps="false"
                 android:textOff="@string/vehicule"
                 android:textOn="@string/vehicule"
-                android:layout_marginRight="20dp"
+                android:layout_marginRight="10dp"
                 android:background="@drawable/bouton_icon"
                 android:layout_marginLeft="20dp"
                 android:padding="2dp" />
@@ -58,7 +58,7 @@
                 android:textOff="@string/vegetation"
                 android:textOn="@string/vegetation"
                 android:checked="false"
-                android:layout_marginRight="20dp"
+                android:layout_marginRight="10dp"
                 android:background="@drawable/bouton_icon"
                 android:padding="2dp" />
 
@@ -98,7 +98,7 @@
             android:textSize="18sp" />
 
         <Button
-            android:layout_width="140dp"
+            android:layout_width="160dp"
             android:layout_height="60dp"
             android:text="@string/nb_victime"
             android:id="@+id/btnNbVictime"

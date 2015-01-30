@@ -42,7 +42,7 @@
                 android:textAllCaps="false"
                 android:textOff="@string/chien"
                 android:textOn="@string/chien"
-                android:layout_marginRight="20dp"
+                android:layout_marginRight="10dp"
                 android:background="@drawable/bouton_icon"
                 android:layout_marginLeft="20dp"
                 android:drawableTop="@drawable/chien"
@@ -57,7 +57,7 @@
                 android:textOff="@string/chat"
                 android:textOn="@string/chat"
                 android:checked="false"
-                android:layout_marginRight="20dp"
+                android:layout_marginRight="10dp"
                 android:background="@drawable/bouton_icon"
                 android:drawableTop="@drawable/chat"
                 android:padding="2dp" />
@@ -91,7 +91,7 @@
                 android:textOff="@string/abeille"
                 android:textOn="@string/abeille"
                 android:checked="false"
-                android:layout_marginRight="20dp"
+                android:layout_marginRight="10dp"
                 android:layout_marginLeft="20dp"
                 android:background="@drawable/bouton_icon"
                 android:drawableTop="@drawable/abeille"
@@ -107,7 +107,7 @@
                 android:textOn="@string/araignee"
                 android:checked="false"
                 android:background="@drawable/bouton_icon"
-                android:layout_marginRight="20dp"
+                android:layout_marginRight="10dp"
                 android:drawableTop="@drawable/areignee"
                 android:padding="2dp" />
 
@@ -146,7 +146,7 @@
             android:textSize="18sp" />
 
         <Button
-            android:layout_width="140dp"
+            android:layout_width="160dp"
             android:layout_height="60dp"
             android:text="@string/nb_victime"
             android:id="@+id/btnNbVictime"

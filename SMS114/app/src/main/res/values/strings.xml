@@ -2,7 +2,6 @@
 <resources>
 
     <string name="app_name">SMS114</string>
-    <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_mes_info">MesInfoActivity</string>
     <string name="title_activity_mes_infos">MesInfosActivity</string>
@@ -23,7 +22,6 @@
     <string name="bus">Bus</string>
     <string name="nb_victime">Nombre de victime(s)</string>
     <string name="causes">Causes</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_detail_incendie">DetailIncendieActivity</string>
     <string name="batiment">Bâtiment</string>
     <string name="vehicule">Véhicule</string>
@@ -49,7 +47,7 @@
     <string name="environ">Environ</string>
     <string name="inconnu">Je ne sais pas</string>
     <string name="title_activity_detail_victime">DetailVictimeActivity</string>
-    <string name="age_approx">Age (approximatif)</string>
+    <string name="age_approx">Catégorie d\'âges</string>
     <string name="nourrisson">Nourrisson</string>
     <string name="enfant">Enfant</string>
     <string name="adolescent">Adolescent</string>
@@ -60,16 +58,16 @@
     <string name="enceinte">Femme(s) enceinte(s)</string>
     <string name="title_activity_symptome">SymptomeActivity</string>
     <string name="precision">Précisions</string>
-    <string name="pb_respiratoire">Problèmes \n respiratoires</string>
-    <string name="arret_cardiaque">Arrêt \n cardiaque</string>
+    <string name="pb_respiratoire">Problèmes\nrespiratoires</string>
+    <string name="arret_cardiaque">Arrêt\ncardiaque</string>
     <string name="vomissement">Vomissement</string>
-    <string name="douleurs">Douleurs \n internes</string>
+    <string name="douleurs">Douleurs\ninternes</string>
     <string name="inconscient">Inconscient</string>
     <string name="saignement">Saignement</string>
     <string name="spasmes">Spasmes</string>
     <string name="brulure">Brûlure</string>
     <string name="contraction">Contraction</string>
-    <string name="perte_eaux">Perte des \n eaux</string>
+    <string name="perte_eaux">Perte des\neaux</string>
     <string name="title_activity_precision">PrecisionActivity</string>
     <string name="autre">Autre</string>
     <string name="details">Détails</string>
@@ -87,9 +85,9 @@
     <string name="domicile">Domicile</string>
     <string name="geoloc">GPS</string>
     <string name="message">Message</string>
-    <string name="aide">Donner toutes informations permettant de vous localiser \nPenser à : étage, code porte, monument proches...</string>
+    <string name="aide">Donner toutes informations permettant de vous localiser\nPenser à : étage, code porte, monument proches...</string>
     <string name="title_activity_message">MessageActivity</string>
-    <string name="envoi_message">Envoi \nmessage</string>
+    <string name="envoi_message">Envoi\nmessage</string>
     <string name="aide_precision">Position de la victime, gestes de secours effectués...</string>
     <string name="description114">Le 114 est un service de secours contactable par SMS.\nIl redirige votre demande au bon service (15,18) qui interviendra au plus vite</string>
     <string name="title_activity_body">BodyActivity</string>

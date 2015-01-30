@@ -60,7 +60,7 @@
             android:textColor="#ffffffff" />
 
         <Button
-            android:layout_width="140dp"
+            android:layout_width="160dp"
             android:layout_height="60dp"
             android:text="@string/localisation"
             android:id="@+id/btnSuivantLocalisation"

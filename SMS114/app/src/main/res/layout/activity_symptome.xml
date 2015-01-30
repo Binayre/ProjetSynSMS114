@@ -24,8 +24,8 @@
         android:layout_below="@+id/txtSymptome"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="28dp"
-        android:id="@+id/linearLayout6">
+        android:id="@+id/linearLayout6"
+        android:layout_marginTop="10dp">
 
         <TableLayout
             android:layout_width="fill_parent"
@@ -224,7 +224,7 @@
                 android:textColor="#ffffffff" />
 
             <Button
-                android:layout_width="140dp"
+                android:layout_width="160dp"
                 android:layout_height="60dp"
                 android:text="@string/precision"
                 android:id="@+id/btnPrecisions"

@@ -60,7 +60,7 @@
             android:textSize="18sp" />
 
         <Button
-            android:layout_width="140dp"
+            android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:text="@string/nb_victime"
             android:id="@+id/btnNbVictime"

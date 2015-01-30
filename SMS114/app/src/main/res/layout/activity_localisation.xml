@@ -25,7 +25,7 @@
         android:id="@+id/edtAdresse"
         android:layout_below="@+id/txtLocalisation"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="35dp" />
+        android:layout_marginTop="100dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -54,7 +54,8 @@
             android:drawableTop="@drawable/domicile"
             android:autoText="false"
             android:background="@drawable/bouton_icon"
-            android:padding="2dp" />
+            android:padding="2dp"
+            android:layout_marginLeft="20dp" />
 
         <Button
             android:layout_width="90dp"
@@ -66,7 +67,8 @@
             android:layout_alignParentEnd="true"
             android:drawableTop="@drawable/gps"
             android:background="@drawable/bouton_icon"
-            android:padding="2dp" />
+            android:padding="2dp"
+            android:layout_marginRight="20dp" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -88,7 +90,7 @@
             android:layout_alignParentStart="true" />
 
         <Button
-            android:layout_width="140dp"
+            android:layout_width="160dp"
             android:layout_height="60dp"
             android:text="@string/message"
             android:id="@+id/btnMessage"

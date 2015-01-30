@@ -25,7 +25,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/txtMesInfos"
-        android:weightSum="1">
+        android:weightSum="1"
+        android:layout_marginBottom="60dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -42,7 +43,7 @@
                 android:layout_alignParentStart="true" />
 
             <EditText
-                android:layout_width="wrap_content"
+                android:layout_width="215dp"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:ems="10"
@@ -69,7 +70,7 @@
                 android:layout_alignParentStart="true" />
 
             <EditText
-                android:layout_width="wrap_content"
+                android:layout_width="215dp"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:ems="10"
@@ -93,7 +94,7 @@
                 android:layout_alignParentStart="true" />
 
             <EditText
-                android:layout_width="wrap_content"
+                android:layout_width="215dp"
                 android:layout_height="wrap_content"
                 android:inputType="phone"
                 android:ems="10"
@@ -121,7 +122,7 @@
                 android:layout_alignParentStart="true" />
 
             <EditText
-                android:layout_width="212dp"
+                android:layout_width="215dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/edtAdresse"
                 android:layout_weight="1"
@@ -143,7 +144,7 @@
                 android:layout_alignParentStart="true" />
 
             <EditText
-                android:layout_width="212dp"
+                android:layout_width="215dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/edtVille"
                 android:layout_weight="1"
@@ -165,7 +166,7 @@
                 android:layout_alignParentStart="true" />
 
             <EditText
-                android:layout_width="wrap_content"
+                android:layout_width="215dp"
                 android:layout_height="wrap_content"
                 android:inputType="number"
                 android:ems="10"
@@ -174,14 +175,10 @@
                 android:layout_alignParentRight="true" />
         </RelativeLayout>
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="35dp"></LinearLayout>
-
         <RelativeLayout
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
 
             <CheckBox
                 android:layout_width="wrap_content"
@@ -211,7 +208,7 @@
                 android:layout_alignParentStart="true" />
 
             <EditText
-                android:layout_width="wrap_content"
+                android:layout_width="215dp"
                 android:layout_height="wrap_content"
                 android:inputType="number"
                 android:ems="10"
@@ -237,7 +234,7 @@
                 android:layout_alignParentStart="true" />
 
             <EditText
-                android:layout_width="212dp"
+                android:layout_width="215dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/edtPorte"
                 android:visibility="invisible"
@@ -261,7 +258,7 @@
                 android:layout_alignParentStart="true" />
 
             <EditText
-                android:layout_width="212dp"
+                android:layout_width="215dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/edtCodePorte"
                 android:layout_alignParentRight="true"
@@ -269,36 +266,38 @@
 
         </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp">
-
-            <Button
-                android:layout_width="140dp"
-                android:layout_height="60dp"
-                android:text="@string/annuler"
-                android:id="@+id/btnAnnuler"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:background="@drawable/bouton_nav"
-                android:textColor="#ffffffff"
-                android:textSize="18sp" />
-
-            <Button
-                android:layout_width="140dp"
-                android:layout_height="60dp"
-                android:text="@string/enregistrer"
-                android:id="@+id/btnEnregistrer"
-                android:layout_gravity="center_horizontal"
-                android:layout_weight="0.02"
-                android:layout_alignParentRight="true"
-                android:background="@drawable/bouton_nav"
-                android:textColor="#ffffffff"
-                android:textSize="18sp" />
-        </RelativeLayout>
-
     </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:text="@string/annuler"
+            android:id="@+id/btnAnnuler"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/bouton_nav"
+            android:textColor="#ffffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="@string/enregistrer"
+            android:id="@+id/btnEnregistrer"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.02"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bouton_nav"
+            android:textColor="#ffffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
 
 </RelativeLayout>

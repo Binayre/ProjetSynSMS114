@@ -42,7 +42,7 @@
                 android:textAllCaps="false"
                 android:textOff="@string/voiture"
                 android:textOn="@string/voiture"
-                android:layout_marginRight="20dp"
+                android:layout_marginRight="10dp"
                 android:background="@drawable/bouton_icon"
                 android:layout_marginLeft="20dp"
                 android:fitsSystemWindows="false"
@@ -58,7 +58,7 @@
                 android:textOff="@string/velo"
                 android:textOn="@string/velo"
                 android:checked="false"
-                android:layout_marginRight="20dp"
+                android:layout_marginRight="10dp"
                 android:background="@drawable/bouton_icon"
                 android:padding="2dp" />
 
@@ -92,10 +92,10 @@
                 android:textOff="@string/camion"
                 android:textOn="@string/camion"
                 android:checked="false"
-                android:layout_marginRight="20dp"
-                android:layout_marginLeft="130dp"
+                android:layout_marginRight="10dp"
                 android:background="@drawable/bouton_icon"
-                android:padding="2dp" />
+                android:padding="2dp"
+                android:layout_marginLeft="20dp" />
 
             <ToggleButton
                 android:layout_width="90dp"
@@ -133,7 +133,7 @@
             android:textSize="18sp" />
 
         <Button
-            android:layout_width="140dp"
+            android:layout_width="160dp"
             android:layout_height="60dp"
             android:text="@string/nb_victime"
             android:id="@+id/btnNbVictime"

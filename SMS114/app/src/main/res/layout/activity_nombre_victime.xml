@@ -23,11 +23,9 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="0"
         android:id="@+id/txtNombre"
-        android:layout_marginTop="40dp"
         android:layout_below="@+id/txtNbVictime"
         android:layout_centerHorizontal="true"
-        android:textSize="170sp"
-        android:layout_marginBottom="20dp" />
+        android:textSize="170sp" />
 
     <SeekBar
         android:layout_width="match_parent"
@@ -38,7 +36,8 @@
         android:max="10"
         android:progress="0"
         android:indeterminate="false"
-        android:background="#ffe0e0e0" />
+        android:background="#ffe0e0e0"
+        android:layout_marginTop="20dp" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -63,7 +62,7 @@
         android:layout_below="@+id/barreNbVictime"
         android:layout_alignRight="@+id/barreNbVictime"
         android:layout_alignEnd="@+id/barreNbVictime"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="35dp"
         android:button="@drawable/checkbox"
         android:paddingLeft="5dp" />
 
