@@ -33,7 +33,7 @@
         android:id="@+id/barreNbVictime"
         android:layout_below="@+id/txtNombre"
         android:layout_centerHorizontal="true"
-        android:max="10"
+        android:max="11"
         android:progress="0"
         android:indeterminate="false"
         android:background="#ffe0e0e0"
@@ -85,7 +85,6 @@
             android:layout_alignParentLeft="true"
             android:background="@drawable/bouton_nav"
             android:drawableLeft="@drawable/retour"
-            android:layout_marginTop="10dp"
             android:textSize="18sp"
             android:textColor="#ffffffff" />
 

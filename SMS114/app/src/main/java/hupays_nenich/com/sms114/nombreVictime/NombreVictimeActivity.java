@@ -55,7 +55,7 @@ public class NombreVictimeActivity extends GlobalActivity implements SeekBar.OnS
 
     @Override
     public String getNouveauTitre() {
-        return "Nombre de victime";
+        return "Nombre de victme(s)";
     }
 
     /**
@@ -69,9 +69,14 @@ public class NombreVictimeActivity extends GlobalActivity implements SeekBar.OnS
         }
         else{
             if(environ.isChecked())
-                return nbvict.getText().toString() + " "+ environ.getText().toString();
+                if(barre.getProgress() < 11)
+                    return nbvict.getText().toString() + " "+ environ.getText().toString();
+                else
+                    return "plus de 10";
             else
-                return nbvict.getText().toString();
+                if(barre.getProgress() < 11)
+                    return nbvict.getText().toString();
+                else return "plus de 10";
         }
     }
 
@@ -102,11 +107,6 @@ public class NombreVictimeActivity extends GlobalActivity implements SeekBar.OnS
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
         return super.onOptionsItemSelected(item);
     }
 
@@ -118,9 +118,13 @@ public class NombreVictimeActivity extends GlobalActivity implements SeekBar.OnS
          if (progress > 0) {
              btnSuivant.setText(R.string.DetailVictime);
              inconnu.setChecked(false);
+             if(progress == 11){
+                 nbvict.setText("10+");
+             }
          }
          else
               btnSuivant.setText(R.string.precision);
+
 
     }
 

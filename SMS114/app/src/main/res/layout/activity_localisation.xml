@@ -17,6 +17,13 @@
         android:layout_centerHorizontal="true"
         android:textSize="30sp" />
 
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAdresse"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtLocalisation" />
+
     <hupays_nenich.com.sms114.MyEditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -25,7 +32,7 @@
         android:id="@+id/edtAdresse"
         android:layout_below="@+id/txtLocalisation"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp" />
+        android:layout_marginTop="30dp" />
 
     <TextView
         android:layout_width="wrap_content"

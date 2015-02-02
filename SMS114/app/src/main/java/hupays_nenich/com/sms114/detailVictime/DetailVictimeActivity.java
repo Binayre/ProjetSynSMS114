@@ -5,6 +5,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 
 import java.util.ArrayList;
 
@@ -12,7 +13,7 @@ import hupays_nenich.com.sms114.GlobalActivity;
 import hupays_nenich.com.sms114.R;
 import hupays_nenich.com.sms114.RetourListener;
 
-public class DetailVictimeActivity extends GlobalActivity{
+public class DetailVictimeActivity extends GlobalActivity implements CompoundButton.OnCheckedChangeListener{
 
     private ArrayList<CheckBox> liste;
     private CheckBox handicap, enceinte;
@@ -78,11 +79,11 @@ public class DetailVictimeActivity extends GlobalActivity{
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+
     }
 }

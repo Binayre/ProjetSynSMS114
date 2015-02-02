@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import hupays_nenich.com.sms114.GlobalActivity;
 import hupays_nenich.com.sms114.R;
@@ -15,6 +16,7 @@ import hupays_nenich.com.sms114.RetourListener;
 public class LocalisationActivity extends GlobalActivity {
 
     private EditText adresse;
+    private TextView txtAdresse;
     private Button domicile, geoloc;
     private GPSListener listener;
     private LocationManager lm;
@@ -35,6 +37,8 @@ public class LocalisationActivity extends GlobalActivity {
         domicile.setOnClickListener(new AdresseListener(this));
 
 
+        txtAdresse = (TextView)findViewById(R.id.txtAdresse);
+
         adresse = (EditText)findViewById(R.id.edtAdresse);
 
         listener = new GPSListener(this);
@@ -47,11 +51,11 @@ public class LocalisationActivity extends GlobalActivity {
     }
 
     public void setTexte(String t){
-        adresse.append(t);
+        txtAdresse.setText(t);
     }
 
     public String getTexte(){
-        return adresse.getText().toString();
+        return txtAdresse.getText().toString() + "\n"+adresse.getText().toString();
     }
 
     @Override
@@ -78,11 +82,6 @@ public class LocalisationActivity extends GlobalActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
 
         return super.onOptionsItemSelected(item);
     }

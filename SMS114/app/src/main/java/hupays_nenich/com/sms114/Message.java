@@ -102,9 +102,7 @@ public class Message implements Serializable{
         if(!precisions.equals(""))
             s = s + "Précisions : "+ precisions +"\n";
 
-        s = s + "Localisation : \n"+ adresse +"\n";
-
-
+        s = s + "Localisation : \n"+ adresse;
         return s;
     }
 }

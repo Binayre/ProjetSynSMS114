@@ -26,71 +26,6 @@
         android:layout_alignParentBottom="true">
 
         <Button
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/accident_route"
-            android:id="@+id/btnAccidentRoute"
-            android:layout_gravity="center_vertical"
-            android:layout_alignParentTop="true"
-            android:drawableLeft="@drawable/accident_de_la_route"
-            android:textSize="20sp"
-            android:background="@drawable/bouton_icon"
-            android:padding="6dp" />
-
-        <Button
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/incendie"
-            android:id="@+id/btnIncendie"
-            android:layout_below="@+id/btnAccidentRoute"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="12dp"
-            android:drawableLeft="@drawable/incendie"
-            android:textSize="20sp"
-            android:background="@drawable/bouton_icon"
-            android:padding="6dp" />
-
-        <Button
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/blessures_animales"
-            android:id="@+id/btnBlessuresAnimales"
-            android:layout_below="@+id/btnIncendie"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="12dp"
-            android:drawableLeft="@drawable/blessures_animales"
-            android:textSize="20sp"
-            android:background="@drawable/bouton_icon"
-            android:padding="6dp" />
-
-        <Button
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/Cat_nat"
-            android:id="@+id/btnCatastrophes"
-            android:layout_below="@+id/btnBlessuresAnimales"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="12dp"
-            android:textSize="20sp"
-            android:drawableLeft="@drawable/catastrophes_naturelles"
-            android:background="@drawable/bouton_icon"
-            android:padding="6dp" />
-
-        <Button
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/autres"
-            android:id="@+id/btnAutresCauses"
-            android:layout_below="@+id/btnCatastrophes"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="12dp"
-            android:drawableLeft="@drawable/autres"
-            android:layout_marginBottom="10dp"
-            android:textSize="20sp"
-            android:background="@drawable/bouton_icon"
-            android:padding="6dp" />
-
-        <Button
             android:layout_width="140dp"
             android:layout_height="60dp"
             android:text="@string/accueil"
@@ -104,5 +39,94 @@
             android:layout_marginTop="10dp"
             android:textSize="18sp"
             android:textColor="#ffffffff" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    android:text="@string/accident_route"
+                    android:id="@+id/btnAccidentRoute"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@drawable/accident_de_la_route"
+                    android:textSize="20sp"
+                    android:background="@drawable/bouton_icon"
+                    android:padding="6dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginRight="10dp" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/incendie"
+                    android:id="@+id/btnIncendie"
+                    android:drawableLeft="@drawable/incendie"
+                    android:textSize="20sp"
+                    android:background="@drawable/bouton_icon"
+                    android:padding="6dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    android:text="@string/blessures_animales"
+                    android:id="@+id/btnBlessuresAnimales"
+                    android:drawableLeft="@drawable/blessures_animales"
+                    android:textSize="20sp"
+                    android:background="@drawable/bouton_icon"
+                    android:padding="6dp"
+                    android:layout_below="@+id/btnAccidentRoute"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="@string/Cat_nat"
+                    android:id="@+id/btnCatastrophes"
+                    android:layout_below="@+id/btnBlessuresAnimales"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="16sp"
+                    android:drawableLeft="@drawable/catastrophes_naturelles"
+                    android:background="@drawable/bouton_icon"
+                    android:padding="6dp"
+                    android:layout_marginTop="10dp" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="@string/autres"
+                android:id="@+id/btnAutresCauses"
+                android:layout_below="@+id/btnCatastrophes"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/autres"
+                android:textSize="20sp"
+                android:background="@drawable/bouton_icon"
+                android:padding="6dp" />
+        </LinearLayout>
+
     </RelativeLayout>
+
 </RelativeLayout>
