@@ -16,7 +16,7 @@ public abstract  class GlobalActivity extends ActionBarActivity{
     protected Message message;
     protected String titre;
     protected Button btnRetour, btnSuivant;
-    private static  int numero = 0;
+    private static  int numero = -1;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,11 +33,20 @@ public abstract  class GlobalActivity extends ActionBarActivity{
 
         //pour la gestion du fil d'Arianne
         numero++;
+
+
         if(titre!=null) {
-            if(numero%4 == 0)
+            if(numero >= 2) {
+               int i = this.titre.lastIndexOf(">");
+               this.titre = "..."+this.titre.substring(i);
+            }
+
+            /*if(numero%4 == 0)
                 this.setTitle("...>" + getNouveauTitre());
-            else
-                this.setTitle(titre + ">" + getNouveauTitre());
+             else*/
+
+            this.setTitle(titre + ">" + getNouveauTitre());
+
         }
         else{
             this.setTitle(getNouveauTitre());
