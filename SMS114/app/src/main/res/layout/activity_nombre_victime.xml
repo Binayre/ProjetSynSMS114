@@ -69,18 +69,16 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_below="@+id/checkBoxEnviron">
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <Button
             android:layout_width="140dp"
             android:layout_height="60dp"
             android:text="@string/nb_victime"
             android:id="@+id/btnRetourDetailCause"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentEnd="false"
+            android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:background="@drawable/bouton_nav"
             android:drawableLeft="@drawable/retour"
@@ -92,14 +90,13 @@
             android:layout_height="60dp"
             android:text="@string/precision"
             android:id="@+id/btnSuivantNbVictime"
-            android:layout_alignTop="@+id/btnRetourCauses"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
             android:drawableRight="@drawable/suivant"
             android:background="@drawable/bouton_nav"
             android:textColor="#ffffffff"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
     </RelativeLayout>
 
 </RelativeLayout>

@@ -43,7 +43,6 @@
             android:text="@string/enregistrer"
             android:id="@+id/btnEnregistrer"
             android:layout_gravity="center_horizontal"
-            android:layout_weight="0.02"
             android:layout_alignParentRight="true"
             android:background="@drawable/bouton_nav"
             android:textColor="#ffffffff"
@@ -62,10 +61,9 @@
 
         <LinearLayout
             android:orientation="vertical"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:weightSum="1"
-            android:layout_marginBottom="60dp">
+            android:weightSum="1">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -87,7 +85,6 @@
                     android:inputType="textPersonName"
                     android:ems="10"
                     android:id="@+id/edtPrenom"
-                    android:layout_weight="0.10"
                     android:gravity="left"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentTop="false"
@@ -115,7 +112,6 @@
                     android:inputType="textPersonName"
                     android:ems="10"
                     android:id="@+id/edtNom"
-                    android:layout_weight="0.70"
                     android:layout_alignParentRight="true" />
             </RelativeLayout>
 
@@ -139,7 +135,6 @@
                     android:inputType="phone"
                     android:ems="10"
                     android:id="@+id/edtTelephone"
-                    android:layout_weight="1"
                     android:layout_alignParentRight="true" />
 
             </RelativeLayout>
@@ -162,8 +157,8 @@
                     android:layout_width="215dp"
                     android:layout_height="wrap_content"
                     android:id="@+id/edtAdresse"
-                    android:layout_weight="1"
-                    android:layout_alignParentRight="true" />
+                    android:layout_alignParentRight="true"
+                    android:inputType="text" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -184,8 +179,8 @@
                     android:layout_width="215dp"
                     android:layout_height="wrap_content"
                     android:id="@+id/edtVille"
-                    android:layout_weight="1"
-                    android:layout_alignParentRight="true" />
+                    android:layout_alignParentRight="true"
+                    android:inputType="text" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -208,7 +203,6 @@
                     android:inputType="number"
                     android:ems="10"
                     android:id="@+id/edtCodePostal"
-                    android:layout_weight="1"
                     android:layout_alignParentRight="true" />
             </RelativeLayout>
 
@@ -250,7 +244,6 @@
                     android:inputType="number"
                     android:ems="10"
                     android:id="@+id/edtEtage"
-                    android:layout_weight="1"
                     android:visibility="invisible"
                     android:layout_alignParentRight="true" />
             </RelativeLayout>
@@ -275,7 +268,8 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/edtPorte"
                     android:visibility="invisible"
-                    android:layout_alignParentRight="true" />
+                    android:layout_alignParentRight="true"
+                    android:inputType="text" />
 
             </RelativeLayout>
 
@@ -299,7 +293,8 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/edtCodePorte"
                     android:layout_alignParentRight="true"
-                    android:visibility="invisible" />
+                    android:visibility="invisible"
+                    android:inputType="number" />
 
             </RelativeLayout>
 

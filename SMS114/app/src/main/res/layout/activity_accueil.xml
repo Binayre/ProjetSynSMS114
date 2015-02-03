@@ -15,7 +15,7 @@
         android:id="@+id/linearLayout7">
 
         <Button
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="80dp"
             android:text="SMS au 114"
             android:id="@+id/btnSMS114"

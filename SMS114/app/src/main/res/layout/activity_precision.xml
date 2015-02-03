@@ -19,49 +19,51 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:id="@+id/scrollView4"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/txtPrecisions"
-        android:layout_marginTop="15dp">
+        android:layout_above="@+id/relativeLayout"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp">
 
-        <hupays_nenich.com.sms114.MyEditText
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textMultiLine"
-            android:ems="10"
-            android:id="@+id/edtPrecision"
-            android:textSize="20sp"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <hupays_nenich.com.sms114.MyEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/edtPrecision"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/aide_precision"
+                android:id="@+id/txtAidePrecision" />
+        </LinearLayout>
     </ScrollView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="@string/aide_precision"
-        android:id="@+id/txtAidePrecision"
-        android:layout_below="@+id/scrollView4"
-        android:layout_alignParentRight="false"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true" />
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
         android:id="@+id/relativeLayout"
-        android:layout_below="@+id/txtAidePrecision">
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
 
         <Button
             android:layout_width="140dp"
             android:layout_height="60dp"
             android:text="@string/symptome"
             android:id="@+id/btnRetourBody"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentEnd="false"
+            android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:background="@drawable/bouton_nav"
             android:drawableLeft="@drawable/retour"
@@ -73,13 +75,13 @@
             android:layout_height="60dp"
             android:text="@string/localisation"
             android:id="@+id/btnSuivantLocalisation"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
             android:drawableRight="@drawable/suivant"
             android:background="@drawable/bouton_nav"
             android:textColor="#ffffffff"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
 
     </RelativeLayout>
 

@@ -78,8 +78,8 @@
 
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_marginTop="10dp" >
 
             <ToggleButton
@@ -113,17 +113,17 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/linearLayout4"
-        android:layout_centerHorizontal="true">
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <Button
             android:layout_width="140dp"
             android:layout_height="60dp"
             android:text="@string/causes"
             android:id="@+id/btnRetourCauses"
-            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:drawableLeft="@drawable/retour"
@@ -136,14 +136,13 @@
             android:layout_height="60dp"
             android:text="@string/nb_victime"
             android:id="@+id/btnNbVictime"
-            android:layout_alignTop="@+id/btnRetourCauses"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
             android:drawableRight="@drawable/suivant"
             android:background="@drawable/bouton_nav"
             android:textColor="#ffffffff"
             android:textSize="18sp"
-            android:enabled="false" />
+            android:enabled="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
     </RelativeLayout>
 </RelativeLayout>

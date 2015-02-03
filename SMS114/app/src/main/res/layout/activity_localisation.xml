@@ -19,15 +19,17 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:id="@+id/scrollView6"
-        android:layout_below="@+id/txtLocalisation">
+        android:layout_below="@+id/txtLocalisation"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp">
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/txtLocalisation"
             android:id="@+id/linearLayout8">
 
             <TextView
@@ -90,10 +92,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="false"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
-        android:layout_below="@+id/linearLayout8">
+        android:id="@+id/relativeLayout">
 
         <Button
             android:layout_width="140dp"
@@ -104,7 +106,7 @@
             android:drawableLeft="@drawable/retour"
             android:textSize="18sp"
             android:textColor="#ffffffff"
-            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
@@ -117,7 +119,7 @@
             android:background="@drawable/bouton_nav"
             android:textColor="#ffffffff"
             android:textSize="18sp"
-            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true" />
     </RelativeLayout>

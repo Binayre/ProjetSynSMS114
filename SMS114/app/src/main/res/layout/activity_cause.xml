@@ -19,7 +19,7 @@
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtCause"
         android:layout_alignParentLeft="true"
@@ -28,7 +28,7 @@
 
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <Button
@@ -60,7 +60,7 @@
 
         <LinearLayout
             android:orientation="horizontal"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <Button
@@ -97,8 +97,6 @@
             android:layout_height="match_parent"
             android:text="@string/autres"
             android:id="@+id/btnAutresCauses"
-            android:layout_below="@+id/btnCatastrophes"
-            android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
             android:drawableLeft="@drawable/autres"
             android:textSize="20sp"
@@ -108,25 +106,23 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_below="@+id/linearLayout9">
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <Button
             android:layout_width="140dp"
             android:layout_height="60dp"
             android:text="@string/accueil"
             android:id="@+id/btnRetourAccueil"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentEnd="false"
-            android:layout_alignParentLeft="true"
             android:background="@drawable/bouton_nav"
             android:drawableLeft="@drawable/retour"
-            android:layout_marginTop="10dp"
             android:textSize="18sp"
-            android:textColor="#ffffffff" />
+            android:textColor="#ffffffff"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
     </RelativeLayout>
 
