@@ -21,7 +21,7 @@ public class ValiderPrecisionListener implements View.OnClickListener{
     public void onClick(View v) {
         activity.getMessage().setPrecisions(activity.precisions());
 
-        //Dialogue d = new Dialogue(activity,activity.getMessage().toString(),"test");
+        activity.ecrireLog(activity.getMessage().getPrecisions());
 
         activity.lancerActivity(LocalisationActivity.class);
     }

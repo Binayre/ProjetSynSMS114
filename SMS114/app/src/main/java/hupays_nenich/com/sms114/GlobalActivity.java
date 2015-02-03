@@ -18,6 +18,9 @@ public abstract  class GlobalActivity extends ActionBarActivity{
     protected Button btnRetour, btnSuivant;
     private static  int numero = -1;
 
+    //pour les log
+    protected static long heure_debut = 0;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -60,10 +63,22 @@ public abstract  class GlobalActivity extends ActionBarActivity{
         overridePendingTransition(R.anim.push_left_in,R.anim.push_left_out);
     }
 
+
+    //servira a ecrire dans le fichier de log
+    public void ecrireLog(String partie_message){
+
+        Log.i("LOOOOOOOOOOOOOOOOOOOOG",Long.toString((System.currentTimeMillis()-heure_debut)/1000)+" secondes "+partie_message);
+
+    }
+
     @Override
     public void finish(){
         super.finish();
         numero--;
+        //log
+        ecrireLog("Retour en arrière");
+
+
         overridePendingTransition(R.anim.push_right_in, R.anim.push_right_out);
     }
 

@@ -20,6 +20,9 @@ public class ValiderNombreVictimeListener implements View.OnClickListener{
     public void onClick(View v) {
 
         activity.getMessage().setNb_victime(activity.nbVictime());
+
+        activity.ecrireLog(activity.getMessage().getNb_victime());
+
         activity.lancerActivity(activity.suivante());
 
 

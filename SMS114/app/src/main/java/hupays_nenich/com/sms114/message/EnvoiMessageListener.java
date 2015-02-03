@@ -24,17 +24,21 @@ public class EnvoiMessageListener implements View.OnClickListener{
         Dialogue d = new Dialogue(activity,activity.getMessageFinal(),"test");
 
         // Envoi le message
-        String num = "114";
         String msg = activity.getMessageFinal();
-        try {
-            SmsManager.getDefault().sendTextMessage(num, null, msg, null, null);
+
+
+        activity.ecrireLog(activity.getMessageFinal()+"\n-------------------------------------------------------------------------");
+
+
+        /*try {
+            SmsManager.getDefault().sendTextMessage(activity.getMessage().getNumero(), null, msg, null, null);
             Toast.makeText(activity.getApplicationContext(), "SMS Envoyé!", Toast.LENGTH_LONG).show();
         }
         catch (Exception e)
         {
             Toast.makeText(activity.getApplicationContext(),"L'envoi du SMS a échoué", Toast.LENGTH_LONG).show();
             e.printStackTrace();
-        }
+        }*/
 
         // Utiliser l application SMS du telephone
         /*try {

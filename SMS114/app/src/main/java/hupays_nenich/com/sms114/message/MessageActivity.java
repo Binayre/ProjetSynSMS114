@@ -35,7 +35,6 @@ public class MessageActivity extends GlobalActivity {
         edtMessage = (EditText)findViewById(R.id.edtMessage);
 
         edtMessage.setText(chargerDonnees());
-        edtMessage.append("\n");
         edtMessage.append(getMessage().toString());
     }
 

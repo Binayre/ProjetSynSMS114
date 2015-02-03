@@ -23,6 +23,9 @@ public class AccueilActivity extends GlobalActivity {
         this.message = new Message();
 
         btnSMS114.setOnClickListener(new SMS114Listener(this));
+
+        if(heure_debut == 0)
+            heure_debut = System.currentTimeMillis();
     }
 
     @Override
