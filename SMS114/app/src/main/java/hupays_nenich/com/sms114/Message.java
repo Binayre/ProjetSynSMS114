@@ -85,24 +85,33 @@ public class Message implements Serializable{
     @Override
     public String toString() {
 
-        String s = "";
+        String s = new String();
 
-        s="Je suis témoin de : "+ cause + " impliquant "+details_causes + "\n";
-        s = s + "Nombre de victime(s) : "+ nb_victime+"\n";
+        /* TO DO
+            Accident de la route impliquant ...
+            Incendie de ...
+            Blessure animales de ...
+            Catastrophe naturelle : ...
+            Autre --> <presicion>
+         */
+
+        s = "\nJe suis témoin de : " + cause +
+                " concernant " + details_causes;
+        s = s + "\nNombre de victime(s) : " + nb_victime;
 
         //la chaine contient au moins 1 chiffres
         if(nb_victime.matches("[1-9]+[^0-9]*")){
-            s = s + "Profil des victime :"+ profil_victime+"\n" +
-                    "Les victimes souffrent de "+ symptomes +"\n";
+            s = s + "\nProfil des victime :" + profil_victime +
+                    "\nLes victimes souffrent de " + symptomes;
 
-            if(!zone_concernee.equals(""))
-                s = s + "Zone(s) douloureuse(s) : "+ zone_concernee +"\n";
+            if(!(zone_concernee.equals("")))
+                s = s + "\nZone(s) douloureuse(s) : " + zone_concernee;
         }
 
-        if(!precisions.equals(""))
-            s = s + "Précisions : "+ precisions +"\n";
+        if(!(precisions.equals("")))
+            s = s + "\nPrécisions : " + precisions;
 
-        s = s + "Localisation : \n"+ adresse;
+        s = s + "\nLocalisation : " + adresse;
         return s;
     }
 }

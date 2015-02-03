@@ -37,7 +37,7 @@
         android:progress="0"
         android:indeterminate="false"
         android:background="#ffe0e0e0"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="10dp" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -62,17 +62,16 @@
         android:layout_below="@+id/barreNbVictime"
         android:layout_alignRight="@+id/barreNbVictime"
         android:layout_alignEnd="@+id/barreNbVictime"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="30dp"
         android:button="@drawable/checkbox"
         android:paddingLeft="5dp" />
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/barreNbVictime"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="100dp">
+        android:layout_below="@+id/checkBoxEnviron">
 
         <Button
             android:layout_width="140dp"

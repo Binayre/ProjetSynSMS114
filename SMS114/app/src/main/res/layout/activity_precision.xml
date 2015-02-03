@@ -17,17 +17,23 @@
         android:layout_centerHorizontal="true"
         android:textSize="30sp" />
 
-    <hupays_nenich.com.sms114.MyEditText
-        android:layout_width="fill_parent"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textMultiLine"
-        android:ems="10"
-        android:id="@+id/edtPrecision"
-        android:layout_below="@+id/txtPrecisions"
+        android:id="@+id/scrollView4"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:textSize="20sp"
-        android:layout_marginTop="15dp" />
+        android:layout_below="@+id/txtPrecisions"
+        android:layout_marginTop="15dp">
+
+        <hupays_nenich.com.sms114.MyEditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/edtPrecision"
+            android:textSize="20sp"/>
+    </ScrollView>
 
     <TextView
         android:layout_width="wrap_content"
@@ -35,11 +41,13 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/aide_precision"
         android:id="@+id/txtAidePrecision"
-        android:layout_below="@+id/edtPrecision" />
+        android:layout_below="@+id/scrollView4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:id="@+id/relativeLayout"
@@ -73,4 +81,5 @@
             android:textSize="18sp" />
 
     </RelativeLayout>
+
 </RelativeLayout>

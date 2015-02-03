@@ -89,7 +89,7 @@
     <string name="title_activity_message">MessageActivity</string>
     <string name="envoi_message">Envoi\nmessage</string>
     <string name="aide_precision">Position de la victime, gestes de secours effectués...</string>
-    <string name="description114">Le 114 est un service de secours contactable par SMS.\nIl redirige votre demande au bon service (15,18) qui interviendra au plus vite</string>
+    <string name="description114">Le 114 est un service de secours contactable par SMS.\nIl redirige votre demande au bon service (15,18) qui interviendra au plus vite.</string>
     <string name="title_activity_body">BodyActivity</string>
     <string name="emplacement_douloureux">Zone(s) douloureuse(s)</string>
     <string name="tete">Tête</string>

@@ -50,9 +50,9 @@ public class MessageActivity extends GlobalActivity {
                 InputStreamReader inputreader = new InputStreamReader(input);
                 BufferedReader finfo = new BufferedReader(inputreader);
 
-                String mot = "Je m'appelle "+ finfo.readLine()+" "; //prenom
-                mot = mot + finfo.readLine()+"\n"; //nom
-                mot = mot + "Mon numéro est le "+finfo.readLine(); //telephone
+                String mot = "Je m'appelle "+ finfo.readLine() + " "; //prenom
+                mot = mot + finfo.readLine() + "\n"; //nom
+                mot = mot + "Mon numéro est le " + finfo.readLine() + "."; //telephone
 
                 finfo.close();
                 inputreader.close();

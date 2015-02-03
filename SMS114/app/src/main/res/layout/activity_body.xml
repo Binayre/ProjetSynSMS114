@@ -18,7 +18,7 @@
         android:textSize="30sp" />
 
     <RelativeLayout
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/layoutBody"
         android:layout_below="@+id/txtBody"
@@ -40,7 +40,7 @@
 
         <ToggleButton
             android:layout_width="100dp"
-            android:layout_height="77dp"
+            android:layout_height="75dp"
             android:text=" "
             android:id="@+id/btnTorse"
             android:layout_below="@+id/btnTete"
@@ -52,7 +52,7 @@
 
         <ToggleButton
             android:layout_width="40dp"
-            android:layout_height="130dp"
+            android:layout_height="120dp"
             android:text=" "
             android:id="@+id/btnBrasDroit"
             android:checked="false"
@@ -65,7 +65,7 @@
 
         <ToggleButton
             android:layout_width="40dp"
-            android:layout_height="130dp"
+            android:layout_height="120dp"
             android:text=" "
             android:id="@+id/btnBrasGauche"
             android:layout_alignTop="@+id/btnTorse"
@@ -116,7 +116,7 @@
 
         <ToggleButton
             android:layout_width="40dp"
-            android:layout_height="130dp"
+            android:layout_height="100dp"
             android:text=" "
             android:id="@+id/btnJambeDroite"
             android:checked="false"
@@ -129,7 +129,7 @@
 
         <ToggleButton
             android:layout_width="40dp"
-            android:layout_height="130dp"
+            android:layout_height="100dp"
             android:text=" "
             android:id="@+id/btnJambeGauche"
             android:checked="false"
@@ -169,7 +169,7 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/layoutBody"
         android:layout_centerHorizontal="true">

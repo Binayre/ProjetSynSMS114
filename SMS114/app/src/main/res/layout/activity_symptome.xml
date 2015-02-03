@@ -17,163 +17,149 @@
         android:layout_centerHorizontal="true"
         android:textSize="30sp" />
 
-    <LinearLayout
-        android:orientation="vertical"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="350dp"
+        android:id="@+id/scrollView2"
         android:layout_below="@+id/txtSymptome"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/linearLayout6"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="15dp">
 
-        <TableLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout6">
 
-            <TableRow
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:rowCount="4"
+                android:columnCount="3"
+                android:layout_marginLeft="20dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
 
                 <ToggleButton
                     android:layout_width="90dp"
                     android:layout_height="90dp"
                     android:text="@string/pb_respiratoire"
                     android:id="@+id/btnPbRespi"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginLeft="30dp"
                     android:textOff="@string/pb_respiratoire"
                     android:textOn="@string/pb_respiratoire"
                     android:background="@drawable/bouton_icon"
-                    android:layout_marginTop="10dp"
                     android:checked="false"
-                    android:drawableTop="@drawable/pb_respi" />
+                    android:drawableTop="@drawable/pb_respi"
+                    android:layout_row="0"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp" />
 
                 <ToggleButton
                     android:layout_width="90dp"
                     android:layout_height="90dp"
                     android:text="@string/arret_cardiaque"
                     android:id="@+id/btnArretCardiaque"
-                    android:layout_marginRight="10dp"
                     android:textOn="@string/arret_cardiaque"
                     android:textOff="@string/arret_cardiaque"
                     android:background="@drawable/bouton_icon"
-                    android:layout_marginTop="10dp"
                     android:checked="false"
-                    android:drawableTop="@drawable/crise_cardiaque" />
+                    android:drawableTop="@drawable/crise_cardiaque"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp" />
 
                 <ToggleButton
                     android:layout_width="90dp"
                     android:layout_height="90dp"
                     android:text="@string/douleurs"
                     android:id="@+id/btnDouleurInterne"
-                    android:layout_marginRight="10dp"
                     android:textOff="@string/douleurs"
                     android:textOn="@string/douleurs"
                     android:background="@drawable/bouton_icon"
-                    android:layout_marginTop="10dp"
                     android:layout_column="2"
                     android:checked="false"
-                    android:drawableTop="@drawable/douleur_interne" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
+                    android:drawableTop="@drawable/douleur_interne"
+                    android:layout_marginBottom="10dp" />
 
                 <ToggleButton
                     android:layout_width="90dp"
                     android:layout_height="90dp"
                     android:text="@string/vomissement"
                     android:id="@+id/btnVomissement"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginLeft="30dp"
                     android:background="@drawable/bouton_icon"
-                    android:layout_marginTop="10dp"
                     android:checked="false"
                     android:textOff="@string/vomissement"
                     android:textOn="@string/vomissement"
-                    android:drawableTop="@drawable/vomissement" />
+                    android:drawableTop="@drawable/vomissement"
+                    android:layout_row="1"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp" />
 
                 <ToggleButton
                     android:layout_width="90dp"
                     android:layout_height="90dp"
                     android:text="@string/inconscient"
                     android:id="@+id/btnInconscient"
-                    android:layout_marginRight="10dp"
                     android:background="@drawable/bouton_icon"
-                    android:layout_marginTop="10dp"
                     android:textOn="@string/inconscient"
                     android:textOff="@string/inconscient"
                     android:layout_column="1"
                     android:checked="false"
-                    android:drawableTop="@drawable/inconscient" />
+                    android:drawableTop="@drawable/inconscient"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp" />
 
                 <ToggleButton
                     android:layout_width="90dp"
                     android:layout_height="90dp"
                     android:text="@string/spasmes"
                     android:id="@+id/btnSpasmes"
-                    android:layout_marginRight="10dp"
                     android:background="@drawable/bouton_icon"
-                    android:layout_marginTop="10dp"
                     android:textOff="@string/spasmes"
                     android:textOn="@string/spasmes"
                     android:layout_column="2"
                     android:checked="false"
                     android:drawableTop="@drawable/spasmes" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
 
                 <ToggleButton
                     android:layout_width="90dp"
                     android:layout_height="90dp"
                     android:text="@string/saignement"
                     android:id="@+id/btnSaignement"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginLeft="30dp"
                     android:background="@drawable/bouton_icon"
-                    android:layout_marginTop="10dp"
                     android:textOff="@string/saignement"
                     android:textOn="@string/saignement"
                     android:checked="false"
-                    android:drawableTop="@drawable/saignement" />
+                    android:drawableTop="@drawable/saignement"
+                    android:layout_row="2"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp" />
 
                 <ToggleButton
                     android:layout_width="90dp"
                     android:layout_height="90dp"
                     android:text="@string/brulure"
                     android:id="@+id/btnBrulure"
-                    android:layout_marginRight="10dp"
                     android:background="@drawable/bouton_icon"
-                    android:layout_marginTop="10dp"
                     android:textOn="@string/brulure"
                     android:textOff="@string/brulure"
                     android:layout_column="1"
                     android:checked="false"
-                    android:drawableTop="@drawable/brulure" />
+                    android:drawableTop="@drawable/brulure"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp" />
 
                 <ToggleButton
                     android:layout_width="90dp"
                     android:layout_height="90dp"
                     android:text="@string/contraction"
                     android:id="@+id/btnContraction"
-                    android:layout_marginRight="10dp"
                     android:background="@drawable/bouton_icon"
-                    android:layout_marginTop="10dp"
                     android:textOff="@string/contraction"
                     android:textOn="@string/contraction"
                     android:layout_column="2"
                     android:checked="false"
                     android:drawableTop="@drawable/contraction" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
 
                 <ToggleButton
                     android:layout_width="90dp"
@@ -183,62 +169,49 @@
                     android:background="@drawable/bouton_icon"
                     android:textOff="@string/perte_eaux"
                     android:textOn="@string/perte_eaux"
-                    android:layout_column="1"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="10dp"
                     android:checked="false"
                     android:drawableTop="@drawable/perte_des_eaux"
-                    android:textSize="10sp" />
-            </TableRow>
+                    android:layout_row="3" />
 
-        </TableLayout>
-
-        <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
-
+            </GridLayout>
         </LinearLayout>
+    </ScrollView>
 
-        <RelativeLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignRight="@+id/linearLayout6"
-            android:layout_alignEnd="@+id/linearLayout6">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/scrollView2">
 
-            <Button
-                android:layout_width="140dp"
-                android:layout_height="60dp"
-                android:text="@string/DetailVictime"
-                android:id="@+id/btnRetourDetailVictime"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
-                android:layout_alignParentEnd="false"
-                android:layout_alignParentLeft="true"
-                android:background="@drawable/bouton_nav"
-                android:drawableLeft="@drawable/retour"
-                android:textSize="18sp"
-                android:textColor="#ffffffff" />
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:text="@string/DetailVictime"
+            android:id="@+id/btnRetourDetailVictime"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/bouton_nav"
+            android:drawableLeft="@drawable/retour"
+            android:textSize="18sp"
+            android:textColor="#ffffffff" />
 
-            <Button
-                android:layout_width="160dp"
-                android:layout_height="60dp"
-                android:text="@string/precision"
-                android:id="@+id/btnPrecisions"
-                android:layout_alignTop="@+id/btnRetourCauses"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:drawableRight="@drawable/suivant"
-                android:background="@drawable/bouton_nav"
-                android:textColor="#ffffffff"
-                android:textSize="18sp" />
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="@string/precision"
+            android:id="@+id/btnPrecisions"
+            android:layout_alignTop="@+id/btnRetourCauses"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:drawableRight="@drawable/suivant"
+            android:background="@drawable/bouton_nav"
+            android:textColor="#ffffffff"
+            android:textSize="18sp" />
 
-        </RelativeLayout>
-
-    </LinearLayout>
+    </RelativeLayout>
 
 </RelativeLayout>

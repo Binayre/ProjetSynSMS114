@@ -19,27 +19,22 @@
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_below="@+id/txtLocalisation">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLocalisation"
+        android:id="@+id/linearLayout8">
 
         <TextView
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/txtAdresse"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@+id/txtLocalisation"
-            android:layout_above="@+id/edtAdresse" />
+            android:id="@+id/txtAdresse" />
 
         <hupays_nenich.com.sms114.MyEditText
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textMultiLine"
             android:ems="10"
-            android:id="@+id/edtAdresse"
-            android:layout_below="@+id/txtLocalisation"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp" />
+            android:id="@+id/edtAdresse" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -47,15 +42,12 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="@string/aide"
             android:id="@+id/txtAide"
-            android:layout_below="@+id/edtAdresse"
             android:textSize="15sp" />
 
         <RelativeLayout
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/txtAide"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:id="@+id/layoutBtn">
 
             <Button
@@ -85,37 +77,42 @@
                 android:layout_marginRight="20dp" />
         </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:layout_below="@+id/layoutBtn">
-
-            <Button
-                android:layout_width="140dp"
-                android:layout_height="60dp"
-                android:text="@string/precision"
-                android:id="@+id/btnRetourPrecision"
-                android:background="@drawable/bouton_nav"
-                android:drawableLeft="@drawable/retour"
-                android:textSize="18sp"
-                android:textColor="#ffffffff"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true" />
-
-            <Button
-                android:layout_width="160dp"
-                android:layout_height="60dp"
-                android:text="@string/message"
-                android:id="@+id/btnMessage"
-                android:drawableRight="@drawable/suivant"
-                android:background="@drawable/bouton_nav"
-                android:textColor="#ffffffff"
-                android:textSize="18sp"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true" />
-        </RelativeLayout>
     </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/linearLayout8">
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:text="@string/precision"
+            android:id="@+id/btnRetourPrecision"
+            android:background="@drawable/bouton_nav"
+            android:drawableLeft="@drawable/retour"
+            android:textSize="18sp"
+            android:textColor="#ffffffff"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="@string/message"
+            android:id="@+id/btnMessage"
+            android:drawableRight="@drawable/suivant"
+            android:background="@drawable/bouton_nav"
+            android:textColor="#ffffffff"
+            android:textSize="18sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
 
 </RelativeLayout>

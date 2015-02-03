@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtDetailVictime"
-        android:layout_marginTop="29dp"
+        android:layout_marginTop="15dp"
         android:layout_alignParentRight="false"
         android:layout_alignParentEnd="true"
         android:layout_alignParentLeft="true"
@@ -145,43 +145,44 @@
             android:button="@drawable/checkbox"
             android:paddingLeft="5dp" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/barreNbVictime"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true">
-
-            <Button
-                android:layout_width="140dp"
-                android:layout_height="60dp"
-                android:text="@string/DetailsCause"
-                android:id="@+id/btnRetourNbVictime"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
-                android:layout_alignParentEnd="false"
-                android:layout_alignParentLeft="true"
-                android:background="@drawable/bouton_nav"
-                android:drawableLeft="@drawable/retour"
-                android:textSize="18sp"
-                android:textColor="#ffffffff" />
-
-            <Button
-                android:layout_width="160dp"
-                android:layout_height="60dp"
-                android:text="@string/symptome"
-                android:id="@+id/btnSymptome"
-                android:layout_alignTop="@+id/btnRetourCauses"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:drawableRight="@drawable/suivant"
-                android:background="@drawable/bouton_nav"
-                android:textColor="#ffffffff"
-                android:textSize="18sp"
-                android:enabled="true" />
-        </RelativeLayout>
-
     </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_below="@+id/linearLayout5">
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:text="@string/DetailsCause"
+            android:id="@+id/btnRetourNbVictime"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/bouton_nav"
+            android:drawableLeft="@drawable/retour"
+            android:textSize="18sp"
+            android:textColor="#ffffffff" />
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:text="@string/symptome"
+            android:id="@+id/btnSymptome"
+            android:layout_alignTop="@+id/btnRetourCauses"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:drawableRight="@drawable/suivant"
+            android:background="@drawable/bouton_nav"
+            android:textColor="#ffffffff"
+            android:textSize="18sp"
+            android:enabled="true" />
+    </RelativeLayout>
 
 </RelativeLayout>

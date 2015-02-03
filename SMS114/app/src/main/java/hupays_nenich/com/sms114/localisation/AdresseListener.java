@@ -30,16 +30,16 @@ public class AdresseListener implements View.OnClickListener{
                 mot = fadresse.readLine(); //nom
                 mot = fadresse.readLine(); //telephone
 
-                mot = fadresse.readLine()+"\n";
-                mot = mot + fadresse.readLine()+"\n";
-                mot = mot + fadresse.readLine()+"\n";
+                mot = fadresse.readLine();
+                mot = mot + "\n" + fadresse.readLine();
+                mot = mot + "\n" + fadresse.readLine();
 
                 String immeuble = fadresse.readLine();
                 if (Integer.parseInt(immeuble) == 1) {
-                    mot = mot + "En immeuble\n";
-                    mot = mot + "Etage: "+fadresse.readLine()+"\n";
-                    mot = mot + "Porte: "+fadresse.readLine()+"\n";
-                    mot = mot + "Code porte: "+fadresse.readLine()+"\n";
+                    mot = mot + "\nEn immeuble";
+                    mot = mot + "\nEtage: "+fadresse.readLine();
+                    mot = mot + "\nPorte: "+fadresse.readLine();
+                    mot = mot + "\nCode porte: "+fadresse.readLine();
                 }
 
                 fadresse.close();
