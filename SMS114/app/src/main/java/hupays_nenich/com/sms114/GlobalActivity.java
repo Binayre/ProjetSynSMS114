@@ -18,8 +18,10 @@ public abstract  class GlobalActivity extends ActionBarActivity{
     protected Button btnRetour, btnSuivant;
     private static  int numero = -1;
 
+
     //pour les log
     protected static long heure_debut = 0;
+    public static int nb_activite_visite = 0;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,7 +43,8 @@ public abstract  class GlobalActivity extends ActionBarActivity{
         if(titre!=null) {
             if(numero >= 2) {
                int i = this.titre.lastIndexOf(">");
-               this.titre = "..."+this.titre.substring(i);
+                if(i != -1)
+                    this.titre = "..."+this.titre.substring(i);
             }
 
             /*if(numero%4 == 0)
@@ -69,6 +72,18 @@ public abstract  class GlobalActivity extends ActionBarActivity{
 
         Log.i("LOOOOOOOOOOOOOOOOOOOOG",Long.toString((System.currentTimeMillis()-heure_debut)/1000)+" secondes "+partie_message);
 
+    }
+
+    @Override
+    public void onBackPressed(){
+        super.onBackPressed();
+        ecrireLog("Retour avec bouton Back du device");
+    }
+
+    @Override
+    public void onResume(){
+        super.onResume();
+        nb_activite_visite++;
     }
 
     @Override

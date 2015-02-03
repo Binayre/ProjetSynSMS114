@@ -42,8 +42,9 @@
         android:text="@string/aide_precision"
         android:id="@+id/txtAidePrecision"
         android:layout_below="@+id/scrollView4"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true" />
 
     <RelativeLayout
         android:layout_width="match_parent"

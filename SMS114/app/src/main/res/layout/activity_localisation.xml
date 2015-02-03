@@ -17,67 +17,74 @@
         android:layout_centerHorizontal="true"
         android:textSize="30sp" />
 
-    <LinearLayout
-        android:orientation="vertical"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/txtLocalisation"
-        android:id="@+id/linearLayout8">
+        android:id="@+id/scrollView6"
+        android:layout_below="@+id/txtLocalisation">
 
-        <TextView
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/txtAdresse" />
+            android:layout_below="@+id/txtLocalisation"
+            android:id="@+id/linearLayout8">
 
-        <hupays_nenich.com.sms114.MyEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textMultiLine"
-            android:ems="10"
-            android:id="@+id/edtAdresse" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtAdresse" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/aide"
-            android:id="@+id/txtAide"
-            android:textSize="15sp" />
+            <hupays_nenich.com.sms114.MyEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/edtAdresse" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:id="@+id/layoutBtn">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/aide"
+                android:id="@+id/txtAide"
+                android:textSize="15sp" />
 
-            <Button
-                android:layout_width="90dp"
-                android:layout_height="90dp"
-                android:text="@string/domicile"
-                android:id="@+id/btnDomicile"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
-                android:drawableTop="@drawable/domicile"
-                android:autoText="false"
-                android:background="@drawable/bouton_icon"
-                android:padding="2dp"
-                android:layout_marginLeft="20dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/layoutBtn">
 
-            <Button
-                android:layout_width="90dp"
-                android:layout_height="90dp"
-                android:text="@string/geoloc"
-                android:id="@+id/btnGeoloc"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:drawableTop="@drawable/gps"
-                android:background="@drawable/bouton_icon"
-                android:padding="2dp"
-                android:layout_marginRight="20dp" />
-        </RelativeLayout>
+                <Button
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:text="@string/domicile"
+                    android:id="@+id/btnDomicile"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:drawableTop="@drawable/domicile"
+                    android:autoText="false"
+                    android:background="@drawable/bouton_icon"
+                    android:padding="2dp"
+                    android:layout_marginLeft="20dp" />
 
-    </LinearLayout>
+                <Button
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:text="@string/geoloc"
+                    android:id="@+id/btnGeoloc"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:drawableTop="@drawable/gps"
+                    android:background="@drawable/bouton_icon"
+                    android:padding="2dp"
+                    android:layout_marginRight="20dp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
     <RelativeLayout
         android:layout_width="match_parent"
