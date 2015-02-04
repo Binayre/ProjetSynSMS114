@@ -63,7 +63,7 @@ public class SymptomeActivity extends GlobalActivity {
 
     // si True, lancer le body
     public boolean lancerBody(){
-        if(message.getNb_victime().matches("[2-9]+[^0-9]*")){
+        if(message.getChifreNombreVictime() != 1){
             return false;
         }
 

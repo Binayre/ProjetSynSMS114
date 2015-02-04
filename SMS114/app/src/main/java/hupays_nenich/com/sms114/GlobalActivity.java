@@ -2,25 +2,33 @@ package hupays_nenich.com.sms114;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.media.MediaScannerConnection;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.widget.Button;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
 /**
  * Created by Jérémy on 10/01/2015.
  */
-public abstract  class GlobalActivity extends ActionBarActivity{
+public abstract  class GlobalActivity extends ActionBarActivity implements MediaScannerConnection.MediaScannerConnectionClient{
 
     protected Message message;
     protected String titre;
     protected Button btnRetour, btnSuivant;
     private static  int numero = -1;
 
-
     //pour les log
     protected static long heure_debut = 0;
     public static int nb_activite_visite = 0;
+    private static MediaScannerConnection msConn;
+    private static File log_file;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +42,18 @@ public abstract  class GlobalActivity extends ActionBarActivity{
             this.message = (Message)intent.getSerializableExtra("message");
             this.titre = intent.getStringExtra("titre");
         }
+
+        //log-------------------------------------------------------------------------------
+       /* if(numero == -1){
+            msConn = new MediaScannerConnection(this.getApplicationContext(), this);
+
+            String dir = Environment.getExternalStorageDirectory() + "/Documents/";
+            log_file = new File(dir, "log.txt");
+
+            msConn.connect();
+        }*/
+        //-----------------------------------------------------------------------------------
+
 
         //pour la gestion du fil d'Arianne
         numero++;
@@ -69,8 +89,36 @@ public abstract  class GlobalActivity extends ActionBarActivity{
     //servira a ecrire dans le fichier de log
     public void ecrireLog(String partie_message){
 
-        Log.i("LOOOOOOOOOOOOOOOOOOOOG",Long.toString((System.currentTimeMillis()-heure_debut)/1000)+" secondes "+partie_message);
 
+        msConn = new MediaScannerConnection(this.getApplicationContext(), this);
+
+        String dir = Environment.getExternalStorageDirectory() + "/Documents/";
+        log_file = new File(dir, "log.txt");
+
+        msConn.connect();
+
+
+        /*Write to file*/
+        try {
+            FileWriter fileWriter = new FileWriter(log_file,true);//= new FileWriter(log_file);
+            fileWriter.append(Long.toString((System.currentTimeMillis()-heure_debut)/1000)+" secondes\n"+partie_message+ "\n\n");
+            fileWriter.flush();
+            fileWriter.close();
+        }
+        catch(IOException e){
+            e.printStackTrace();
+        }
+
+    }
+
+    @Override
+    public void onMediaScannerConnected() {
+        msConn.scanFile(log_file.getAbsolutePath(), null);
+    }
+
+    @Override
+    public void onScanCompleted(String path, Uri uri) {
+        msConn.disconnect();
     }
 
     @Override

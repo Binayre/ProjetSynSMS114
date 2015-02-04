@@ -62,6 +62,8 @@ public class NombreVictimeActivity extends GlobalActivity implements SeekBar.OnS
      */
     public String nbVictime(){
 
+        message.setChifreNombreVictime(barre.getProgress());
+
         if(inconnu.isChecked()){
             return inconnu.getText().toString();
         }

@@ -10,6 +10,10 @@ public class Message implements Serializable{
     private String numero, cause, details_causes, symptomes, adresse, precisions;
     private String nb_victime, profil_victime, zone_concernee;
 
+
+    private int chifreNombreVictime; //peut etre utile d'avoir directement le chiffre
+
+
     public Message() {
         this.numero = "";
         this.cause = "";
@@ -18,6 +22,7 @@ public class Message implements Serializable{
         this.adresse = "";
         this.precisions = "";
         this.nb_victime = "0";
+        this.chifreNombreVictime = 0;
         this.profil_victime = "";
         this.zone_concernee = "";
     }
@@ -82,6 +87,11 @@ public class Message implements Serializable{
 
     public void setProfil_victime(String profil_victime) { this.profil_victime = profil_victime; }
 
+    public int getChifreNombreVictime() { return chifreNombreVictime; }
+
+    public void setChifreNombreVictime(int chifreNombreVictime) { this.chifreNombreVictime = chifreNombreVictime;}
+
+
     @Override
     public String toString() {
 
@@ -106,7 +116,7 @@ public class Message implements Serializable{
         s = s + "\nNombre de victimes : " + nb_victime;
 
         //la chaine contient au moins 1 chiffres
-        if(nb_victime.matches("[1-9]+[^0-9]*")){
+        if(chifreNombreVictime > 0){
             s = s + "\nProfils des victimes : " + profil_victime +
                     "\nLes victimes souffrent de " + symptomes;
 
