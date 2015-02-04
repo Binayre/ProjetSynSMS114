@@ -85,14 +85,20 @@ public class SymptomeActivity extends GlobalActivity {
 
     public String boutonSelectionne(){
         String symptomes = new String();
+        boolean premier = true;
 
         for(int i=0; i<liste_boutons.size(); i++){
             if(liste_boutons.get(i).isChecked()){
-                symptomes = symptomes+", "+liste_boutons.get(i).getText().toString();
+                if(premier)
+                {
+                    symptomes = liste_boutons.get(i).getText().toString();
+                    premier = false;
+                }
+                else symptomes = symptomes + ", "+ liste_boutons.get(i).getText().toString();
             }
         }
 
-        return symptomes.substring(2);
+        return symptomes;
     }
 
 

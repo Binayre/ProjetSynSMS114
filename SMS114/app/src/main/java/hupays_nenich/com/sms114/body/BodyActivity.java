@@ -55,13 +55,19 @@ public class BodyActivity extends GlobalActivity {
 
     public String boutonSelectionne(){
         String zones = new String();
+        boolean premier = true;
 
         for(int i=0; i<liste_boutons.size(); i++){
             if(liste_boutons.get(i).getBtn().isChecked()){
-                zones = zones+", "+liste_boutons.get(i).getPartie();
+                if(premier)
+                {
+                    zones = liste_boutons.get(i).getPartie();
+                    premier = false;
+                }
+                else zones = zones + ", "+liste_boutons.get(i).getPartie();
             }
         }
-        return zones.substring(2);
+        return zones;
     }
 
 

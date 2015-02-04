@@ -70,13 +70,19 @@ public abstract class DetailCauseActivity extends GlobalActivity{
 
     public String boutonSelectionne(){
         String details = new String();
+        boolean premier = true;
 
         for(int i=0; i<liste_boutons.size(); i++){
             if(liste_boutons.get(i).isChecked()){
-                details = details + ", " + liste_boutons.get(i).getText().toString();
+                if(premier)
+                {
+                    details = liste_boutons.get(i).getText().toString();
+                    premier = false;
+                }
+                else details = details + ", " + liste_boutons.get(i).getText().toString();
             }
         }
 
-        return details.substring(2);
+        return details;
     }
 }
