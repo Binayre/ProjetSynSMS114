@@ -48,11 +48,17 @@ public class DetailVictimeActivity extends GlobalActivity implements CompoundBut
     }
 
     public String detail(){
-        String s="";
+        String s = new String();
+        boolean premier = true;
 
         for(int i=0;i<liste.size();i++){
-            if(liste.get(i).isChecked())
-                s = s+", "+liste.get(i).getText().toString();
+            if(liste.get(i).isChecked()) {
+                if (premier) {
+                    s = liste.get(i).getText().toString();
+                    premier = false;
+                }
+                else s = s + ", " + liste.get(i).getText().toString();
+            }
         }
 
         if(handicap.isChecked())

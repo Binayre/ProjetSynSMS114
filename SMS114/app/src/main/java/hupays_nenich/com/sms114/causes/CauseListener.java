@@ -1,9 +1,8 @@
 package hupays_nenich.com.sms114.causes;
 
-import android.content.Intent;
+
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 /**
  * Created by Jérémy on 10/01/2015.

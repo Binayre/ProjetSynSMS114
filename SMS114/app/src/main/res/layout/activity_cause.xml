@@ -24,7 +24,8 @@
         android:layout_below="@+id/txtCause"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:id="@+id/linearLayout9">
+        android:id="@+id/linearLayout9"
+        android:layout_marginTop="15dp">
 
         <LinearLayout
             android:orientation="horizontal"

@@ -1,9 +1,6 @@
 package hupays_nenich.com.sms114.nombreVictime;
 
-import android.content.Intent;
 import android.view.View;
-
-import hupays_nenich.com.sms114.Dialogue;
 
 /**
  * Created by Jérémy on 13/01/2015.

@@ -3,7 +3,6 @@ package hupays_nenich.com.sms114.causes;
 import android.content.Intent;
 import android.view.View;
 
-import hupays_nenich.com.sms114.Dialogue;
 import hupays_nenich.com.sms114.nombreVictime.NombreVictimeActivity;
 
 /**

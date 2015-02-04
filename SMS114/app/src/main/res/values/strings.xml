@@ -20,7 +20,7 @@
     <string name="velo">Vélo</string>
     <string name="camion">Camion</string>
     <string name="bus">Bus</string>
-    <string name="nb_victime">Nombre de victime(s)</string>
+    <string name="nb_victime">Nombre de victimes</string>
     <string name="causes">Causes</string>
     <string name="title_activity_detail_incendie">DetailIncendieActivity</string>
     <string name="batiment">Bâtiment</string>
@@ -42,12 +42,12 @@
     <string name="title_activity_detail_autre">DetailAutreActivity</string>
     <string name="title_activity_nombre_victime">NombreVictimeActivity</string>
     <string name="DetailsCause">Détail cause</string>
-    <string name="DetailVictime">Détail victime</string>
+    <string name="DetailVictime">Détails victimes</string>
     <string name="localisation">Adresse</string>
     <string name="environ">Environ</string>
     <string name="inconnu">Je ne sais pas</string>
     <string name="title_activity_detail_victime">DetailVictimeActivity</string>
-    <string name="age_approx">Catégorie d\'âges</string>
+    <string name="age_approx">Catégories d\'âges</string>
     <string name="nourrisson">Nourrisson</string>
     <string name="enfant">Enfant</string>
     <string name="adolescent">Adolescent</string>
@@ -69,7 +69,6 @@
     <string name="contraction">Contraction</string>
     <string name="perte_eaux">Perte des\neaux</string>
     <string name="title_activity_precision">PrecisionActivity</string>
-    <string name="autre">Autre</string>
     <string name="details">Détails</string>
     <string name="mesInfos">Mes Informations</string>
     <string name="prenom">Prénom</string>
@@ -91,7 +90,7 @@
     <string name="aide_precision">Position de la victime, gestes de secours effectués...</string>
     <string name="description114">Le 114 est un service de secours contactable par SMS.\nIl redirige votre demande au bon service (15,18) qui interviendra au plus vite.</string>
     <string name="title_activity_body">BodyActivity</string>
-    <string name="emplacement_douloureux">Zone(s) douloureuse(s)</string>
+    <string name="emplacement_douloureux">Zones douloureuses</string>
     <string name="tete">Tête</string>
     <string name="torse">Torse</string>
     <string name="ventre">Ventre</string>

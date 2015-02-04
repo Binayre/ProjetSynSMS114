@@ -29,7 +29,7 @@ public class SymptomeActivity extends GlobalActivity {
         btnSuivant = (Button)findViewById(R.id.btnPrecisions);
         btnSuivant.setOnClickListener(new ValiderSymptomeListener(this));
 
-        btnSuivant.setEnabled(false);
+        //btnSuivant.setEnabled(false);
 
         this.liste_boutons = new ArrayList<ToggleButton>();
 
@@ -84,16 +84,15 @@ public class SymptomeActivity extends GlobalActivity {
     }
 
     public String boutonSelectionne(){
-        String symptomes = "";
+        String symptomes = new String();
 
-        for(int i=0; i<liste_boutons.size();i++){
-
+        for(int i=0; i<liste_boutons.size(); i++){
             if(liste_boutons.get(i).isChecked()){
                 symptomes = symptomes+", "+liste_boutons.get(i).getText().toString();
             }
         }
 
-        return symptomes;
+        return symptomes.substring(2);
     }
 
 

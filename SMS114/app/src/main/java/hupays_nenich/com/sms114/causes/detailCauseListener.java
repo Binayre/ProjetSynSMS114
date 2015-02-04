@@ -1,9 +1,6 @@
 package hupays_nenich.com.sms114.causes;
 
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.view.View;
-import android.widget.ToggleButton;
 
 /**
  * Created by Jérémy on 11/01/2015.

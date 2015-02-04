@@ -1,9 +1,7 @@
 package hupays_nenich.com.sms114.precisions;
 
-import android.content.Intent;
 import android.view.View;
 
-import hupays_nenich.com.sms114.Dialogue;
 import hupays_nenich.com.sms114.localisation.LocalisationActivity;
 
 /**

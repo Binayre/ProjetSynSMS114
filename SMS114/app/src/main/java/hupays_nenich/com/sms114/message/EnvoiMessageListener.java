@@ -1,10 +1,6 @@
 package hupays_nenich.com.sms114.message;
 
-import android.app.PendingIntent;
 import android.view.View;
-import android.telephony.SmsManager;
-import android.widget.Toast;
-import android.content.Intent;
 
 import hupays_nenich.com.sms114.Dialogue;
 

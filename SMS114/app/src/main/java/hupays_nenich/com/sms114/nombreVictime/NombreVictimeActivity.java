@@ -5,10 +5,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.SeekBar;
 import android.widget.TextView;
-
 
 import hupays_nenich.com.sms114.GlobalActivity;
 import hupays_nenich.com.sms114.R;

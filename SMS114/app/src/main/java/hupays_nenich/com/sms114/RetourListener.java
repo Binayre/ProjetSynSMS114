@@ -1,7 +1,5 @@
 package hupays_nenich.com.sms114;
 
-import android.app.Activity;
-import android.content.Intent;
 import android.view.View;
 
 /**

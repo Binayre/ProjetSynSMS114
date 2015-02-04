@@ -1,17 +1,11 @@
 package hupays_nenich.com.sms114.causes;
 
-import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
 import android.widget.ToggleButton;
 
-import hupays_nenich.com.sms114.GlobalActivity;
-import hupays_nenich.com.sms114.Message;
 import hupays_nenich.com.sms114.R;
-import hupays_nenich.com.sms114.RetourListener;
 
 public class DetailAnimauxActivity extends DetailCauseActivity {
 

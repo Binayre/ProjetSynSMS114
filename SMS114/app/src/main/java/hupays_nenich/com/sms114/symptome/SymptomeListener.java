@@ -1,8 +1,6 @@
 package hupays_nenich.com.sms114.symptome;
 
-import android.graphics.Color;
 import android.view.View;
-import android.widget.ToggleButton;
 
 import hupays_nenich.com.sms114.R;
 
@@ -19,10 +17,10 @@ public class SymptomeListener implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
-        if(activity.nbBoutonsSelectionnes()>0)
+        /*if(activity.nbBoutonsSelectionnes()>0)
             activity.getBtnSuivant().setEnabled(true);
         else
-            activity.getBtnSuivant().setEnabled(false);
+            activity.getBtnSuivant().setEnabled(false);*/
 
         if(activity.lancerBody())
             activity.getBtnSuivant().setText(R.string.emplacement_douloureux);

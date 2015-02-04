@@ -16,13 +16,13 @@
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".mesInfos.MesInfosActivity"
-            android:label="@string/title_activity_mes_infos" >
+            android:label="@string/title_activity_mes_infos"
+            android:windowSoftInputMode="stateUnchanged">
         </activity>
         <activity
             android:name=".causes.CauseActivity"
@@ -46,7 +46,8 @@
         </activity>
         <activity
             android:name=".causes.DetailAutreActivity"
-            android:label="@string/title_activity_detail_autre" >
+            android:label="@string/title_activity_detail_autre"
+            android:windowSoftInputMode="stateUnchanged">
         </activity>
         <activity
             android:name=".nombreVictime.NombreVictimeActivity"
@@ -62,15 +63,18 @@
         </activity>
         <activity
             android:name=".precisions.PrecisionActivity"
-            android:label="@string/title_activity_precision" >
+            android:label="@string/title_activity_precision"
+            android:windowSoftInputMode="stateUnchanged">
         </activity>
         <activity
             android:name=".localisation.LocalisationActivity"
-            android:label="@string/title_activity_localisation" >
+            android:label="@string/title_activity_localisation"
+            android:windowSoftInputMode="stateUnchanged">
         </activity>
         <activity
             android:name=".message.MessageActivity"
-            android:label="@string/title_activity_message" >
+            android:label="@string/title_activity_message"
+            android:windowSoftInputMode="stateUnchanged">
         </activity>
         <activity
             android:name=".body.BodyActivity"
