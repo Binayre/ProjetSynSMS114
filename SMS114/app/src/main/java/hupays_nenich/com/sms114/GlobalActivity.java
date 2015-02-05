@@ -29,6 +29,7 @@ public abstract  class GlobalActivity extends ActionBarActivity implements Media
     public static int nb_activite_visite = 0;
     private static MediaScannerConnection msConn;
     private static File log_file;
+    private static int num_test;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,14 +45,19 @@ public abstract  class GlobalActivity extends ActionBarActivity implements Media
         }
 
         //log-------------------------------------------------------------------------------
-       /* if(numero == -1){
+        if(numero == -1) {
             msConn = new MediaScannerConnection(this.getApplicationContext(), this);
-
-            String dir = Environment.getExternalStorageDirectory() + "/Documents/";
-            log_file = new File(dir, "log.txt");
-
-            msConn.connect();
-        }*/
+            String dir = Environment.getExternalStorageDirectory() + "/Documents/Tests_utilisateurs/";
+            File directory = new File(dir);
+            if (!directory.exists()) {
+                Log.i("TEST","Le fichier/répertoire n'existe pas");
+            } else if (!directory.isDirectory()) {
+                Log.i("TEST","Le chemin correspond à un fichier et non à un répertoire");
+            } else {
+                File[] subfiles = directory.listFiles();
+                num_test = subfiles.length;
+            }
+        }
         //-----------------------------------------------------------------------------------
 
 
@@ -92,8 +98,8 @@ public abstract  class GlobalActivity extends ActionBarActivity implements Media
 
         msConn = new MediaScannerConnection(this.getApplicationContext(), this);
 
-        String dir = Environment.getExternalStorageDirectory() + "/Documents/";
-        log_file = new File(dir, "log.txt");
+        String dir = Environment.getExternalStorageDirectory() + "/Documents/Tests_utilisateurs/";
+        log_file = new File(dir, "log_"+Integer.toString(num_test)+".txt");
 
         msConn.connect();
 
