@@ -28,8 +28,10 @@ public abstract  class GlobalActivity extends ActionBarActivity implements Media
     protected static long heure_debut = 0;
     public static int nb_activite_visite = 0;
     private static MediaScannerConnection msConn;
+    private static String dir;
     private static File log_file;
     private static int num_test;
+    public static int nb_retour;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,7 +49,7 @@ public abstract  class GlobalActivity extends ActionBarActivity implements Media
         //log-------------------------------------------------------------------------------
         if(numero == -1) {
             msConn = new MediaScannerConnection(this.getApplicationContext(), this);
-            String dir = Environment.getExternalStorageDirectory() + "/Documents/Tests_utilisateurs/";
+            dir = Environment.getExternalStorageDirectory() + "/SMS114/";
             File directory = new File(dir);
             if (!directory.exists()) {
                 Log.i("TEST","Le fichier/répertoire n'existe pas");
@@ -55,7 +57,10 @@ public abstract  class GlobalActivity extends ActionBarActivity implements Media
                 Log.i("TEST","Le chemin correspond à un fichier et non à un répertoire");
             } else {
                 File[] subfiles = directory.listFiles();
-                num_test = subfiles.length;
+                num_test = subfiles.length + 1;
+                log_file = new File(dir, "log_"+Integer.toString(num_test)+".txt");
+                msConn.connect();
+                nb_retour = 0;
             }
         }
         //-----------------------------------------------------------------------------------
@@ -96,12 +101,12 @@ public abstract  class GlobalActivity extends ActionBarActivity implements Media
     public void ecrireLog(String partie_message){
 
 
-        msConn = new MediaScannerConnection(this.getApplicationContext(), this);
+       // msConn = new MediaScannerConnection(this.getApplicationContext(), this);
 
-        String dir = Environment.getExternalStorageDirectory() + "/Documents/Tests_utilisateurs/";
-        log_file = new File(dir, "log_"+Integer.toString(num_test)+".txt");
+       //String dir = Environment.getExternalStorageDirectory() + "/Documents/Tests_utilisateurs/";
+        //log_file = new File(dir, "log_"+Integer.toString(num_test)+".txt");
 
-        msConn.connect();
+       // msConn.connect();
 
 
         /*Write to file*/
@@ -131,6 +136,7 @@ public abstract  class GlobalActivity extends ActionBarActivity implements Media
     public void onBackPressed(){
         super.onBackPressed();
         ecrireLog("Retour avec bouton Back du device");
+
     }
 
     @Override
@@ -144,8 +150,7 @@ public abstract  class GlobalActivity extends ActionBarActivity implements Media
         super.finish();
         numero--;
         //log
-        ecrireLog("Retour en arrière");
-
+        nb_retour++;
 
         overridePendingTransition(R.anim.push_right_in, R.anim.push_right_out);
     }

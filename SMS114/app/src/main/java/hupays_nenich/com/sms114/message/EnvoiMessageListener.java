@@ -23,7 +23,7 @@ public class EnvoiMessageListener implements View.OnClickListener{
         String msg = activity.getMessageFinal();
 
 
-        activity.ecrireLog(activity.getMessageFinal()+"\n Nb activités visités: "+ activity.nb_activite_visite+ "\n------------------------------------------------------------------");
+        activity.ecrireLog(activity.getMessageFinal()+"\n Nb activités visités: "+ activity.nb_activite_visite+ "\nNombre de retours: "+ activity.nb_retour+"\n------------------------------------------------------------------");
 
 
         /*try {

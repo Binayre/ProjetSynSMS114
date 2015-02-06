@@ -93,6 +93,15 @@ public class NombreVictimeActivity extends GlobalActivity implements SeekBar.OnS
         }
     }
 
+    public String suivanteLog(){
+        if((inconnu.isChecked()) || (barre.getProgress()==0)){
+            return "Précisions"; //renvoyer l'activity qui s'occupe de l'adresse ou des precisions
+        }
+        else{
+            return "Détail victime"; //renvoyer l'activity qui s'occuper de detailler les victimes
+        }
+    }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

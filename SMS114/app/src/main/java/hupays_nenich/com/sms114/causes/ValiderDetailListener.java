@@ -24,7 +24,7 @@ public class ValiderDetailListener implements View.OnClickListener{
 
         activity.getMessage().setDetails_causes(activity.boutonSelectionne());
 
-        activity.ecrireLog(activity.getMessage().getDetails_causes());
+        activity.ecrireLog("Detail cause --> Nombre victime");
 
         activity.lancerActivity(NombreVictimeActivity.class);
     }

@@ -22,7 +22,7 @@ public class ValiderDetailAutre implements View.OnClickListener{
         activity.getMessage().setDetails_causes(activity.getDetail());
         Intent intent = new Intent(activity, NombreVictimeActivity.class);
 
-        activity.ecrireLog(activity.getMessage().getDetails_causes());
+        activity.ecrireLog("Détail Cause --> Nombre victimes");
 
         activity.lancerActivity(NombreVictimeActivity.class);
 

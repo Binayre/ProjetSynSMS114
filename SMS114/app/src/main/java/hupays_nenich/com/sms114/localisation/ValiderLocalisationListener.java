@@ -19,7 +19,7 @@ public class ValiderLocalisationListener implements View.OnClickListener{
     public void onClick(View v) {
         activity.getMessage().setAdresse(activity.getTexte());
 
-        activity.ecrireLog(activity.getMessage().getAdresse());
+        activity.ecrireLog("Localisation ---> Message");
 
         activity.lancerActivity(MessageActivity.class);
 

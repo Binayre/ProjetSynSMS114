@@ -20,7 +20,7 @@ public class ValiderDetailVictime implements View.OnClickListener{
 
         activity.getMessage().setProfil_victime(activity.detail());
 
-        activity.ecrireLog(activity.getMessage().getProfil_victime());
+        activity.ecrireLog("Détail victimes --> Symptômes");
 
         activity.lancerActivity(SymptomeActivity.class);
     }
