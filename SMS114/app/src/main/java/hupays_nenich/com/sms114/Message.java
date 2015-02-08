@@ -111,20 +111,24 @@ public class Message implements Serializable{
             s = s + " impliquant " + details_causes;
         else if(cause.contains("Incendie") || cause.contains("Blessure"))
             s = s + " de " + details_causes;
-        else s = s + " : " + details_causes;
+        else
+            s = s + " : " + details_causes;
 
         s = s + "\nNombre de victimes : " + nb_victime;
 
         //la chaine contient au moins 1 chiffres
         if(chifreNombreVictime > 0){
-            s = s + "\nProfils des victimes : " + profil_victime +
-                    "\nLes victimes souffrent de " + symptomes;
+            if(!(profil_victime.isEmpty()))
+                s = s + "\nProfils des victimes : " + profil_victime;
 
-            if(!(zone_concernee.equals("")))
+            if(!(symptomes.isEmpty()))
+                s = s + "\nSymptômes : " + symptomes;
+
+            if(!(zone_concernee.isEmpty()))
                 s = s + "\nZones douloureuses : " + zone_concernee;
         }
 
-        if(!(precisions.equals("")))
+        if(!(precisions.isEmpty()))
             s = s + "\nPrécisions : " + precisions;
 
         s = s + "\nLocalisation : " + adresse;
