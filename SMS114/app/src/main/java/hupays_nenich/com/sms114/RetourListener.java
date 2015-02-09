@@ -15,7 +15,7 @@ public class RetourListener implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
-        activity.ecrireLog("Retour en arrière");
+        activity.ecrireLog("",0, 1, 0, "");
         activity.finish();
     }
 }

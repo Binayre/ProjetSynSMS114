@@ -19,7 +19,7 @@ public class SMS114Listener implements View.OnClickListener{
     public void onClick(View v) {
 
         activity.getMessage().setNumero("114");
-        activity.ecrireLog("SMS 114 ---> Cause");
+        activity.ecrireLog("Cause",1, 0, 0, "");
         activity.lancerActivity(CauseActivity.class);
     }
 }

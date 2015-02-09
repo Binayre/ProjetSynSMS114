@@ -26,12 +26,10 @@ public abstract  class GlobalActivity extends ActionBarActivity implements Media
 
     //pour les log
     protected static long heure_debut = 0;
-    public static int nb_activite_visite = 0;
     private static MediaScannerConnection msConn;
     private static String dir;
     private static File log_file;
     private static int num_test;
-    public static int nb_retour;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,9 +56,17 @@ public abstract  class GlobalActivity extends ActionBarActivity implements Media
             } else {
                 File[] subfiles = directory.listFiles();
                 num_test = subfiles.length + 1;
-                log_file = new File(dir, "log_"+Integer.toString(num_test)+".txt");
+                log_file = new File(dir, "log_"+Integer.toString(num_test)+".csv");
                 msConn.connect();
-                nb_retour = 0;
+                try {
+                    FileWriter fileWriter = new FileWriter(log_file,true);
+                    fileWriter.append("temps_passe;destination;suivant;retour_logiciel;retour_hardware;divers;\n");
+                    fileWriter.flush();
+                    fileWriter.close();
+                }
+                catch(IOException e){
+                    e.printStackTrace();
+                }
             }
         }
         //-----------------------------------------------------------------------------------
@@ -76,10 +82,6 @@ public abstract  class GlobalActivity extends ActionBarActivity implements Media
                 if(i != -1)
                     this.titre = "..."+this.titre.substring(i);
             }
-
-            /*if(numero%4 == 0)
-                this.setTitle("...>" + getNouveauTitre());
-             else*/
 
             this.setTitle(titre + ">" + getNouveauTitre());
 
@@ -98,21 +100,10 @@ public abstract  class GlobalActivity extends ActionBarActivity implements Media
 
 
     //servira a ecrire dans le fichier de log
-    public void ecrireLog(String partie_message){
-
-
-       // msConn = new MediaScannerConnection(this.getApplicationContext(), this);
-
-       //String dir = Environment.getExternalStorageDirectory() + "/Documents/Tests_utilisateurs/";
-        //log_file = new File(dir, "log_"+Integer.toString(num_test)+".txt");
-
-       // msConn.connect();
-
-
-        /*Write to file*/
+    public void ecrireLog(String dest,int suivant, int retour_log, int retour_hard, String d){
         try {
-            FileWriter fileWriter = new FileWriter(log_file,true);//= new FileWriter(log_file);
-            fileWriter.append(Long.toString((System.currentTimeMillis()-heure_debut)/1000)+" secondes\n"+partie_message+ "\n\n");
+            FileWriter fileWriter = new FileWriter(log_file,true);
+            fileWriter.append(Long.toString((System.currentTimeMillis()-heure_debut))+";"+dest+";"+suivant+";"+retour_log+";"+retour_hard+";"+d.replace("\n"," ||| ").replace(";"," ")+";\n");
             fileWriter.flush();
             fileWriter.close();
         }
@@ -135,14 +126,13 @@ public abstract  class GlobalActivity extends ActionBarActivity implements Media
     @Override
     public void onBackPressed(){
         super.onBackPressed();
-        ecrireLog("Retour avec bouton Back du device");
+        ecrireLog("",0, 0, 1, "");
 
     }
 
     @Override
     public void onResume(){
         super.onResume();
-        nb_activite_visite++;
     }
 
     @Override
@@ -150,7 +140,6 @@ public abstract  class GlobalActivity extends ActionBarActivity implements Media
         super.finish();
         numero--;
         //log
-        nb_retour++;
 
         overridePendingTransition(R.anim.push_right_in, R.anim.push_right_out);
     }

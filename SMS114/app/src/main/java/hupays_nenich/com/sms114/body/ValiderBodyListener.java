@@ -23,7 +23,7 @@ public class ValiderBodyListener implements View.OnClickListener{
         else
             activity.getMessage().setZone_concernee(activity.boutonSelectionne());
 
-        activity.ecrireLog("Body --> Précisions");
+        activity.ecrireLog("Précisions",1, 0, 0, activity.getMessage().getZone_concernee());
 
         activity.lancerActivity(PrecisionActivity.class);
 

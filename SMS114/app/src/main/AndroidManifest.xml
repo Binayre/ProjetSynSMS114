@@ -24,7 +24,7 @@
         <activity
             android:name=".mesInfos.MesInfosActivity"
             android:label="@string/title_activity_mes_infos"
-            android:windowSoftInputMode="stateUnchanged">
+            android:windowSoftInputMode="stateAlwaysHidden">
         </activity>
         <activity
             android:name=".causes.CauseActivity"
@@ -48,8 +48,7 @@
         </activity>
         <activity
             android:name=".causes.DetailAutreActivity"
-            android:label="@string/title_activity_detail_autre"
-            android:windowSoftInputMode="stateUnchanged">
+            android:label="@string/title_activity_detail_autre">
         </activity>
         <activity
             android:name=".nombreVictime.NombreVictimeActivity"
@@ -66,17 +65,17 @@
         <activity
             android:name=".precisions.PrecisionActivity"
             android:label="@string/title_activity_precision"
-            android:windowSoftInputMode="stateUnchanged">
+            android:windowSoftInputMode="stateAlwaysHidden">
         </activity>
         <activity
             android:name=".localisation.LocalisationActivity"
             android:label="@string/title_activity_localisation"
-            android:windowSoftInputMode="stateUnchanged">
+            android:windowSoftInputMode="stateAlwaysHidden">
         </activity>
         <activity
             android:name=".message.MessageActivity"
             android:label="@string/title_activity_message"
-            android:windowSoftInputMode="stateUnchanged">
+            android:windowSoftInputMode="stateAlwaysHidden">
         </activity>
         <activity
             android:name=".body.BodyActivity"

@@ -27,7 +27,7 @@ public class DetailAnimauxActivity extends DetailCauseActivity {
 
     @Override
     public String getNouveauTitre() {
-        return "Animaux";
+        return "Blessures Animales";
     }
 
     @Override

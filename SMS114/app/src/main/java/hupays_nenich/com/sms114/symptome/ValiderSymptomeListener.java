@@ -25,10 +25,10 @@ public class ValiderSymptomeListener implements View.OnClickListener{
 
         if(activity.lancerBody()) {
             suivante = BodyActivity.class;
-            activity.ecrireLog("Symptome ---> Body");
+            activity.ecrireLog("Body",1, 0, 0, activity.getMessage().getSymptomes());
         }
         else
-            activity.ecrireLog("Symptome ---> Précisions");
+            activity.ecrireLog("Précisions",1, 0, 0, activity.getMessage().getSymptomes());
 
         activity.lancerActivity(suivante);
 

@@ -85,4 +85,11 @@ public abstract class DetailCauseActivity extends GlobalActivity{
 
         return details;
     }
+
+    @Override
+    public void onResume(){
+        super.onResume();
+        if(nbBoutonsSelectionnes()> 0)
+            btnSuivant.setEnabled(true);
+    }
 }

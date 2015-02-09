@@ -53,7 +53,7 @@ public class NombreVictimeActivity extends GlobalActivity implements SeekBar.OnS
 
     @Override
     public String getNouveauTitre() {
-        return "Nombre de victime(s)";
+        return "Nombre de victimes";
     }
 
     /**
