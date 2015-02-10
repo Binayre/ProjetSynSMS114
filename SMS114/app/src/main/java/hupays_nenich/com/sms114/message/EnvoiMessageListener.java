@@ -46,5 +46,6 @@ public class EnvoiMessageListener implements View.OnClickListener{
             e.printStackTrace();
         }*/
         activity.ecrireLog("Fin",1, 0, 0, msg);
+        activity.ecrire_log = false;
     }
 }

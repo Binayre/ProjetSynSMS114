@@ -30,6 +30,7 @@ public abstract  class GlobalActivity extends ActionBarActivity implements Media
     private static String dir;
     private static File log_file;
     private static int num_test;
+    public static boolean ecrire_log = true;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -101,14 +102,16 @@ public abstract  class GlobalActivity extends ActionBarActivity implements Media
 
     //servira a ecrire dans le fichier de log
     public void ecrireLog(String dest,int suivant, int retour_log, int retour_hard, String d){
-        try {
-            FileWriter fileWriter = new FileWriter(log_file,true);
-            fileWriter.append(Long.toString((System.currentTimeMillis()-heure_debut))+";"+dest+";"+suivant+";"+retour_log+";"+retour_hard+";"+d.replace("\n"," ||| ").replace(";"," ")+";\n");
-            fileWriter.flush();
-            fileWriter.close();
-        }
-        catch(IOException e){
-            e.printStackTrace();
+        if(ecrire_log) {
+            try {
+                FileWriter fileWriter = new FileWriter(log_file, true);
+                fileWriter.append(Long.toString((System.currentTimeMillis() - heure_debut)) + ";" + dest + ";" + suivant + ";" + retour_log + ";" + retour_hard + ";" + d.replace("\n", " ||| ").replace(";", " ") + ";\n");
+                fileWriter.flush();
+                fileWriter.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
         }
 
     }
