@@ -40,7 +40,7 @@ public class PrecisionActivity extends GlobalActivity {
 
     @Override
     public String getNouveauTitre() {
-        return "Precision";
+        return "Precisions";
     }
 
     public String precisions(){

@@ -44,7 +44,7 @@ public class DetailVictimeActivity extends GlobalActivity implements CompoundBut
 
     @Override
     public String getNouveauTitre() {
-        return "Victime";
+        return "Victimes";
     }
 
     public String detail(){

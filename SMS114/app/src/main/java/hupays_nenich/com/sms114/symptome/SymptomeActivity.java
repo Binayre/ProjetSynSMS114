@@ -58,7 +58,7 @@ public class SymptomeActivity extends GlobalActivity {
 
     @Override
     public String getNouveauTitre() {
-        return "Symptome";
+        return "Symptomes";
     }
 
     // si True, lancer le body

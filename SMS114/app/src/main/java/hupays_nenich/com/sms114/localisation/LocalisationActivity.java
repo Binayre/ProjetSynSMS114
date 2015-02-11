@@ -55,7 +55,7 @@ public class LocalisationActivity extends GlobalActivity {
     }
 
     public String getTexte(){
-        return txtAdresse.getText().toString() + "\n"+adresse.getText().toString();
+        return txtAdresse.getText().toString() + "\n" + adresse.getText().toString();
     }
 
     @Override

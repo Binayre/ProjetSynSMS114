@@ -30,7 +30,7 @@ public class DetailAutreActivity extends DetailCauseActivity {
 
     @Override
     public String getNouveauTitre() {
-        return "Autre";
+        return "Autres";
     }
 
     public String getDetail(){
