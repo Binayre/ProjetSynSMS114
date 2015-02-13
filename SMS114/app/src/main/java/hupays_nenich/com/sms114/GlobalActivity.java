@@ -105,7 +105,7 @@ public abstract  class GlobalActivity extends ActionBarActivity implements Media
         if(ecrire_log) {
             try {
                 FileWriter fileWriter = new FileWriter(log_file, true);
-                fileWriter.append(Long.toString((System.currentTimeMillis() - heure_debut)) + ";" + dest + ";" + suivant + ";" + retour_log + ";" + retour_hard + ";" + d.replace("\n", " ||| ").replace(";", " ") + ";\n");
+                fileWriter.append(Long.toString((System.currentTimeMillis() - heure_debut)) + ";" + dest + ";" + suivant + ";" + retour_log + ";" + retour_hard + ";" + d.replace("\n", " | ").replace(";", " ") + ";\n");
                 fileWriter.flush();
                 fileWriter.close();
             } catch (IOException e) {

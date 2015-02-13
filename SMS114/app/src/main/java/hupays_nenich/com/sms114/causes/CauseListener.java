@@ -26,7 +26,7 @@ public class CauseListener implements View.OnClickListener{
         Button b = (Button) v;
         activity.getMessage().setCause(b.getText().toString());
         
-        activity.ecrireLog("Detail Causes",1, 0, 0, activity.getMessage().getCause());
+        activity.ecrireLog("Detail Causes "+ activity.getMessage().getCause(),1, 0, 0, activity.getMessage().getCause());
 
         activity.lancerActivity(suivante);
     }

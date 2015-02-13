@@ -18,9 +18,20 @@ public class InconnuListener implements CompoundButton.OnCheckedChangeListener {
     @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
         if(activity.inconnu.isChecked()) {
-            activity.getBtnSuivant().setText(R.string.precision);
-            activity.barre.setProgress(0);
+            activity.getBtnSuivant().setText(R.string.DetailVictime);
+            activity.barre.setEnabled(false);
             activity.environ.setChecked(false);
+            activity.environ.setEnabled(false);
+            activity.nbvict.setEnabled(false);
+        }
+        else{
+            activity.barre.setEnabled(true);
+            activity.environ.setEnabled(true);
+            activity.nbvict.setEnabled(true);
+
+            if(activity.barre.getProgress() == 0){
+                activity.getBtnSuivant().setText(R.string.precision);
+            }
         }
     }
 }

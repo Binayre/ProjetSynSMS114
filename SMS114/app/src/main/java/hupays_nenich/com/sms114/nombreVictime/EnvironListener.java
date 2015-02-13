@@ -15,7 +15,10 @@ public class EnvironListener implements CompoundButton.OnCheckedChangeListener{
 
     @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-        if(activity.environ.isChecked())
+        if(activity.environ.isChecked()) {
             activity.inconnu.setChecked(false);
+            if(activity.barre.getProgress()<2)
+                activity.barre.setProgress(2);
+        }
     }
 }

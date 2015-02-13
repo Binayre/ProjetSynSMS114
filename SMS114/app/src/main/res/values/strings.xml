@@ -45,7 +45,7 @@
     <string name="DetailVictime">Détails victimes</string>
     <string name="localisation">Adresse</string>
     <string name="environ">Environ</string>
-    <string name="inconnu">Je ne sais pas</string>
+    <string name="inconnu">Plusieurs</string>
     <string name="title_activity_detail_victime">DetailVictimeActivity</string>
     <string name="age_approx">Catégories d\'âges</string>
     <string name="nourrisson">Nourrisson</string>
@@ -87,7 +87,7 @@
     <string name="aide">Donner toutes informations permettant de vous localiser\nPenser à : étage, code porte, monument proches...</string>
     <string name="title_activity_message">MessageActivity</string>
     <string name="envoi_message">Envoi\nmessage</string>
-    <string name="aide_precision">Position de la victime, gestes de secours effectués...</string>
+    <string name="aide_precision">Précisions sur la victime (Position de la victime, gestes de secours effectués...)\nPrécisions sur la cause:(type de blessures, position des véhicules, étage de l\'incendie...)\nTout ce que vous jugez utile.</string>
     <string name="description114">Le 114 est un service de secours contactable par SMS.\nIl redirige votre demande au bon service (15,18) qui interviendra au plus vite.</string>
     <string name="title_activity_body">BodyActivity</string>
     <string name="emplacement_douloureux">Zones douloureuses</string>

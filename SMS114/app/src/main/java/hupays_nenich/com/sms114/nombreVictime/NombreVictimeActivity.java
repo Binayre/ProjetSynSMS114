@@ -18,7 +18,7 @@ import hupays_nenich.com.sms114.precisions.PrecisionActivity;
 public class NombreVictimeActivity extends GlobalActivity implements SeekBar.OnSeekBarChangeListener{
 
     public SeekBar barre;
-    private TextView nbvict;
+    public TextView nbvict;
     public CheckBox environ, inconnu;
 
     @Override
@@ -49,6 +49,9 @@ public class NombreVictimeActivity extends GlobalActivity implements SeekBar.OnS
 
         btnRetour.setOnClickListener(new RetourListener(this));
         btnSuivant.setOnClickListener(new ValiderNombreVictimeListener(this));
+
+        barre.setProgress(0);
+        nbvict.setText("?");
     }
 
     @Override
@@ -62,19 +65,24 @@ public class NombreVictimeActivity extends GlobalActivity implements SeekBar.OnS
      */
     public String nbVictime(){
 
-        message.setChifreNombreVictime(barre.getProgress());
+        message.setChifreNombreVictime(barre.getProgress()-1);
 
         if(inconnu.isChecked()){
+            message.setChifreNombreVictime(2);//n'a pas de sens, juste pour dire: on ne sait pas
             return inconnu.getText().toString();
         }
         else{
             if(environ.isChecked())
-                if(barre.getProgress() < 11)
+                if(barre.getProgress() == 0)
+                    return "Je ne sais pas "+ environ.getText().toString();
+                else if(barre.getProgress() < 11)
                     return nbvict.getText().toString() + " "+ environ.getText().toString();
                 else
                     return "plus de 10";
             else
-                if(barre.getProgress() < 11)
+                 if(barre.getProgress() == 0)
+                    return "Je ne sais pas ";
+                else if(barre.getProgress() < 11)
                     return nbvict.getText().toString();
                 else return "plus de 10";
         }
@@ -85,7 +93,7 @@ public class NombreVictimeActivity extends GlobalActivity implements SeekBar.OnS
      * @return
      */
     public Class<?> suivante(){
-        if((inconnu.isChecked()) || (barre.getProgress()==0)){
+        if((barre.getProgress()==0) && (!inconnu.isChecked())){
             return PrecisionActivity.class; //renvoyer l'activity qui s'occupe de l'adresse ou des precisions
         }
         else{
@@ -94,7 +102,7 @@ public class NombreVictimeActivity extends GlobalActivity implements SeekBar.OnS
     }
 
     public String suivanteLog(){
-        if((inconnu.isChecked()) || (barre.getProgress()==0)){
+        if((barre.getProgress()==0) && (!inconnu.isChecked())){
             return "Précisions"; //renvoyer l'activity qui s'occupe de l'adresse ou des precisions
         }
         else{
@@ -122,17 +130,27 @@ public class NombreVictimeActivity extends GlobalActivity implements SeekBar.OnS
     @Override
     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
 
-        nbvict.setText(Integer.toString(progress));
+        nbvict.setText(Integer.toString(progress-1));
 
-         if (progress > 0) {
+        if(progress < 2){
+            environ.setChecked(false);
+        }
+
+         if (progress > 1) {
              btnSuivant.setText(R.string.DetailVictime);
              inconnu.setChecked(false);
+
              if(progress == 11){
                  nbvict.setText("10+");
              }
          }
-         else
-              btnSuivant.setText(R.string.precision);
+         else {
+
+             btnSuivant.setText(R.string.precision);
+             inconnu.setChecked(false);
+             if(progress < 1)
+              nbvict.setText("?");
+         }
 
 
     }
